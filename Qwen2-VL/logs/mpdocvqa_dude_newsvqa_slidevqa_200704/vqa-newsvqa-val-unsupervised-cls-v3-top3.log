@@ -1,0 +1,260 @@
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/
++ DATASET=vqa-newsvqa-val-unsupervised-cls-v3-top3
++ GPUS=8
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/
+++ pwd
++ export PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ echo 'CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/'
+CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/
++ MASTER_PORT=47979
++ PORT=62621
++ GPUS=8
++ export MASTER_PORT=47979
++ MASTER_PORT=47979
++ export PORT=62621
++ PORT=62621
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-mpdocvqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-mpdocvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-mpdocvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-dude-mpdocvqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-newsvqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-newsvqa-val-unsupervised-cls-v3-top3 ']'
++ torchrun --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --nproc_per_node=8 --master_port=47979 infer_mpdocvqa_dynamic_unsupervised_cls3.py --checkpoint /gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/ --max-pixels-low 200704 --max-pixels-high 802816 --datasets newsvqa_val --out-dir ./res/news-vqa --select-mode topk --select-image-num 3
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.45it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  5.03it/s]You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.67it/s]You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.25it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  5.34it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.60it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.26it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.26it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.16it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.15it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.14it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.07it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.95it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.37it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.80it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.60it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.68it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.64it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.65it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.58it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.52it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  3.98it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.82it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.73it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.82it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.78it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.74it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.01it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.86it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.95it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.81it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.00it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.84it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.94it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.79it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.91it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.74it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.35it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.19it/s]
+0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]1it [00:03,  3.60s/it]1it [00:03,  3.78s/it]1it [00:03,  3.49s/it]1it [00:03,  3.54s/it]1it [00:03,  3.69s/it]1it [00:03,  3.62s/it]1it [00:03,  3.68s/it]1it [00:03,  3.54s/it]2it [00:05,  2.72s/it]2it [00:05,  2.80s/it]2it [00:05,  2.72s/it]2it [00:05,  2.67s/it]2it [00:05,  2.74s/it]2it [00:05,  2.71s/it]2it [00:05,  2.78s/it]2it [00:05,  2.70s/it]3it [00:07,  2.42s/it]3it [00:07,  2.47s/it]3it [00:07,  2.43s/it]3it [00:07,  2.46s/it]3it [00:07,  2.46s/it]3it [00:07,  2.44s/it]3it [00:07,  2.48s/it]3it [00:07,  2.44s/it]4it [00:09,  2.30s/it]4it [00:10,  2.33s/it]4it [00:09,  2.31s/it]4it [00:10,  2.32s/it]4it [00:09,  2.32s/it]4it [00:09,  2.34s/it]4it [00:10,  2.32s/it]4it [00:09,  2.32s/it]5it [00:11,  2.21s/it]5it [00:12,  2.24s/it]5it [00:12,  2.25s/it]5it [00:12,  2.25s/it]5it [00:12,  2.24s/it]5it [00:12,  2.25s/it]5it [00:12,  2.28s/it]5it [00:12,  2.25s/it]6it [00:13,  2.16s/it]6it [00:14,  2.19s/it]6it [00:14,  2.22s/it]6it [00:14,  2.21s/it]6it [00:14,  2.22s/it]6it [00:14,  2.21s/it]6it [00:14,  2.24s/it]6it [00:14,  2.22s/it]7it [00:16,  2.15s/it]7it [00:16,  2.16s/it]7it [00:16,  2.20s/it]7it [00:16,  2.16s/it]7it [00:16,  2.17s/it]7it [00:16,  2.18s/it]7it [00:16,  2.20s/it]7it [00:16,  2.20s/it]8it [00:18,  2.12s/it]8it [00:18,  2.13s/it]8it [00:18,  2.23s/it]8it [00:18,  2.15s/it]8it [00:18,  2.15s/it]8it [00:18,  2.15s/it]8it [00:18,  2.19s/it]8it [00:18,  2.16s/it]9it [00:20,  2.11s/it]9it [00:20,  2.12s/it]9it [00:20,  2.19s/it]9it [00:20,  2.12s/it]9it [00:20,  2.14s/it]9it [00:20,  2.16s/it]9it [00:20,  2.15s/it]9it [00:20,  2.14s/it]10it [00:22,  2.11s/it]10it [00:22,  2.09s/it]10it [00:22,  2.16s/it]10it [00:22,  2.13s/it]10it [00:22,  2.13s/it]10it [00:22,  2.16s/it]10it [00:22,  2.17s/it]10it [00:22,  2.17s/it]11it [00:24,  2.15s/it]11it [00:24,  2.08s/it]11it [00:24,  2.14s/it]11it [00:24,  2.11s/it]11it [00:24,  2.11s/it]11it [00:24,  2.14s/it]11it [00:25,  2.15s/it]11it [00:24,  2.15s/it]12it [00:26,  2.13s/it]12it [00:26,  2.12s/it]12it [00:27,  2.13s/it]12it [00:26,  2.13s/it]12it [00:26,  2.14s/it]12it [00:26,  2.15s/it]12it [00:27,  2.14s/it]12it [00:26,  2.13s/it]13it [00:28,  2.13s/it]13it [00:28,  2.11s/it]13it [00:29,  2.15s/it]13it [00:28,  2.12s/it]13it [00:29,  2.12s/it]13it [00:29,  2.14s/it]13it [00:29,  2.13s/it]14it [00:30,  2.11s/it]13it [00:29,  2.18s/it]14it [00:30,  2.11s/it]14it [00:30,  1.92s/it]14it [00:31,  2.14s/it]14it [00:31,  2.19s/it]14it [00:31,  2.12s/it]14it [00:31,  2.10s/it]15it [00:32,  2.10s/it]14it [00:31,  2.15s/it]15it [00:31,  1.78s/it]15it [00:33,  2.11s/it]15it [00:33,  2.12s/it]15it [00:33,  2.10s/it]15it [00:33,  2.20s/it]16it [00:33,  1.67s/it]15it [00:33,  2.11s/it]16it [00:35,  2.09s/it]15it [00:33,  2.18s/it]16it [00:35,  2.09s/it]17it [00:34,  1.65s/it]16it [00:35,  2.11s/it]16it [00:35,  2.14s/it]16it [00:35,  2.17s/it]16it [00:35,  2.10s/it]17it [00:37,  2.09s/it]16it [00:35,  2.16s/it]17it [00:37,  2.09s/it]18it [00:36,  1.58s/it]17it [00:37,  2.09s/it]17it [00:37,  2.15s/it]17it [00:37,  2.16s/it]17it [00:37,  2.13s/it]19it [00:37,  1.54s/it]18it [00:39,  2.13s/it]17it [00:37,  2.14s/it]18it [00:39,  2.10s/it]20it [00:39,  1.53s/it]18it [00:39,  2.10s/it]18it [00:39,  2.13s/it]18it [00:40,  2.18s/it]18it [00:40,  2.17s/it]19it [00:41,  2.14s/it]18it [00:39,  2.12s/it]19it [00:41,  2.10s/it]21it [00:40,  1.51s/it]19it [00:41,  2.10s/it]19it [00:41,  2.11s/it]19it [00:42,  2.16s/it]19it [00:42,  2.15s/it]22it [00:42,  1.51s/it]20it [00:43,  2.11s/it]19it [00:41,  2.11s/it]20it [00:43,  2.08s/it]20it [00:43,  2.08s/it]20it [00:43,  2.11s/it]23it [00:43,  1.51s/it]20it [00:44,  2.16s/it]20it [00:44,  2.14s/it]21it [00:45,  2.12s/it]20it [00:44,  2.11s/it]21it [00:45,  2.08s/it]24it [00:45,  1.49s/it]21it [00:45,  2.07s/it]21it [00:45,  2.09s/it]21it [00:46,  2.19s/it]21it [00:46,  2.13s/it]22it [00:47,  2.13s/it]21it [00:46,  2.11s/it]22it [00:47,  2.09s/it]25it [00:46,  1.49s/it]22it [00:47,  2.08s/it]22it [00:47,  2.08s/it]26it [00:48,  1.48s/it]22it [00:48,  2.16s/it]22it [00:48,  2.17s/it]23it [00:49,  2.12s/it]23it [00:49,  2.08s/it]22it [00:48,  2.12s/it]27it [00:49,  1.47s/it]23it [00:49,  2.09s/it]23it [00:50,  2.09s/it]23it [00:50,  2.14s/it]23it [00:50,  2.16s/it]24it [00:51,  2.07s/it]24it [00:52,  2.11s/it]23it [00:50,  2.12s/it]28it [00:51,  1.48s/it]24it [00:51,  2.09s/it]24it [00:52,  2.09s/it]29it [00:52,  1.47s/it]24it [00:53,  2.15s/it]25it [00:53,  2.06s/it]25it [00:54,  2.12s/it]24it [00:52,  2.18s/it]24it [00:52,  2.12s/it]30it [00:54,  1.48s/it]25it [00:54,  2.10s/it]25it [00:54,  2.14s/it]25it [00:55,  2.13s/it]26it [00:55,  2.07s/it]25it [00:55,  2.15s/it]26it [00:56,  2.11s/it]25it [00:54,  2.11s/it]31it [00:55,  1.46s/it]26it [00:56,  2.10s/it]26it [00:56,  2.13s/it]26it [00:57,  2.13s/it]32it [00:56,  1.45s/it]27it [00:58,  2.10s/it]27it [00:58,  2.09s/it]26it [00:56,  2.11s/it]26it [00:57,  2.27s/it]27it [00:58,  2.11s/it]33it [00:58,  1.47s/it]27it [00:58,  2.12s/it]27it [00:59,  2.13s/it]28it [01:00,  2.08s/it]28it [01:00,  2.09s/it]27it [00:58,  2.13s/it]27it [00:59,  2.23s/it]28it [01:00,  2.10s/it]34it [01:00,  1.65s/it]28it [01:00,  2.11s/it]28it [01:01,  2.14s/it]29it [01:02,  2.09s/it]29it [01:02,  2.10s/it]28it [01:01,  2.14s/it]28it [01:01,  2.17s/it]29it [01:02,  2.10s/it]35it [01:02,  1.77s/it]29it [01:02,  2.10s/it]30it [01:04,  2.08s/it]30it [01:04,  2.09s/it]29it [01:03,  2.18s/it]29it [01:03,  2.12s/it]29it [01:03,  2.18s/it]30it [01:04,  2.09s/it]36it [01:04,  1.86s/it]30it [01:04,  2.11s/it]31it [01:06,  2.08s/it]31it [01:06,  2.10s/it]30it [01:06,  2.18s/it]30it [01:05,  2.10s/it]30it [01:06,  2.21s/it]37it [01:06,  1.92s/it]31it [01:06,  2.11s/it]31it [01:06,  2.10s/it]32it [01:08,  2.07s/it]32it [01:08,  2.11s/it]31it [01:07,  2.10s/it]31it [01:08,  2.22s/it]31it [01:08,  2.16s/it]38it [01:08,  1.97s/it]32it [01:08,  2.12s/it]32it [01:09,  2.09s/it]33it [01:10,  2.07s/it]33it [01:10,  2.09s/it]32it [01:10,  2.18s/it]32it [01:09,  2.14s/it]32it [01:10,  2.17s/it]39it [01:10,  2.00s/it]33it [01:10,  2.10s/it]33it [01:11,  2.11s/it]34it [01:12,  2.08s/it]34it [01:12,  2.10s/it]33it [01:12,  2.16s/it]33it [01:11,  2.15s/it]33it [01:12,  2.19s/it]40it [01:12,  2.02s/it]34it [01:13,  2.09s/it]34it [01:13,  2.12s/it]35it [01:14,  2.10s/it]35it [01:14,  2.08s/it]34it [01:14,  2.14s/it]34it [01:13,  2.13s/it]34it [01:14,  2.16s/it]41it [01:15,  2.05s/it]35it [01:15,  2.10s/it]35it [01:15,  2.11s/it]36it [01:16,  2.07s/it]36it [01:17,  2.10s/it]35it [01:16,  2.14s/it]35it [01:15,  2.11s/it]35it [01:16,  2.14s/it]42it [01:17,  2.05s/it]36it [01:17,  2.10s/it]36it [01:17,  2.12s/it]37it [01:19,  2.08s/it]37it [01:18,  2.07s/it]36it [01:18,  2.13s/it]36it [01:17,  2.10s/it]36it [01:19,  2.16s/it]43it [01:19,  2.06s/it]37it [01:19,  2.10s/it]37it [01:19,  2.12s/it]38it [01:21,  2.08s/it]38it [01:21,  2.09s/it]37it [01:20,  2.09s/it]37it [01:21,  2.14s/it]37it [01:21,  2.14s/it]44it [01:21,  2.05s/it]38it [01:21,  2.15s/it]38it [01:21,  2.12s/it]39it [01:23,  2.07s/it]39it [01:23,  2.08s/it]38it [01:22,  2.08s/it]38it [01:23,  2.13s/it]45it [01:23,  2.06s/it]38it [01:23,  2.15s/it]39it [01:23,  2.15s/it]39it [01:23,  2.13s/it]40it [01:25,  2.08s/it]40it [01:25,  2.07s/it]39it [01:24,  2.11s/it]39it [01:25,  2.13s/it]46it [01:25,  2.07s/it]39it [01:25,  2.13s/it]40it [01:26,  2.12s/it]40it [01:25,  2.17s/it]41it [01:27,  2.07s/it]41it [01:27,  2.08s/it]40it [01:26,  2.11s/it]40it [01:27,  2.14s/it]47it [01:27,  2.06s/it]40it [01:27,  2.14s/it]41it [01:28,  2.12s/it]41it [01:28,  2.15s/it]42it [01:29,  2.07s/it]42it [01:29,  2.14s/it]41it [01:28,  2.09s/it]41it [01:29,  2.13s/it]48it [01:29,  2.05s/it]41it [01:29,  2.13s/it]42it [01:30,  2.21s/it]42it [01:30,  2.19s/it]43it [01:31,  2.12s/it]43it [01:31,  2.16s/it]42it [01:30,  2.18s/it]42it [01:31,  2.19s/it]49it [01:31,  2.07s/it]42it [01:32,  2.18s/it]43it [01:32,  2.17s/it]43it [01:32,  2.18s/it]44it [01:33,  2.10s/it]44it [01:33,  2.15s/it]43it [01:32,  2.17s/it]43it [01:33,  2.17s/it]50it [01:33,  2.11s/it]43it [01:34,  2.21s/it]44it [01:34,  2.16s/it]45it [01:35,  2.10s/it]44it [01:34,  2.18s/it]45it [01:35,  2.14s/it]44it [01:35,  2.14s/it]44it [01:36,  2.14s/it]51it [01:36,  2.19s/it]44it [01:36,  2.17s/it]45it [01:36,  2.14s/it]46it [01:38,  2.11s/it]45it [01:36,  2.15s/it]46it [01:37,  2.11s/it]45it [01:37,  2.12s/it]45it [01:38,  2.12s/it]52it [01:38,  2.16s/it]45it [01:38,  2.15s/it]46it [01:38,  2.14s/it]47it [01:40,  2.10s/it]46it [01:39,  2.14s/it]47it [01:40,  2.12s/it]46it [01:39,  2.12s/it]46it [01:40,  2.11s/it]53it [01:40,  2.14s/it]46it [01:40,  2.14s/it]47it [01:40,  2.12s/it]48it [01:42,  2.09s/it]47it [01:41,  2.13s/it]48it [01:42,  2.11s/it]47it [01:41,  2.11s/it]47it [01:42,  2.11s/it]54it [01:42,  2.16s/it]47it [01:42,  2.14s/it]48it [01:43,  2.11s/it]49it [01:44,  2.11s/it]48it [01:43,  2.13s/it]49it [01:44,  2.10s/it]48it [01:43,  2.11s/it]48it [01:44,  2.12s/it]55it [01:44,  2.13s/it]48it [01:44,  2.12s/it]49it [01:45,  2.10s/it]50it [01:46,  2.11s/it]49it [01:45,  2.11s/it]50it [01:46,  2.12s/it]49it [01:45,  2.10s/it]49it [01:46,  2.13s/it]56it [01:46,  2.16s/it]49it [01:47,  2.13s/it]50it [01:47,  2.10s/it]50it [01:47,  2.12s/it]51it [01:48,  2.13s/it]51it [01:48,  2.12s/it]50it [01:47,  2.13s/it]50it [01:48,  2.13s/it]57it [01:48,  2.14s/it]50it [01:49,  2.15s/it]51it [01:49,  2.11s/it]51it [01:49,  2.10s/it]52it [01:50,  2.13s/it]52it [01:50,  2.11s/it]51it [01:49,  2.12s/it]51it [01:50,  2.13s/it]58it [01:50,  2.11s/it]51it [01:51,  2.12s/it]52it [01:51,  2.13s/it]52it [01:51,  2.09s/it]53it [01:52,  2.11s/it]53it [01:52,  2.09s/it]52it [01:51,  2.12s/it]52it [01:53,  2.14s/it]59it [01:53,  2.12s/it]52it [01:53,  2.12s/it]53it [01:53,  2.12s/it]53it [01:53,  2.10s/it]54it [01:54,  2.11s/it]54it [01:54,  2.13s/it]53it [01:54,  2.13s/it]53it [01:55,  2.14s/it]60it [01:55,  2.09s/it]53it [01:55,  2.11s/it]54it [01:55,  2.11s/it]54it [01:55,  2.09s/it]55it [01:57,  2.11s/it]55it [01:56,  2.11s/it]54it [01:56,  2.14s/it]54it [01:57,  2.13s/it]61it [01:57,  2.10s/it]54it [01:57,  2.11s/it]55it [01:57,  2.12s/it]55it [01:57,  2.10s/it]56it [01:59,  2.14s/it]56it [01:59,  2.16s/it]55it [01:58,  2.15s/it]55it [01:59,  2.14s/it]62it [01:59,  2.10s/it]55it [01:59,  2.11s/it]56it [02:00,  2.10s/it]56it [02:00,  2.13s/it]57it [02:01,  2.12s/it]57it [02:01,  2.15s/it]56it [02:00,  2.13s/it]56it [02:01,  2.15s/it]63it [02:01,  2.12s/it]56it [02:01,  2.09s/it]57it [02:02,  2.09s/it]58it [02:03,  2.11s/it]57it [02:02,  2.16s/it]58it [02:03,  2.13s/it]57it [02:02,  2.13s/it]57it [02:03,  2.16s/it]64it [02:03,  2.10s/it]57it [02:03,  2.08s/it]58it [02:04,  2.09s/it]58it [02:04,  2.14s/it]59it [02:05,  2.12s/it]59it [02:05,  2.13s/it]58it [02:04,  2.14s/it]58it [02:05,  2.16s/it]65it [02:05,  2.14s/it]58it [02:05,  2.09s/it]59it [02:06,  2.11s/it]59it [02:06,  2.12s/it]60it [02:07,  2.14s/it]60it [02:07,  2.13s/it]59it [02:06,  2.16s/it]59it [02:08,  2.16s/it]66it [02:07,  2.13s/it]59it [02:07,  2.09s/it]60it [02:08,  2.12s/it]60it [02:08,  2.13s/it]61it [02:09,  2.13s/it]61it [02:09,  2.13s/it]60it [02:09,  2.14s/it]60it [02:10,  2.16s/it]67it [02:10,  2.12s/it]60it [02:10,  2.09s/it]61it [02:10,  2.11s/it]61it [02:10,  2.12s/it]62it [02:11,  2.12s/it]62it [02:12,  2.15s/it]61it [02:11,  2.11s/it]61it [02:12,  2.16s/it]68it [02:12,  2.13s/it]61it [02:12,  2.10s/it]62it [02:12,  2.11s/it]62it [02:12,  2.17s/it]63it [02:14,  2.16s/it]63it [02:14,  2.19s/it]62it [02:13,  2.11s/it]62it [02:14,  2.16s/it]62it [02:14,  2.08s/it]69it [02:14,  2.11s/it]63it [02:14,  2.09s/it]63it [02:15,  2.15s/it]64it [02:16,  2.20s/it]64it [02:16,  2.16s/it]63it [02:15,  2.09s/it]63it [02:16,  2.06s/it]63it [02:16,  2.16s/it]70it [02:16,  2.11s/it]64it [02:16,  2.07s/it]64it [02:17,  2.12s/it]65it [02:18,  2.17s/it]65it [02:18,  2.17s/it]64it [02:17,  2.08s/it]64it [02:18,  2.06s/it]64it [02:18,  2.14s/it]71it [02:18,  2.11s/it]65it [02:18,  2.07s/it]65it [02:19,  2.14s/it]66it [02:20,  2.13s/it]66it [02:20,  2.15s/it]65it [02:19,  2.08s/it]65it [02:20,  2.10s/it]72it [02:20,  2.11s/it]65it [02:20,  2.14s/it]66it [02:20,  2.08s/it]66it [02:21,  2.13s/it]67it [02:22,  2.10s/it]67it [02:22,  2.13s/it]66it [02:21,  2.08s/it]66it [02:22,  2.11s/it]73it [02:22,  2.11s/it]66it [02:23,  2.14s/it]67it [02:23,  2.08s/it]67it [02:23,  2.13s/it]68it [02:24,  2.09s/it]68it [02:24,  2.13s/it]67it [02:23,  2.10s/it]67it [02:24,  2.11s/it]74it [02:24,  2.14s/it]67it [02:25,  2.15s/it]68it [02:25,  2.08s/it]68it [02:25,  2.10s/it]69it [02:26,  2.08s/it]69it [02:27,  2.12s/it]68it [02:25,  2.09s/it]68it [02:26,  2.09s/it]68it [02:27,  2.14s/it]69it [02:27,  2.07s/it]75it [02:27,  2.17s/it]70it [02:28,  1.92s/it]69it [02:27,  2.10s/it]70it [02:29,  2.11s/it]69it [02:27,  2.09s/it]69it [02:28,  2.08s/it]71it [02:30,  1.82s/it]70it [02:29,  2.07s/it]69it [02:29,  2.14s/it]76it [02:29,  2.15s/it]70it [02:29,  2.09s/it]71it [02:31,  2.13s/it]70it [02:29,  2.10s/it]72it [02:31,  1.71s/it]70it [02:30,  2.08s/it]71it [02:31,  2.08s/it]70it [02:31,  2.14s/it]77it [02:31,  2.14s/it]71it [02:31,  2.10s/it]73it [02:32,  1.63s/it]72it [02:33,  2.11s/it]71it [02:32,  2.11s/it]71it [02:32,  2.07s/it]72it [02:33,  2.07s/it]71it [02:33,  2.13s/it]74it [02:34,  1.57s/it]78it [02:33,  2.13s/it]72it [02:33,  2.08s/it]73it [02:35,  2.11s/it]72it [02:34,  2.16s/it]75it [02:35,  1.56s/it]72it [02:35,  2.08s/it]73it [02:35,  2.08s/it]72it [02:35,  2.12s/it]79it [02:35,  2.14s/it]73it [02:35,  2.08s/it]74it [02:37,  2.10s/it]76it [02:37,  1.52s/it]73it [02:36,  2.17s/it]73it [02:37,  2.08s/it]74it [02:37,  2.07s/it]73it [02:38,  2.11s/it]80it [02:37,  2.14s/it]77it [02:38,  1.49s/it]74it [02:37,  2.07s/it]75it [02:39,  2.09s/it]74it [02:39,  2.08s/it]78it [02:40,  1.49s/it]74it [02:38,  2.21s/it]75it [02:39,  2.08s/it]74it [02:40,  2.12s/it]81it [02:39,  2.12s/it]75it [02:40,  2.09s/it]76it [02:41,  2.08s/it]79it [02:41,  1.48s/it]75it [02:41,  2.08s/it]75it [02:40,  2.20s/it]76it [02:41,  2.09s/it]75it [02:42,  2.11s/it]82it [02:41,  2.11s/it]76it [02:42,  2.07s/it]80it [02:43,  1.47s/it]77it [02:43,  2.07s/it]76it [02:43,  2.10s/it]76it [02:43,  2.20s/it]77it [02:43,  2.12s/it]81it [02:44,  1.53s/it]76it [02:44,  2.13s/it]83it [02:44,  2.12s/it]77it [02:44,  2.09s/it]78it [02:45,  2.10s/it]82it [02:46,  1.52s/it]77it [02:45,  2.09s/it]77it [02:45,  2.18s/it]78it [02:46,  2.12s/it]77it [02:46,  2.13s/it]84it [02:46,  2.11s/it]78it [02:46,  2.08s/it]79it [02:47,  2.11s/it]83it [02:47,  1.54s/it]78it [02:47,  2.10s/it]79it [02:48,  2.11s/it]78it [02:47,  2.20s/it]85it [02:48,  2.11s/it]78it [02:48,  2.14s/it]84it [02:49,  1.53s/it]79it [02:48,  2.10s/it]80it [02:49,  2.09s/it]79it [02:49,  2.08s/it]85it [02:50,  1.51s/it]80it [02:50,  2.15s/it]79it [02:49,  2.21s/it]86it [02:50,  2.12s/it]79it [02:50,  2.15s/it]80it [02:50,  2.10s/it]81it [02:52,  2.10s/it]86it [02:52,  1.49s/it]80it [02:51,  2.08s/it]81it [02:52,  2.13s/it]87it [02:52,  2.11s/it]80it [02:52,  2.13s/it]80it [02:52,  2.23s/it]81it [02:52,  2.10s/it]87it [02:53,  1.49s/it]82it [02:54,  2.08s/it]81it [02:53,  2.06s/it]88it [02:55,  1.50s/it]82it [02:54,  2.16s/it]88it [02:54,  2.12s/it]81it [02:55,  2.14s/it]81it [02:54,  2.22s/it]82it [02:54,  2.11s/it]83it [02:56,  2.11s/it]82it [02:55,  2.07s/it]89it [02:56,  1.50s/it]89it [02:56,  1.99s/it]
+83it [02:56,  2.14s/it]89it [02:56,  2.11s/it]89it [02:56,  1.99s/it]
+82it [02:57,  2.12s/it]82it [02:56,  2.19s/it]83it [02:56,  2.11s/it]84it [02:58,  2.11s/it]83it [02:57,  2.06s/it]83it [02:59,  2.14s/it]84it [02:59,  2.20s/it]83it [02:58,  2.17s/it]84it [02:59,  2.16s/it]85it [03:00,  2.18s/it]84it [02:59,  2.07s/it]84it [03:01,  2.13s/it]85it [03:01,  2.17s/it]84it [03:00,  2.22s/it]85it [03:01,  2.19s/it]86it [03:02,  2.15s/it]85it [03:02,  2.13s/it]86it [03:03,  2.15s/it]85it [03:03,  2.18s/it]86it [03:03,  2.16s/it]85it [03:03,  2.23s/it]87it [03:04,  2.13s/it]86it [03:04,  2.10s/it]87it [03:05,  2.13s/it]86it [03:05,  2.15s/it]87it [03:05,  2.18s/it]88it [03:07,  2.12s/it]86it [03:05,  2.22s/it]87it [03:06,  2.09s/it]88it [03:07,  2.10s/it]87it [03:07,  2.13s/it]89it [03:09,  2.12s/it]88it [03:07,  2.16s/it]87it [03:07,  2.18s/it]89it [03:09,  2.13s/it]
+88it [03:08,  2.07s/it]89it [03:09,  2.09s/it]89it [03:09,  2.13s/it]
+88it [03:10,  2.11s/it]89it [03:09,  2.13s/it]89it [03:10,  2.13s/it]
+88it [03:09,  2.16s/it]89it [03:10,  2.08s/it]89it [03:10,  2.14s/it]
+89it [03:12,  2.12s/it]89it [03:12,  2.16s/it]
+89it [03:11,  2.13s/it]89it [03:11,  2.15s/it]
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 575, in <module>
+[rank3]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 447, in evaluate_chat_model
+[rank3]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank3]:   File "/root/miniconda3/lib/python3.10/json/__init__.py", line 231, in dumps
+[rank3]:     return _default_encoder.encode(obj)
+[rank3]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 199, in encode
+[rank3]:     chunks = self.iterencode(o, _one_shot=True)
+[rank3]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 257, in iterencode
+[rank3]:     return _iterencode(o, 0)
+[rank3]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 179, in default
+[rank3]:     raise TypeError(f'Object of type {o.__class__.__name__} '
+[rank3]: TypeError: Object of type Tensor is not JSON serializable
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 575, in <module>
+[rank5]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank5]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 447, in evaluate_chat_model
+[rank5]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank5]:   File "/root/miniconda3/lib/python3.10/json/__init__.py", line 231, in dumps
+[rank5]:     return _default_encoder.encode(obj)
+[rank5]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 199, in encode
+[rank5]:     chunks = self.iterencode(o, _one_shot=True)
+[rank5]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 257, in iterencode
+[rank5]:     return _iterencode(o, 0)
+[rank5]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 179, in default
+[rank5]:     raise TypeError(f'Object of type {o.__class__.__name__} '
+[rank5]: TypeError: Object of type Tensor is not JSON serializable
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 575, in <module>
+[rank0]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank0]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 447, in evaluate_chat_model
+[rank0]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank0]:   File "/root/miniconda3/lib/python3.10/json/__init__.py", line 231, in dumps
+[rank0]:     return _default_encoder.encode(obj)
+[rank0]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 199, in encode
+[rank0]:     chunks = self.iterencode(o, _one_shot=True)
+[rank0]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 257, in iterencode
+[rank0]:     return _iterencode(o, 0)
+[rank0]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 179, in default
+[rank0]:     raise TypeError(f'Object of type {o.__class__.__name__} '
+[rank0]: TypeError: Object of type Tensor is not JSON serializable
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 575, in <module>
+[rank2]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank2]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 447, in evaluate_chat_model
+[rank2]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank2]:   File "/root/miniconda3/lib/python3.10/json/__init__.py", line 231, in dumps
+[rank2]:     return _default_encoder.encode(obj)
+[rank2]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 199, in encode
+[rank2]:     chunks = self.iterencode(o, _one_shot=True)
+[rank2]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 257, in iterencode
+[rank2]:     return _iterencode(o, 0)
+[rank2]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 179, in default
+[rank2]:     raise TypeError(f'Object of type {o.__class__.__name__} '
+[rank2]: TypeError: Object of type Tensor is not JSON serializable
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 575, in <module>
+[rank6]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank6]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 447, in evaluate_chat_model
+[rank6]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank6]:   File "/root/miniconda3/lib/python3.10/json/__init__.py", line 231, in dumps
+[rank6]:     return _default_encoder.encode(obj)
+[rank6]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 199, in encode
+[rank6]:     chunks = self.iterencode(o, _one_shot=True)
+[rank6]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 257, in iterencode
+[rank6]:     return _iterencode(o, 0)
+[rank6]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 179, in default
+[rank6]:     raise TypeError(f'Object of type {o.__class__.__name__} '
+[rank6]: TypeError: Object of type Tensor is not JSON serializable
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 575, in <module>
+[rank4]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank4]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 447, in evaluate_chat_model
+[rank4]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank4]:   File "/root/miniconda3/lib/python3.10/json/__init__.py", line 231, in dumps
+[rank4]:     return _default_encoder.encode(obj)
+[rank4]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 199, in encode
+[rank4]:     chunks = self.iterencode(o, _one_shot=True)
+[rank4]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 257, in iterencode
+[rank4]:     return _iterencode(o, 0)
+[rank4]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 179, in default
+[rank4]:     raise TypeError(f'Object of type {o.__class__.__name__} '
+[rank4]: TypeError: Object of type Tensor is not JSON serializable
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 575, in <module>
+[rank1]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank1]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 447, in evaluate_chat_model
+[rank1]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank1]:   File "/root/miniconda3/lib/python3.10/json/__init__.py", line 231, in dumps
+[rank1]:     return _default_encoder.encode(obj)
+[rank1]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 199, in encode
+[rank1]:     chunks = self.iterencode(o, _one_shot=True)
+[rank1]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 257, in iterencode
+[rank1]:     return _iterencode(o, 0)
+[rank1]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 179, in default
+[rank1]:     raise TypeError(f'Object of type {o.__class__.__name__} '
+[rank1]: TypeError: Object of type Tensor is not JSON serializable
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 575, in <module>
+[rank7]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank7]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 447, in evaluate_chat_model
+[rank7]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank7]:   File "/root/miniconda3/lib/python3.10/json/__init__.py", line 231, in dumps
+[rank7]:     return _default_encoder.encode(obj)
+[rank7]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 199, in encode
+[rank7]:     chunks = self.iterencode(o, _one_shot=True)
+[rank7]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 257, in iterencode
+[rank7]:     return _iterencode(o, 0)
+[rank7]:   File "/root/miniconda3/lib/python3.10/json/encoder.py", line 179, in default
+[rank7]:     raise TypeError(f'Object of type {o.__class__.__name__} '
+[rank7]: TypeError: Object of type Tensor is not JSON serializable
+W1222 09:24:28.953000 139631964392320 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 203209 closing signal SIGTERM
+W1222 09:24:28.954000 139631964392320 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 203210 closing signal SIGTERM
+W1222 09:24:28.954000 139631964392320 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 203211 closing signal SIGTERM
+W1222 09:24:28.954000 139631964392320 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 203212 closing signal SIGTERM
+W1222 09:24:28.954000 139631964392320 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 203214 closing signal SIGTERM
+W1222 09:24:28.954000 139631964392320 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 203215 closing signal SIGTERM
+W1222 09:24:28.954000 139631964392320 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 203216 closing signal SIGTERM
+E1222 09:24:30.348000 139631964392320 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 4 (pid: 203213) of binary: /root/miniconda3/bin/python
+Traceback (most recent call last):
+  File "/root/miniconda3/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/root/miniconda3/lib/python3.10/site-packages/zhenjin_utils/import_hooks/torchrun_args_hook.py", line 28, in new_run
+    return module.old_run(*func_args, **func_kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+infer_mpdocvqa_dynamic_unsupervised_cls3.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-12-22_09:24:28
+  host      : amed-kmaker-033145117225
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 203213)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-newsvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-newsvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-newsvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-slidevqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-slidevqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-slidevqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-slidevqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-slidevqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v3-top3 == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix-test2 ']'

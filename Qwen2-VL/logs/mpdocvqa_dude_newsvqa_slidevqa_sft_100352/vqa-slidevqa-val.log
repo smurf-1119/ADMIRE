@@ -1,0 +1,172 @@
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/
++ DATASET=vqa-slidevqa-val
++ GPUS=8
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/
+++ pwd
++ export PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ echo 'CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/'
+CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/
++ MASTER_PORT=62621
++ PORT=62621
++ GPUS=8
++ export MASTER_PORT=62621
++ MASTER_PORT=62621
++ export PORT=62621
++ PORT=62621
++ '[' vqa-slidevqa-val == vqa-mpdocvqa-val ']'
++ '[' vqa-slidevqa-val == vqa-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val == vqa-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val == vqa-dude-mpdocvqa-val ']'
++ '[' vqa-slidevqa-val == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val == vqa-newsvqa-val ']'
++ '[' vqa-slidevqa-val == vqa-newsvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val == vqa-newsvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val == vqa-slidevqa-val ']'
++ torchrun --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --nproc_per_node=8 --master_port=62621 infer_mpdocvqa_dynamic.py --checkpoint /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/ --max-pixels 200704 --datasets slidevqa_val --out-dir ./res/slidevqa-vqa
+datasets:datasets: datasets: ['slidevqa_val'] ['slidevqa_val']
+
+['slidevqa_val']
+datasets: datasets:['slidevqa_val'] 
+['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.48it/s]`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.99it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.39it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.13it/s]You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.55it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.65it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.75it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  3.95it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.90it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.32it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.65it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.40it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.79it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.70it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.97it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.70it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.04it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.15it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.57it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.44it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.30it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.00it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.94it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.11it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.75it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  3.80it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.37it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.35it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.22it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.62it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.63it/s]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  3.94it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.32it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.25it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.36it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.30it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.17it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  4.00it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.87it/s]
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 351, in <module>
+[rank0]:     evaluate_chat_model(model, processor, image_process_args)
+[rank0]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 186, in evaluate_chat_model
+[rank0]:     test=ds_collections[ds_name]['test'],
+[rank0]: KeyError: 'slidevqa_val'
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 351, in <module>
+[rank6]:     evaluate_chat_model(model, processor, image_process_args)
+[rank6]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 186, in evaluate_chat_model
+[rank6]:     test=ds_collections[ds_name]['test'],
+[rank6]: KeyError: 'slidevqa_val'
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 351, in <module>
+[rank7]:     evaluate_chat_model(model, processor, image_process_args)
+[rank7]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 186, in evaluate_chat_model
+[rank7]:     test=ds_collections[ds_name]['test'],
+[rank7]: KeyError: 'slidevqa_val'
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 351, in <module>
+[rank3]:     evaluate_chat_model(model, processor, image_process_args)
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 186, in evaluate_chat_model
+[rank3]:     test=ds_collections[ds_name]['test'],
+[rank3]: KeyError: 'slidevqa_val'
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 351, in <module>
+[rank4]:     evaluate_chat_model(model, processor, image_process_args)
+[rank4]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 186, in evaluate_chat_model
+[rank4]:     test=ds_collections[ds_name]['test'],
+[rank4]: KeyError: 'slidevqa_val'
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 351, in <module>
+[rank5]:     evaluate_chat_model(model, processor, image_process_args)
+[rank5]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 186, in evaluate_chat_model
+[rank5]:     test=ds_collections[ds_name]['test'],
+[rank5]: KeyError: 'slidevqa_val'
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 351, in <module>
+[rank2]:     evaluate_chat_model(model, processor, image_process_args)
+[rank2]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 186, in evaluate_chat_model
+[rank2]:     test=ds_collections[ds_name]['test'],
+[rank2]: KeyError: 'slidevqa_val'
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 351, in <module>
+[rank1]:     evaluate_chat_model(model, processor, image_process_args)
+[rank1]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic.py", line 186, in evaluate_chat_model
+[rank1]:     test=ds_collections[ds_name]['test'],
+[rank1]: KeyError: 'slidevqa_val'
+W1216 18:15:34.431000 140542346685312 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 185610 closing signal SIGTERM
+W1216 18:15:34.431000 140542346685312 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 185611 closing signal SIGTERM
+W1216 18:15:34.432000 140542346685312 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 185612 closing signal SIGTERM
+W1216 18:15:34.433000 140542346685312 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 185613 closing signal SIGTERM
+W1216 18:15:34.433000 140542346685312 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 185614 closing signal SIGTERM
+W1216 18:15:34.433000 140542346685312 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 185615 closing signal SIGTERM
+W1216 18:15:34.434000 140542346685312 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 185616 closing signal SIGTERM
+E1216 18:15:35.049000 140542346685312 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 0 (pid: 185609) of binary: /root/miniconda3/bin/python
+Traceback (most recent call last):
+  File "/root/miniconda3/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/root/miniconda3/lib/python3.10/site-packages/zhenjin_utils/import_hooks/torchrun_args_hook.py", line 28, in new_run
+    return module.old_run(*func_args, **func_kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+infer_mpdocvqa_dynamic.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-12-16_18:15:34
+  host      : kmaker-kmaker-033145099100
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 185609)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
++ '[' vqa-slidevqa-val == vqa-slidevqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val == vqa-slidevqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix ']'

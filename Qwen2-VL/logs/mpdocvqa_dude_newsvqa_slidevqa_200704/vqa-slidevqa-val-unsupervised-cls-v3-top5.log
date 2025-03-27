@@ -1,0 +1,144 @@
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/
++ DATASET=vqa-slidevqa-val-unsupervised-cls-v3-top5
++ GPUS=7
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/
+++ pwd
++ export PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ echo 'CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/'
+CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/
++ MASTER_PORT=39632
++ PORT=62621
++ GPUS=7
++ export MASTER_PORT=39632
++ MASTER_PORT=39632
++ export PORT=62621
++ PORT=62621
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-mpdocvqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-mpdocvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-mpdocvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-dude-mpdocvqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-newsvqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-newsvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-newsvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-newsvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-newsvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-slidevqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-slidevqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-slidevqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-slidevqa-val-unsupervised-cls-v3-top5 ']'
++ torchrun --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --nproc_per_node=7 --master_port=39632 infer_mpdocvqa_dynamic_unsupervised_cls3.py --checkpoint /gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/ --max-pixels-low 200704 --max-pixels-high 802816 --datasets slidevqa_val --out-dir ./res/slidevqa-vqa --dynamic --select-mode topk --select-image-num 5
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.11it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.65it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.82it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.71it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.22it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.28it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.20it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.19it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.11it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.85it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.75it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  5.19it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.63it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.70it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.67it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.67it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.57it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.38it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.91it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.73it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.84it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.56it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.41it/s]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.89it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.77it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.11it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.94it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.05it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.90it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.95it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.81it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.10it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.92it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.98it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.81it/s]
+0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]1it [00:03,  3.40s/it]1it [00:03,  3.66s/it]1it [00:03,  3.44s/it]1it [00:03,  3.63s/it]1it [00:03,  3.69s/it]2it [00:05,  2.68s/it]1it [00:03,  3.36s/it]1it [00:03,  3.33s/it]2it [00:06,  2.89s/it]2it [00:05,  2.75s/it]2it [00:05,  2.78s/it]2it [00:05,  2.86s/it]3it [00:07,  2.45s/it]2it [00:05,  2.60s/it]2it [00:05,  2.71s/it]3it [00:08,  2.61s/it]3it [00:07,  2.52s/it]3it [00:07,  2.51s/it]3it [00:08,  2.61s/it]4it [00:09,  2.33s/it]3it [00:07,  2.37s/it]3it [00:07,  2.52s/it]4it [00:10,  2.55s/it]4it [00:10,  2.42s/it]4it [00:10,  2.41s/it]5it [00:12,  2.30s/it]4it [00:10,  2.53s/it]4it [00:09,  2.26s/it]4it [00:10,  2.41s/it]5it [00:12,  2.40s/it]5it [00:12,  2.35s/it]5it [00:12,  2.34s/it]6it [00:14,  2.27s/it]5it [00:12,  2.44s/it]5it [00:11,  2.17s/it]5it [00:12,  2.35s/it]6it [00:15,  2.31s/it]6it [00:14,  2.30s/it]6it [00:14,  2.34s/it]7it [00:16,  2.25s/it]6it [00:13,  2.13s/it]6it [00:15,  2.37s/it]6it [00:14,  2.32s/it]7it [00:17,  2.24s/it]7it [00:16,  2.28s/it]7it [00:17,  2.33s/it]7it [00:15,  2.09s/it]8it [00:18,  2.23s/it]7it [00:17,  2.32s/it]7it [00:16,  2.30s/it]8it [00:19,  2.19s/it]8it [00:17,  2.07s/it]8it [00:19,  2.26s/it]8it [00:19,  2.30s/it]8it [00:19,  2.41s/it]
+9it [00:20,  2.23s/it]8it [00:19,  2.35s/it][rank3]: Traceback (most recent call last):
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 575, in <module>
+[rank3]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 375, in evaluate_chat_model
+[rank3]:     page_pred = predict_page(inputs[0].to(model.device),
+[rank3]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank3]:     return func(*args, **kwargs)
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls3.py", line 220, in predict_page
+[rank3]:     pixel_values = pixel_values.type(qwen2vl_generation_model.visual.get_dtype())
+[rank3]: AttributeError: 'NoneType' object has no attribute 'type'
+9it [00:21,  2.16s/it]8it [00:19,  2.34s/it]9it [00:19,  2.08s/it]10it [00:23,  2.17s/it]9it [00:21,  2.30s/it]W1222 09:25:06.457000 139990526364544 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 204522 closing signal SIGTERM
+W1222 09:25:06.457000 139990526364544 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 204523 closing signal SIGTERM
+W1222 09:25:06.458000 139990526364544 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 204524 closing signal SIGTERM
+W1222 09:25:06.459000 139990526364544 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 204526 closing signal SIGTERM
+W1222 09:25:06.460000 139990526364544 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 204527 closing signal SIGTERM
+W1222 09:25:06.461000 139990526364544 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 204528 closing signal SIGTERM
+E1222 09:25:07.590000 139990526364544 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 3 (pid: 204525) of binary: /root/miniconda3/bin/python
+Traceback (most recent call last):
+  File "/root/miniconda3/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/root/miniconda3/lib/python3.10/site-packages/zhenjin_utils/import_hooks/torchrun_args_hook.py", line 28, in new_run
+    return module.old_run(*func_args, **func_kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+infer_mpdocvqa_dynamic_unsupervised_cls3.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-12-22_09:25:06
+  host      : amed-kmaker-033145117225
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 204525)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-slidevqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v3-top5 == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix-test2 ']'

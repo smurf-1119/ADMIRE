@@ -1,0 +1,1747 @@
++ CHECKPOINT=/gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct
++ DATASET=vqa-slidevqa-val-unsupervised-cls-v4-top3_mix
++ GPUS=8
++ CHECKPOINT=/gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct
+++ pwd
++ export PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ echo 'CHECKPOINT: /gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct'
+CHECKPOINT: /gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct
++ MASTER_PORT=27660
++ PORT=62621
++ GPUS=8
++ export MASTER_PORT=27660
++ MASTER_PORT=27660
++ export PORT=62621
++ PORT=62621
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix ']'
++ torchrun --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --nproc_per_node=8 --master_port=27660 infer_mpdocvqa_dynamic_unsupervised_cls4.py --checkpoint /gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct --max-pixels-low 200704 --max-pixels-high 802816 --datasets slidevqa_val --out-dir ./res/slide-vqa --dynamic --select-mode mix_topk --select-image-num 3
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.92it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  4.26it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.84it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.86it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.83it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  4.19it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.30it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.42it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.41it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.41it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  4.23it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  4.29it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  4.26it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00,  4.11it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.77it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.75it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.64it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.75it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  4.35it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  4.41it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  4.41it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.17it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.15it/s]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  3.87it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  3.86it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  3.79it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  3.84it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00,  4.38it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00,  4.42it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00,  4.39it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:01<00:00,  4.01it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:01<00:00,  3.96it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:01<00:00,  3.92it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:01<00:00,  3.96it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.49it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.39it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.48it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.39it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.46it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.39it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.08it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  3.96it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.03it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  3.89it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.05it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  3.93it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.00it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  3.91it/s]
+0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]['Business Under-performance'] 348 7171
+1it [00:03,  3.20s/it]['Glassdoor'] 348 7177
+1it [00:03,  3.14s/it]['UK'] 336 6933
+1it [00:03,  3.15s/it]['68%'] 342 7056
+1it [00:03,  3.19s/it]['1948'] 342 7059
+1it [00:03,  3.34s/it]['Antarctic and Arctic regions'] 342 7063
+1it [00:03,  3.37s/it]['1000'] 342 7061
+1it [00:03,  3.26s/it]['3.7%'] 348 7180
+1it [00:03,  3.31s/it]['Mass Affluent Customers'] 348 7169
+2it [00:05,  2.47s/it]['83%'] 342 7061
+2it [00:05,  2.40s/it]['UK'] 336 6944
+2it [00:04,  2.36s/it]['95%'] 330 6809
+2it [00:05,  2.40s/it]['Earth'] 342 7056
+2it [00:05,  2.46s/it]['10'] 348 7169
+2it [00:05,  2.49s/it]['7'] 348 7184
+2it [00:05,  2.45s/it]['Design'] 348 7182
+2it [00:05,  2.48s/it]['Mr. Henderson'] 342 7068
+3it [00:07,  2.20s/it]['1 year'] 342 7063
+3it [00:06,  2.14s/it]['Baidu'] 330 6806
+3it [00:06,  2.10s/it]['The Conservatives'] 336 6935
+3it [00:06,  2.13s/it]['Water'] 348 7172
+3it [00:07,  2.19s/it]['Pathways'] 348 7172
+3it [00:07,  2.21s/it]['France'] 342 7054
+3it [00:07,  2.19s/it]['Perempuan'] 348 7176
+3it [00:07,  2.23s/it]['2015'] 342 7061
+4it [00:08,  2.05s/it]['Determine Broad Long-Term Target Allocation'] 348 7178
+4it [00:09,  2.14s/it]['Nigeria'] 330 6816
+4it [00:08,  2.00s/it]['The Conservatives'] 336 6945
+4it [00:08,  2.03s/it]['Assay Purpose'] 342 7050
+4it [00:09,  2.08s/it]['15'] 348 7171
+4it [00:08,  2.08s/it]['SMS, IVR, USSD'] 348 7170
+4it [00:09,  2.14s/it]['11,978,749'] 348 7183
+4it [00:09,  2.19s/it]['75%'] 342 7065
+5it [00:10,  1.98s/it]['$868.3'] 330 6806
+5it [00:10,  2.05s/it]['90%'] 330 6813
+5it [00:10,  1.92s/it]['CONVENTIONAL'] 342 7055
+5it [00:10,  2.02s/it]['70%'] 342 7056
+5it [00:10,  2.01s/it]['15'] 348 7196
+5it [00:10,  2.02s/it]['Relevant content'] 342 7047
+5it [00:11,  2.05s/it]['Turkey'] 348 7175
+5it [00:11,  2.07s/it]['39%'] 348 7170
+6it [00:12,  1.96s/it]['$868.3'] 330 6825
+6it [00:12,  2.00s/it]['80.6 million'] 348 7164
+6it [00:12,  1.93s/it]['Monies'] 348 7174
+6it [00:12,  2.00s/it]['Customer experience'] 348 7166
+6it [00:12,  1.98s/it]['Iceland'] 348 7171
+6it [00:12,  1.98s/it]['Rate of understanding for labels with text and pictures'] 348 7189
+6it [00:12,  2.02s/it]['0'] 348 7179
+6it [00:12,  2.00s/it]['250 million'] 330 6802
+7it [00:14,  1.94s/it]['Indonesia'] 348 7193
+7it [00:14,  1.95s/it]['49%'] 330 6808
+7it [00:14,  1.87s/it]['Monies'] 348 7199
+7it [00:14,  1.99s/it]['Disrupts plasma membrane'] 330 6813
+7it [00:14,  1.95s/it]['B2C activities'] 342 7047
+7it [00:14,  1.96s/it]['34'] 348 7173
+7it [00:14,  1.96s/it]['107'] 348 7182
+7it [00:14,  1.97s/it]['250 million'] 330 6814
+8it [00:16,  1.92s/it]['Personalized'] 330 6805
+8it [00:15,  1.83s/it]['Subtropical dry forest'] 342 7069
+8it [00:16,  1.96s/it]['CONVENTIONAL'] 342 7056
+8it [00:16,  1.99s/it]['Disrupts plasma membrane'] 330 6825
+8it [00:16,  1.91s/it]['Business process outsourcing'] 348 7163
+8it [00:16,  1.94s/it]['Map is directly connected to HDFS (blocks).'] 348 7170
+8it [00:16,  2.01s/it]['Med'] 348 7176
+8it [00:16,  1.94s/it]['10'] 324 6687
+9it [00:18,  1.87s/it]['Patterns & shapes'] 348 7162
+9it [00:17,  1.85s/it]['17%'] 342 7060
+9it [00:18,  1.94s/it]['Protease, RNAase'] 330 6803
+9it [00:18,  1.89s/it]['10 PM'] 348 7164
+9it [00:18,  1.93s/it]['CONVENTIONAL (Bond)'] 348 7191
+9it [00:18,  2.02s/it]['W. Africa'] 348 7181
+9it [00:18,  1.93s/it]['Map is directly connected to Hadoop Distributed FileSystem (blocks).'] 348 7174
+9it [00:18,  2.06s/it]['2015'] 348 7171
+10it [00:20,  1.91s/it]['Twitter'] 348 7167
+10it [00:19,  1.85s/it]['Russia'] 348 7177
+10it [00:20,  1.93s/it]['Centrifuge'] 330 6804
+10it [00:20,  1.86s/it]['1kg'] 348 7172
+10it [00:20,  1.91s/it]['Beneficial ownership of the assets'] 342 7050
+10it [00:20,  2.03s/it]['140'] 348 7176
+10it [00:20,  1.93s/it]['Lack of adoption'] 330 6808
+11it [00:21,  1.84s/it]['Day 6'] 348 7177
+11it [00:22,  1.93s/it]['69.1%'] 330 6806
+11it [00:22,  1.91s/it]['Apache Tez is an open-source project that is part of the Apache Software Foundation. The top-level domain of the Apache Tez website is apache.org.'] 348 7169
+10it [00:21,  2.26s/it]['Ethanol'] 330 6804
+11it [00:21,  1.81s/it]['$2.84'] 348 7168
+11it [00:22,  1.93s/it]['Desktop PC'] 342 7057
+11it [00:22,  1.91s/it]['Beneficial ownership of the assets'] 348 7180
+11it [00:22,  2.04s/it]['7%'] 324 6680
+12it [00:23,  1.81s/it]['59.1%'] 330 6806
+12it [00:23,  1.89s/it]['15mg'] 348 7180
+12it [00:24,  1.93s/it]['Ethanol'] 330 6819
+12it [00:23,  1.79s/it]['Apache'] 348 7175
+11it [00:23,  2.15s/it]["Longo's"] 348 7165
+12it [00:24,  1.91s/it]['India'] 348 7180
+12it [00:24,  1.89s/it]['Originator'] 342 7050
+12it [00:24,  1.99s/it]['50,000'] 342 7053
+13it [00:25,  1.87s/it]['16.1%'] 330 6809
+13it [00:25,  1.88s/it]['Clean tube'] 330 6808
+13it [00:25,  1.78s/it]['Non steroidal Anti Inflammatory Drug'] 348 7163
+13it [00:26,  1.97s/it]['Smart'] 348 7166
+12it [00:25,  2.05s/it]['Bananas'] 348 7163
+13it [00:26,  1.90s/it]['Turkey'] 348 7180
+13it [00:26,  1.87s/it]['25 Jun'] 330 6813
+13it [00:26,  1.93s/it]['85%'] 324 6676
+14it [00:26,  1.84s/it]['19.6%'] 330 6807
+14it [00:27,  1.87s/it]['Clean tube'] 330 6819
+14it [00:27,  1.77s/it]['Smart'] 348 7170
+13it [00:27,  1.98s/it]['BitYota and Netskope'] 342 7051
+14it [00:28,  1.98s/it]['7'] 348 7173
+14it [00:28,  1.88s/it]['7 Jun'] 330 6813
+14it [00:28,  1.87s/it]['Q4:11'] 348 7178
+14it [00:28,  1.90s/it]['India'] 348 7168
+15it [00:28,  1.86s/it]['Significant disruption'] 330 6804
+15it [00:28,  1.78s/it]['85.7%'] 330 6806
+15it [00:29,  1.87s/it]['28%'] 348 7176
+14it [00:29,  1.96s/it]['Tiny Speck'] 348 7166
+15it [00:30,  1.96s/it]['2'] 348 7172
+15it [00:29,  1.87s/it]['Twitter'] 330 6809
+15it [00:29,  1.83s/it]['Aug 2013'] 348 7184
+15it [00:30,  1.92s/it]['China'] 348 7163
+16it [00:30,  1.87s/it]['$35'] 330 6803
+16it [00:30,  1.78s/it]['52%'] 348 7169
+16it [00:31,  1.89s/it]['28%'] 348 7188
+15it [00:31,  1.93s/it]['Crushpath'] 348 7177
+16it [00:32,  1.94s/it]['Twitter'] 330 6828
+16it [00:31,  1.79s/it]['3x10-20 meters each'] 348 7166
+16it [00:31,  1.93s/it]['11.4'] 342 7069
+16it [00:31,  1.91s/it]['$3.78'] 330 6817
+17it [00:32,  1.79s/it]['16.67%'] 330 6806
+17it [00:32,  1.87s/it]['55%'] 348 7172
+17it [00:33,  1.89s/it]['David Karp'] 348 7188
+16it [00:32,  1.92s/it]['$1m-$5m'] 348 7166
+17it [00:34,  1.96s/it]['4.3%'] 330 6808
+17it [00:33,  1.80s/it]['Speed Training'] 342 7049
+17it [00:33,  1.90s/it]['Tickets'] 348 7180
+17it [00:33,  1.89s/it]['$172.50'] 330 6808
+18it [00:34,  1.82s/it]['86%'] 348 7168
+18it [00:34,  1.88s/it]['11%'] 348 7174
+18it [00:35,  1.90s/it]['Dawn Rosenberg McKay'] 348 7192
+17it [00:34,  1.92s/it]['11.9%'] 330 6810
+18it [00:35,  1.81s/it]['Strong conviction in team, market and early customer validation'] 348 7170
+18it [00:36,  1.99s/it]['Plyometrics'] 348 7169
+18it [00:35,  1.89s/it]['Signage'] 348 7173
+18it [00:35,  1.88s/it]['$172.50'] 330 6819
+19it [00:36,  1.84s/it]['Index Living Mall'] 348 7172
+19it [00:36,  1.90s/it]['53%'] 348 7172
+19it [00:37,  1.90s/it]['Comments'] 342 7072
+18it [00:36,  1.89s/it]['11.9%'] 330 6829
+19it [00:37,  1.82s/it]['Strong conviction in team, market and early customer validation'] 348 7178
+19it [00:38,  2.02s/it]['RNA'] 348 7167
+19it [00:37,  1.88s/it]['4%'] 348 7182
+19it [00:37,  1.88s/it]['8'] 330 6806
+20it [00:38,  1.81s/it]['40.2%'] 348 7166
+20it [00:38,  1.93s/it]['95%'] 348 7171
+20it [00:39,  1.90s/it]['14%'] 358 7370
+19it [00:38,  1.91s/it]['Phospholipid'] 348 7166
+20it [00:39,  1.87s/it]['DNA'] 342 7050
+20it [00:39,  1.86s/it]['KPCB + Google Ventures'] 348 7164
+20it [00:40,  2.01s/it]['Network administrators'] 342 7059
+20it [00:39,  1.87s/it]['11:41 AM'] 324 6672
+21it [00:39,  1.81s/it]['Researcher'] 348 7168
+21it [00:40,  1.93s/it]['10%'] 365 7530
+20it [00:40,  1.94s/it]['There is no existence of any glasses in the given information, so it would be misleading to ask someone to count them.'] 330 6807
+21it [00:41,  2.05s/it]['Conventional liposome'] 348 7167
+21it [00:41,  1.91s/it]['1'] 348 7163
+21it [00:41,  1.85s/it]['+41%'] 342 7062
+21it [00:42,  1.99s/it]['Medical records technicians'] 348 7175
+21it [00:41,  1.88s/it]['15%'] 348 7168
+22it [00:41,  1.83s/it]['Energy sector'] 348 7173
+22it [00:42,  1.92s/it]['1'] 330 6808
+22it [00:43,  1.95s/it]['7%'] 365 7519
+21it [00:42,  1.94s/it]['Conventional liposome'] 342 7061
+22it [00:43,  1.92s/it]['A, G, C'] 348 7166
+22it [00:43,  1.89s/it]['32%'] 342 7065
+22it [00:43,  1.88s/it]['+38%'] 348 7197
+22it [00:44,  1.99s/it]['8%'] 348 7173
+23it [00:43,  1.84s/it]['65%'] 342 7056
+23it [00:44,  1.91s/it]['Right'] 324 6679
+23it [00:44,  1.89s/it]['7%'] 358 7392
+22it [00:44,  1.94s/it]['U'] 348 7163
+23it [00:44,  1.88s/it]['Cationic lipid with DOPE'] 348 7168
+23it [00:45,  1.94s/it]['Ho Chi Minh City'] 348 7168
+23it [00:45,  1.90s/it]['Animation'] 330 6805
+24it [00:45,  1.81s/it]['Traffic services, pollution/ghg, road facilities, parking facilities, travel time, crashes'] 342 7056
+23it [00:46,  2.10s/it]['67%'] 348 7168
+24it [00:46,  1.91s/it]['$17,400'] 324 6677
+24it [00:46,  1.88s/it]['40%'] 358 7357
+23it [00:46,  1.94s/it]['We Are Social'] 348 7164
+24it [00:46,  1.90s/it]['pH sensitive liposomes'] 348 7177
+24it [00:47,  1.96s/it]['Strong exclusive'] 330 6805
+25it [00:47,  1.79s/it]['17%'] 348 7191
+24it [00:47,  1.90s/it]['Traffic services, pollution/ GHG, road facilities, parking facilities, travel time, crashes'] 342 7072
+24it [00:48,  2.17s/it]['16,000'] 348 7171
+25it [00:48,  1.95s/it]['Flipkart'] 348 7173
+25it [00:48,  1.88s/it]['13%'] 365 7511
+24it [00:48,  1.95s/it]['Simon Kemp'] 348 7164
+25it [00:48,  1.90s/it]['pH sensitive liposomes'] 348 7213
+25it [00:49,  1.96s/it]['10%'] 348 7164
+26it [00:48,  1.83s/it]['Female'] 342 7048
+25it [00:48,  1.88s/it]['3'] 348 7170
+26it [00:50,  1.87s/it]['2008'] 348 7164
+26it [00:50,  1.94s/it]['Safety and Security, Operational Efficiency, Travel Experience, Revenue Generation'] 348 7166
+25it [00:51,  2.16s/it]['37%'] 358 7387
+25it [00:50,  1.96s/it]['Customer Creation'] 365 7498
+26it [00:50,  1.91s/it]['Middle Class'] 348 7168
+27it [00:50,  1.83s/it]['Games'] 348 7167
+26it [00:50,  1.87s/it]['LCL'] 348 7168
+26it [00:50,  1.94s/it]['Community'] 348 7169
+27it [00:51,  1.92s/it]['2007'] 348 7168
+27it [00:52,  1.88s/it]['V2I & Local Dynamic Traffic Management'] 348 7176
+26it [00:53,  2.14s/it]['89%'] 358 7366
+26it [00:52,  1.95s/it]['40'] 348 7165
+28it [00:52,  1.85s/it]['Venture capital funds'] 365 7500
+['2011'] 348 7178
+27it [00:52,  1.95s/it]27it [00:52,  1.89s/it]['More than 200,000'] 324 6690
+27it [00:52,  1.95s/it]['Hyperopia'] 330 6807
+28it [00:53,  1.87s/it]['Around 80%'] 348 7170
+28it [00:54,  1.90s/it]['V2I & Local Dynamic Traffic Management'] 348 7191
+27it [00:55,  2.13s/it]['66%'] 358 7384
+27it [00:54,  1.96s/it]['Mass affluent'] 348 7165
+29it [00:54,  1.85s/it]['11.5%'] 348 7174
+28it [00:54,  1.90s/it]['Company Building'] 365 7496
+28it [00:54,  1.95s/it]['Yes, we have a separate F/T sourcing group'] 330 6810
+28it [00:54,  1.95s/it]['SMS Banking'] 330 6807
+29it [00:55,  1.84s/it]['37 items'] 348 7169
+29it [00:56,  1.90s/it]['2'] 348 7173
+28it [00:56,  1.94s/it]['$100'] 348 7170
+28it [00:57,  2.09s/it]['Owners'] 348 7174
+30it [00:56,  1.85s/it]['9.3%'] 330 6817
+29it [00:56,  1.91s/it]['13'] 348 7188
+29it [00:56,  1.91s/it]['Drive growth aggressively & execute business model'] 365 7499
+29it [00:56,  2.00s/it]['JNE'] 330 6808
+30it [00:57,  1.82s/it]['Master'] 342 7045
+30it [00:58,  1.86s/it]['1'] 348 7197
+29it [00:58,  1.93s/it]['Prepare to go and Proceed'] 348 7171
+29it [00:59,  2.07s/it]['24.5%'] 330 6809
+30it [00:58,  1.89s/it]['24.46%'] 324 6698
+30it [00:58,  1.89s/it]['$2,000,000'] 365 7502
+30it [00:59,  2.05s/it]['C4H10'] 348 7165
+31it [00:59,  1.87s/it]['Replica'] 348 7162
+31it [00:59,  1.86s/it]['Seattle, New York, Detroit, New Orleans, Cali, Quito, Lima, Rio de Janeiro, Concepcion, Cape Town, Surat, Hong Kong, Ho Chi Minh City, Semarang, Bangkok, Chengdu'] 330 6804
+31it [00:59,  2.17s/it]['39.9'] 348 7175
+30it [01:00,  1.94s/it]['24.5%'] 324 6689
+31it [01:00,  1.88s/it]['69.7%'] 324 6685
+31it [01:00,  1.88s/it]['500'] 348 7168
+30it [01:01,  2.03s/it]['27%'] 342 7050
+31it [01:00,  2.01s/it]['Stress related'] 324 6676
+32it [01:01,  2.05s/it]['Master'] 348 7166
+32it [01:01,  1.85s/it]['74.6 million'] 348 7171
+32it [01:01,  1.91s/it]['5'] 348 7171
+31it [01:01,  1.93s/it]['2013'] 330 6818
+32it [01:02,  1.86s/it]['110,891'] 330 6819
+32it [01:02,  1.88s/it]['500'] 342 7058
+31it [01:03,  2.00s/it]['Direct mail'] 342 7053
+32it [01:02,  1.97s/it]['Shock related'] 330 6815
+33it [01:02,  1.96s/it]['2'] 348 7168
+33it [01:03,  1.85s/it]['57%'] 365 7502
+33it [01:03,  1.94s/it]['2012'] 330 6834
+33it [01:04,  1.85s/it]['7'] 342 7067
+32it [01:03,  1.92s/it]['Male'] 330 6807
+33it [01:03,  1.84s/it]["Comparison, Industry Global, Bird's Eye View"] 348 7169
+32it [01:05,  2.04s/it]['Government'] 330 6805
+34it [01:04,  1.90s/it]['Radio advertisement'] 342 7052
+33it [01:04,  1.94s/it]['no'] 348 7170
+34it [01:05,  1.85s/it]["1950's"] 330 6802
+34it [01:05,  1.90s/it]['Debit'] 330 6816
+34it [01:05,  1.83s/it]['90%'] 342 7057
+34it [01:05,  1.88s/it]['Goods and Services'] 348 7166
+33it [01:05,  1.93s/it]["Comparison, Industry Global, Bird's Eye View"] 348 7181
+33it [01:07,  2.07s/it]['Internet'] 348 7166
+34it [01:06,  1.92s/it]['8:00'] 348 7170
+35it [01:07,  1.88s/it]['The employer is looking for the identity and contact information of the candidate.'] 365 7500
+35it [01:06,  2.02s/it]['October 14, 2013'] 330 6807
+35it [01:06,  1.92s/it]['US'] 324 6685
+35it [01:07,  1.80s/it]['90%'] 348 7181
+35it [01:07,  1.89s/it]['Critical Path Method'] 342 7047
+34it [01:07,  1.92s/it]['Books'] 348 7170
+35it [01:08,  1.91s/it]['Brazil'] 348 7185
+34it [01:09,  2.02s/it]['15'] 348 7165
+36it [01:09,  1.88s/it]['Objective'] 365 7506
+36it [01:08,  1.99s/it]['100%'] 342 7057
+36it [01:08,  1.94s/it]['US'] 330 6822
+36it [01:09,  1.78s/it]['2'] 342 7052
+35it [01:09,  1.90s/it]['90%'] 348 7166
+36it [01:09,  1.89s/it]['Nearly half'] 342 7042
+36it [01:10,  1.90s/it]['UAE'] 342 7089
+35it [01:11,  2.00s/it]['60'] 348 7167
+37it [01:11,  1.89s/it]['79%'] 342 7050
+37it [01:10,  1.96s/it]['Computer software engineers'] 348 7169
+37it [01:10,  1.94s/it]['19%'] 324 6675
+37it [01:10,  1.77s/it]['Search'] 348 7173
+36it [01:11,  1.89s/it]['MySpace'] 348 7170
+37it [01:11,  1.88s/it]['151'] 342 7046
+37it [01:12,  1.90s/it]['Poland, US, Sweden'] 348 7174
+36it [01:13,  2.00s/it]['30'] 348 7169
+38it [01:13,  1.89s/it]['Social media'] 342 7056
+38it [01:12,  1.93s/it]['6.5%'] 324 6682
+38it [01:12,  1.78s/it]['More than 2 hours'] 348 7168
+38it [01:12,  1.95s/it]['Asia'] 348 7171
+38it [01:13,  1.87s/it]['Search'] 348 7188
+37it [01:13,  1.89s/it]['Urban middle'] 348 7165
+38it [01:14,  1.91s/it]['45'] 348 7170
+39it [01:14,  1.89s/it]['Poland, US, Sweden'] 348 7198
+37it [01:15,  2.01s/it]['35,000'] 342 7049
+39it [01:14,  1.95s/it]['1,000'] 324 6681
+39it [01:14,  1.79s/it]['29%'] 348 7165
+39it [01:14,  1.94s/it]['Asia'] 348 7177
+39it [01:15,  1.87s/it]['42%'] 342 7062
+38it [01:15,  1.90s/it]['Urban middle'] 348 7166
+39it [01:16,  1.90s/it]['71%'] 330 6814
+40it [01:16,  1.88s/it]['Financial Services Industry'] 348 7165
+38it [01:17,  1.99s/it]['Happy Meal Sales'] 330 6811
+40it [01:16,  1.79s/it]['35,000'] 348 7175
+40it [01:16,  1.96s/it]['6.8 billion'] 342 7049
+40it [01:16,  1.93s/it]['32%'] 348 7168
+40it [01:17,  1.87s/it]['4%'] 342 7077
+39it [01:17,  1.89s/it]['Urban mass'] 348 7167
+40it [01:17,  1.89s/it]['82%'] 330 6813
+41it [01:18,  1.86s/it]['1.5 KB'] 330 6807
+39it [01:19,  1.96s/it]['FunMobility'] 358 7360
+41it [01:18,  1.85s/it]['3'] 348 7170
+41it [01:18,  1.93s/it]['200'] 348 7165
+41it [01:18,  1.92s/it]['64%'] 342 7051
+41it [01:19,  1.88s/it]['39%'] 348 7173
+40it [01:19,  1.90s/it]['47'] 348 7174
+41it [01:19,  1.89s/it]['69%'] 330 6814
+42it [01:20,  1.86s/it]['43%'] 330 6811
+42it [01:20,  1.89s/it]['57%'] 365 7501
+42it [01:20,  1.90s/it]['Three'] 348 7166
+42it [01:20,  1.91s/it]['The difference between the Total number of objects processed in the Short Run and the Long Run is 684,335 objects.'] 324 6684
+40it [01:21,  2.11s/it]['Believe'] 342 7056
+42it [01:20,  1.87s/it]['30%'] 348 7185
+41it [01:20,  1.91s/it]['Kienbaum'] 324 6684
+43it [01:22,  1.83s/it]['$465.7K'] 348 7172
+42it [01:21,  1.92s/it]['Somewhat important'] 330 6814
+43it [01:22,  1.86s/it]['26%'] 348 7167
+43it [01:22,  1.90s/it]['FunMobility'] 365 7498
+43it [01:22,  1.94s/it]['SQS'] 324 6673
+41it [01:23,  2.01s/it]['Atleast College Education'] 348 7180
+43it [01:22,  1.89s/it]['24%'] 342 7062
+42it [01:22,  1.92s/it]['110'] 330 6802
+44it [01:24,  1.83s/it]['Onboarding (new)'] 348 7164
+43it [01:23,  1.93s/it]['ToolApp'] 348 7170
+44it [01:23,  1.86s/it]['$1 Billion'] 342 7058
+44it [01:24,  1.90s/it]['Monitor instance'] 330 6817
+42it [01:25,  1.96s/it]['$1,540'] 365 7507
+44it [01:24,  2.00s/it]['Telepathy'] 348 7165
+44it [01:24,  1.90s/it]['24%'] 348 7194
+43it [01:24,  1.93s/it]['Time'] 348 7170
+45it [01:25,  1.85s/it]['All Customers'] 348 7163
+44it [01:25,  1.92s/it]['4:15pm'] 348 7170
+45it [01:25,  1.91s/it]['435'] 330 6809
+45it [01:26,  1.88s/it]['0.12 million'] 342 7066
+43it [01:27,  1.97s/it]['5%'] 348 7168
+45it [01:26,  1.95s/it]['Move'] 348 7169
+45it [01:26,  1.89s/it]['Twitter'] 342 7058
+46it [01:27,  1.84s/it]['2005'] 348 7172
+44it [01:27,  2.03s/it]['74'] 348 7167
+45it [01:27,  1.90s/it]['Teddy Park'] 348 7168
+46it [01:27,  1.92s/it]['12,909'] 330 6815
+46it [01:27,  1.88s/it]['0.12'] 342 7076
+44it [01:29,  1.97s/it]['$35,900'] 342 7051
+46it [01:28,  1.96s/it]['Lean Manufacturing'] 348 7185
+46it [01:28,  1.88s/it]['Twitter'] 342 7058
+47it [01:29,  1.84s/it]['Award'] 348 7168
+45it [01:29,  1.98s/it]['Department of Pathophysiology'] 348 7179
+46it [01:29,  1.94s/it]['Complex Adaptive System'] 354 7272
+47it [01:29,  1.92s/it]['4'] 342 7050
+47it [01:29,  1.87s/it]['Safe'] 348 7164
+45it [01:31,  1.94s/it]['Supply Chain'] 348 7170
+47it [01:30,  1.89s/it]['$0'] 342 7057
+47it [01:30,  2.01s/it]['4'] 348 7169
+46it [01:30,  1.95s/it]['Krux'] 348 7172
+48it [01:31,  1.95s/it]['2006'] 347 7162
+48it [01:31,  1.92s/it]['Associate Professor'] 342 7063
+47it [01:31,  2.03s/it]['Comfort of Jehovah'] 348 7164
+48it [01:32,  2.00s/it]['Groundwater Depletion'] 348 7163
+46it [01:32,  1.94s/it]['58%'] 348 7164
+48it [01:32,  1.89s/it]['Loan Debt'] 342 7051
+48it [01:32,  1.96s/it]['0.5'] 348 7177
+47it [01:32,  1.94s/it]['100'] 342 7054
+49it [01:33,  1.93s/it]['2006'] 354 7316
+49it [01:33,  1.93s/it]['M.D., PhD'] 348 7172
+48it [01:33,  2.03s/it]['98%'] 348 7167
+49it [01:34,  1.98s/it]['Incentive to conserve'] 342 7057
+47it [01:34,  1.95s/it]['Masticatory Muscles'] 348 7170
+49it [01:34,  1.96s/it]['1'] 348 7169
+49it [01:34,  1.98s/it]['9'] 348 7168
+48it [01:34,  1.91s/it]['18%'] 348 7169
+50it [01:35,  1.92s/it]['40'] 354 7287
+50it [01:35,  1.93s/it]['< 4min'] 330 6804
+50it [01:35,  1.94s/it]['Ivano-Frankivsk National Medical University'] 348 7173
+49it [01:35,  2.08s/it]['Incentive to conserve'] 348 7186
+48it [01:36,  1.97s/it]['Lower compartment of TMJ'] 348 7164
+50it [01:36,  1.95s/it]['14,516'] 348 7170
+50it [01:36,  2.00s/it]['Budget Edition and Deluxe Edition.'] 348 7169
+49it [01:36,  1.93s/it]['5'] 342 7051
+51it [01:37,  1.89s/it]['Cultural'] 354 7283
+51it [01:37,  1.91s/it]['91%'] 348 7166
+51it [01:37,  1.93s/it]['Microcirculation and peripheral blood flow'] 342 7061
+50it [01:38,  2.08s/it]['International Water Management Institute'] 348 7163
+49it [01:38,  1.96s/it]['2009'] 348 7178
+51it [01:38,  1.95s/it]['1999'] 348 7185
+51it [01:38,  1.98s/it]['3'] 348 7165
+50it [01:38,  1.90s/it]['Western Ghats'] 342 7061
+52it [01:39,  1.89s/it]['0-0'] 348 7171
+52it [01:39,  1.91s/it]['1665'] 348 7169
+52it [01:39,  1.94s/it]['305,926'] 324 6685
+50it [01:40,  1.93s/it]['Steve'] 365 7499
+51it [01:40,  2.05s/it]['33'] 348 7168
+52it [01:39,  1.93s/it]['Cheap'] 348 7172
+51it [01:40,  1.89s/it]['1999'] 342 7083
+52it [01:40,  1.98s/it]['K.K.'] 342 7076
+53it [01:41,  1.90s/it]['0-0'] 348 7189
+53it [01:41,  1.91s/it]['250%'] 342 7049
+53it [01:41,  1.95s/it]['Low public investment Poor regulation'] 330 6805
+51it [01:42,  1.91s/it]['Ballmer'] 365 7495
+52it [01:42,  2.03s/it]['RJ45 connector'] 348 7164
+53it [01:41,  1.94s/it]['John'] 348 7178
+52it [01:42,  1.88s/it]['2014'] 342 7066
+53it [01:42,  1.95s/it]['Desert'] 342 7061
+54it [01:43,  1.89s/it]['Tottenham'] 348 7167
+54it [01:43,  1.90s/it]['Agriculture labour'] 330 6818
+52it [01:44,  1.89s/it]['361'] 342 7055
+54it [01:43,  1.95s/it]['4'] 348 7164
+54it [01:43,  1.92s/it]['No planning methods or tools'] 342 7054
+53it [01:44,  1.90s/it]["things they didn't think they could learn before"] 365 7502
+53it [01:44,  2.09s/it]['2000'] 348 7199
+54it [01:44,  1.94s/it]['Bioversity International NBPGR'] 348 7198
+55it [01:45,  1.93s/it]['HOME TEAM'] 348 7171
+55it [01:45,  2.00s/it]['74%'] 330 6808
+53it [01:46,  1.87s/it]['Scotland'] 330 6825
+55it [01:45,  1.86s/it]['Influence, Ambiguity, Individual/Collective, Time, Space, Achievement'] 330 6803
+55it [01:45,  2.03s/it]['1947'] 348 7171
+54it [01:46,  1.91s/it]['Educational technology'] 358 7362
+54it [01:46,  2.04s/it]['$8.7'] 348 7180
+55it [01:46,  1.95s/it]['Desert'] 342 7073
+56it [01:47,  1.91s/it]['74%'] 330 6826
+54it [01:48,  1.85s/it]['10'] 348 7167
+56it [01:47,  1.97s/it]['Young adult prisoners'] 324 6687
+56it [01:47,  1.84s/it]['4'] 324 6671
+56it [01:47,  1.95s/it]['3D Holographic Display'] 348 7170
+55it [01:48,  1.94s/it]['3'] 324 6693
+57it [01:48,  1.85s/it]['$13.2'] 348 7193
+56it [01:48,  1.96s/it]['Educational technology empowers people to do what they want to do.'] 365 7504
+55it [01:48,  2.11s/it]['Middle Third'] 342 7050
+57it [01:49,  1.95s/it]['36%'] 324 6678
+57it [01:49,  1.82s/it]['10.04'] 324 6681
+55it [01:50,  1.92s/it]['$ 675 million'] 348 7175
+57it [01:49,  1.97s/it]['Have basic knowledge of Map-Reduce'] 324 6705
+58it [01:50,  1.85s/it]['2030'] 348 7176
+56it [01:49,  1.94s/it]["Q3'14"] 348 7186
+57it [01:50,  1.96s/it]['Outcomes'] 365 7503
+56it [01:50,  2.07s/it]['9.9%'] 324 6679
+58it [01:50,  1.89s/it]['4,923'] 324 6673
+58it [01:50,  1.81s/it]['10.04'] 324 6696
+56it [01:51,  1.88s/it]['$18.4 trillion'] 348 7171
+58it [01:51,  1.98s/it]['80%'] 330 6807
+57it [01:51,  1.89s/it]['22%'] 348 7194
+59it [01:52,  1.87s/it]["Q2'14"] 342 7084
+58it [01:52,  1.96s/it]['Discovery'] 365 7501
+57it [01:52,  2.03s/it]['25K-100K'] 330 6830
+59it [01:52,  1.89s/it]['38%'] 348 7168
+59it [01:52,  1.83s/it]['Maya Angelou'] 348 7184
+57it [01:53,  1.90s/it]['75 billion'] 348 7176
+59it [01:53,  1.97s/it]['80%'] 330 6826
+58it [01:53,  1.86s/it]['17.3%'] 348 7170
+60it [01:54,  1.90s/it]["Q2'13"] 348 7182
+59it [01:54,  1.95s/it]['Data sets'] 365 7502
+58it [01:54,  2.01s/it]['1.5 billion'] 324 6679
+60it [01:54,  1.85s/it]['Female'] 342 7053
+60it [01:54,  1.83s/it]['There are two people in the "Introducing Apple II" advertisement.'] 365 7507
+58it [01:56,  2.03s/it]['Americas'] 330 6808
+59it [01:55,  1.84s/it]['13'] 348 7166
+60it [01:55,  1.94s/it]['Business'] 330 6823
+61it [01:56,  1.85s/it]["Q2'13"] 348 7195
+60it [01:56,  1.95s/it]['1.5 billion videos'] 324 6688
+61it [01:56,  1.83s/it]['Internet Users'] 348 7171
+61it [01:56,  1.83s/it]['2%'] 330 6833
+60it [01:57,  1.82s/it]["Categorize the type of analytics techniques, develop the 'right fit' architecture with tools to enable a rapid prototyping environment, consider scalable in-memory analytics and visualization tools as core components."] 358 7363
+59it [01:57,  2.30s/it]['169 Million'] 342 7047
+61it [01:57,  1.94s/it]['Joachim Gauck'] 348 7190
+62it [01:58,  1.89s/it]['2016'] 330 6813
+61it [01:57,  1.91s/it]['The presentation includes an image of the early version of the Google search engine from 1998.'] 365 7503
+59it [01:58,  2.18s/it]['3X'] 330 6808
+62it [01:58,  1.80s/it]['Internet Users'] 348 7181
+62it [01:58,  1.83s/it]['2%'] 330 6841
+61it [01:58,  1.80s/it]['169 Million'] 348 7163
+62it [01:59,  1.95s/it]['Angela Merkel'] 348 7187
+63it [02:00,  1.90s/it]['The functional model includes leaders such as Marketing, Sales, and HR.'] 365 7506
+60it [01:59,  2.29s/it]['2016'] 330 6829
+62it [01:59,  1.89s/it]['3X'] 330 6814
+63it [01:59,  1.78s/it]['Upside of Liquidity'] 365 7508
+60it [02:00,  2.15s/it]['14%'] 342 7064
+63it [02:00,  1.85s/it]['Top Performers'] 330 6809
+62it [02:00,  1.80s/it]['$4.69'] 330 6804
+63it [02:01,  1.92s/it]['President'] 348 7186
+64it [02:01,  1.89s/it]['2010'] 324 6684
+63it [02:01,  1.85s/it]['China'] 342 7049
+61it [02:01,  2.16s/it]["America's Most Convenient Bank"] 348 7164
+64it [02:01,  1.83s/it]['4'] 365 7497
+61it [02:02,  2.10s/it]['14%'] 342 7073
+64it [02:01,  1.85s/it]['13%'] 365 7510
+63it [02:02,  1.85s/it]['4'] 348 7166
+64it [02:03,  1.92s/it]['2010'] 330 6827
+64it [02:03,  1.85s/it]['Chancellor'] 348 7183
+65it [02:03,  1.90s/it]['287M'] 348 7174
+62it [02:03,  2.11s/it]['50%'] 348 7169
+65it [02:03,  1.85s/it]['Kyle Mayer'] 365 7499
+62it [02:04,  2.07s/it]['Near Field Communications (NFC)'] 348 7175
+65it [02:03,  1.89s/it]['11%'] 365 7523
+64it [02:04,  1.89s/it]['Personality'] 348 7166
+65it [02:05,  1.91s/it]['1,268'] 324 6679
+65it [02:05,  1.85s/it]['1'] 342 7074
+66it [02:05,  1.88s/it]['Rural'] 348 7168
+63it [02:05,  2.05s/it]['The verbal presentation that had accompanying visuals'] 348 7178
+66it [02:05,  1.90s/it]['2%'] 342 7064
+66it [02:05,  1.88s/it]['Leadership agility contributes to the Agile enterprise by providing direction and results.'] 365 7499
+63it [02:07,  2.13s/it]['73%'] 365 7517
+65it [02:06,  1.91s/it]['1'] 324 6700
+67it [02:07,  1.83s/it]['1,268'] 330 6830
+66it [02:07,  1.85s/it]['41%'] 342 7050
+66it [02:06,  1.91s/it]['186M'] 348 7169
+64it [02:07,  2.03s/it]['87%'] 348 7163
+67it [02:07,  1.90s/it]['The Voice of Business Technology'] 348 7166
+67it [02:07,  1.90s/it]['1'] 324 6699
+68it [02:09,  1.79s/it]['71'] 358 7387
+66it [02:08,  1.92s/it]['Leadership agility contributes to the agility of operations, execution, and strategy within the enterprise.'] 365 7510
+64it [02:09,  2.21s/it]['HIV/AIDS'] 324 6678
+67it [02:08,  1.87s/it]['25K - 100K'] 324 6698
+67it [02:08,  1.89s/it]['Urban'] 342 7055
+65it [02:09,  1.97s/it]['Link'] 348 7166
+68it [02:09,  1.88s/it]['38.8%'] 348 7175
+68it [02:09,  1.91s/it]['1'] 330 6831
+69it [02:10,  1.78s/it]['41%'] 365 7504
+67it [02:10,  1.95s/it]['Direction'] 365 7502
+65it [02:11,  2.14s/it]['Influitive was founded in October 2010.'] 330 6803
+68it [02:10,  1.94s/it]['25K - 100K'] 324 6712
+68it [02:10,  1.90s/it]['21M+'] 330 6803
+66it [02:10,  1.92s/it]['Internal structures'] 348 7169
+69it [02:11,  1.87s/it]['SANS survey'] 348 7167
+69it [02:11,  1.90s/it]['1'] 330 6830
+70it [02:12,  1.76s/it]['YouTube'] 330 6810
+69it [02:12,  1.84s/it]['BUILD'] 365 7498
+66it [02:13,  2.08s/it]['Tesla'] 330 6812
+69it [02:12,  1.89s/it]['41%'] 365 7517
+68it [02:12,  1.96s/it]['South Africa'] 330 6810
+67it [02:12,  1.88s/it]['internal structures'] 348 7179
+70it [02:13,  1.87s/it]['King Croesus'] 342 7053
+70it [02:13,  1.89s/it]['2'] 330 6831
+71it [02:14,  1.75s/it]['YouTube'] 330 6834
+70it [02:14,  1.82s/it]['48%'] 330 6808
+70it [02:14,  1.87s/it]['United Kingdom'] 330 6806
+68it [02:14,  1.85s/it]['Unfavorable'] 365 7509
+69it [02:14,  1.97s/it]['Sprint zero comprises Business Model, Market analysis, Agile strategy & actions, and Financial performance.'] 365 7494
+67it [02:15,  2.20s/it]['Vehicle to be registered'] 348 7168
+71it [02:15,  1.89s/it]['Five'] 348 7169
+71it [02:15,  1.89s/it]['40'] 348 7196
+72it [02:16,  1.79s/it]['Asia-Pacific'] 348 7180
+71it [02:16,  1.85s/it]['Americas'] 330 6807
+69it [02:16,  1.83s/it]['38%'] 365 7511
+70it [02:16,  1.98s/it]['Secure by Design, Secure by Planning, Secure by Restriction'] 348 7166
+71it [02:16,  1.97s/it]['Vehicle registration'] 348 7184
+72it [02:16,  1.89s/it]['Volume, profile, behavior, pain, needs, expectations'] 358 7356
+68it [02:18,  2.19s/it]['Indra Yudhipratama'] 348 7171
+72it [02:17,  1.92s/it]['40'] 348 7196
+73it [02:18,  1.81s/it]['90%'] 330 6809
+70it [02:18,  1.82s/it]['Asia-Pacific'] 348 7193
+72it [02:18,  1.87s/it]['17%'] 358 7382
+71it [02:18,  1.97s/it]['Petrobras'] 348 7166
+72it [02:18,  1.97s/it]['1973'] 348 7168
+73it [02:18,  1.90s/it]['1826'] 365 7499
+69it [02:20,  2.14s/it]['15'] 348 7173
+73it [02:19,  1.91s/it]['$107'] 348 7202
+74it [02:20,  1.85s/it]['BS5750'] 348 7164
+71it [02:20,  1.86s/it]['3.3%'] 342 7057
+73it [02:20,  1.89s/it]['11%'] 342 7058
+72it [02:20,  1.96s/it]['Poor preparation'] 348 7163
+73it [02:20,  1.96s/it]['Pretensioner'] 348 7167
+74it [02:20,  1.92s/it]['200'] 348 7174
+74it [02:21,  1.91s/it]['ISO 27001'] 365 7500
+70it [02:22,  2.13s/it]['$237'] 348 7203
+75it [02:21,  1.87s/it]['20'] 342 7054
+72it [02:21,  1.86s/it]['3.3%'] 348 7189
+74it [02:22,  1.90s/it]['Persuasive Message'] 342 7052
+74it [02:22,  1.95s/it]['Q3 2008'] 348 7189
+73it [02:22,  1.98s/it]['Pretensioner'] 348 7171
+75it [02:22,  1.92s/it]['Twitter'] 348 7171
+75it [02:22,  1.90s/it]['@BSpress'] 365 7499
+71it [02:24,  2.09s/it]['$127.3'] 348 7203
+76it [02:23,  1.91s/it]['17'] 348 7170
+73it [02:23,  1.87s/it]['3.3%'] 342 7053
+75it [02:24,  1.91s/it]['4'] 348 7169
+75it [02:24,  1.94s/it]['Q3 2007'] 348 7207
+74it [02:24,  2.00s/it]['Meet with approval'] 365 7497
+76it [02:24,  1.94s/it]['177.5'] 348 7185
+76it [02:24,  1.92s/it]['80'] 348 7183
+77it [02:25,  1.91s/it]['@BSpress'] 365 7506
+72it [02:26,  2.06s/it]['2008'] 348 7164
+74it [02:25,  1.89s/it]['3.3%'] 348 7185
+76it [02:25,  1.93s/it]['4'] 348 7167
+76it [02:26,  1.92s/it]['Calgary'] 348 7166
+75it [02:26,  1.97s/it]['60%'] 365 7498
+77it [02:26,  1.97s/it]['121.8'] 348 7193
+77it [02:26,  1.93s/it]['400'] 348 7191
+78it [02:27,  1.91s/it]['Oficina 3.456.432'] 365 7502
+73it [02:28,  2.11s/it]['To Educate, Amuse & Enrich'] 348 7166
+75it [02:27,  1.95s/it]['Jan-14'] 342 7065
+77it [02:27,  1.93s/it]['Build Commitment'] 342 7050
+77it [02:28,  1.92s/it]['Calgary'] 348 7171
+76it [02:28,  1.95s/it]['9.5%'] 365 7498
+78it [02:28,  1.98s/it]['34%'] 342 7061
+78it [02:28,  1.91s/it]['400'] 348 7191
+79it [02:29,  1.91s/it]['Pol Navarro'] 365 7514
+74it [02:30,  2.07s/it]['37'] 348 7181
+76it [02:29,  1.93s/it]['Jul-12'] 348 7201
+78it [02:29,  1.94s/it]['+33%'] 348 7173
+78it [02:30,  1.93s/it]['FACTS devices can be classified into two types based on their connection to the network and technological features.'] 342 7049
+77it [02:30,  2.07s/it]['2-5 friends'] 358 7365
+79it [02:30,  1.98s/it]['177'] 348 7182
+79it [02:30,  1.91s/it]['6000'] 348 7188
+80it [02:31,  1.92s/it]['Cheque'] 358 7360
+75it [02:32,  2.03s/it]["Q4'15"] 342 7051
+77it [02:31,  1.93s/it]['200K'] 342 7058
+79it [02:31,  1.94s/it]['Crafting original content'] 348 7177
+79it [02:32,  1.94s/it]['Hybrid'] 342 7051
+78it [02:32,  2.02s/it]['Amazon'] 348 7167
+80it [02:32,  1.89s/it]['Power and Torque'] 348 7184
+81it [02:33,  1.93s/it]['33-1-5884-1336'] 348 7165
+80it [02:33,  2.05s/it]['Cheque'] 365 7514
+76it [02:34,  2.01s/it]['201'] 348 7175
+78it [02:33,  1.94s/it]['201K'] 342 7078
+80it [02:33,  1.94s/it]['28%'] 365 7500
+80it [02:34,  1.95s/it]['Social Networks'] 330 6821
+79it [02:34,  1.95s/it]['705'] 324 6679
+81it [02:34,  1.85s/it]['59%'] 342 7084
+82it [02:35,  1.92s/it]['33-1-5884-1336'] 348 7168
+81it [02:35,  2.09s/it]['Upfront Payments'] 348 7166
+77it [02:36,  1.98s/it]['2011'] 324 6678
+81it [02:35,  1.89s/it]['57'] 348 7178
+79it [02:35,  1.93s/it]['29%'] 358 7364
+81it [02:36,  1.96s/it]['Social Networks'] 330 6832
+80it [02:36,  1.89s/it]['705'] 324 6695
+82it [02:36,  1.83s/it]['56%'] 348 7194
+83it [02:37,  1.91s/it]['AV enabled room from web client'] 348 7171
+82it [02:37,  2.07s/it]['Clinical, regulatory, global reach'] 342 7038
+78it [02:38,  1.99s/it]['2009'] 330 6821
+82it [02:37,  1.88s/it]['Sweezey'] 365 7502
+80it [02:37,  1.96s/it]['4%'] 324 6695
+81it [02:37,  1.85s/it]['150'] 324 6674
+83it [02:37,  1.80s/it]['72%'] 358 7357
+82it [02:38,  1.96s/it]['49%'] 348 7194
+84it [02:39,  1.91s/it]['1981'] 330 6819
+83it [02:39,  2.00s/it]['2012'] 324 6679
+83it [02:39,  1.85s/it]['Partnering'] 342 7034
+79it [02:40,  1.96s/it]['Marketing Automation for Dummies'] 358 7360
+81it [02:39,  1.98s/it]['Solution'] 330 6808
+84it [02:39,  1.79s/it]['14%'] 330 6837
+82it [02:39,  1.83s/it]['74%'] 342 7048
+83it [02:39,  1.94s/it]['41.4%'] 348 7195
+85it [02:41,  1.92s/it]['FIRST PLC CREATED'] 330 6809
+84it [02:40,  1.93s/it]['2012'] 330 6823
+84it [02:40,  1.84s/it]['Partnering'] 348 7187
+80it [02:41,  1.94s/it]['1042'] 324 6683
+85it [02:41,  1.79s/it]['2,415'] 330 6822
+83it [02:41,  1.84s/it]['2014'] 358 7356
+82it [02:41,  1.98s/it]['580'] 330 6814
+84it [02:41,  1.89s/it]['27%'] 348 7194
+86it [02:43,  1.92s/it]['PRODUCTIVITY'] 330 6812
+85it [02:42,  1.88s/it]['2,427,728'] 324 6690
+85it [02:42,  1.85s/it]['Denmark'] 348 7165
+81it [02:43,  1.94s/it]['1042'] 330 6821
+86it [02:43,  1.80s/it]['SMOTRI.COM'] 330 6809
+84it [02:43,  1.83s/it]['Premium'] 330 6806
+85it [02:43,  1.86s/it]['Mathew'] 365 7505
+83it [02:43,  1.98s/it]['NO INTERNET'] 324 6691
+86it [02:44,  1.84s/it]['1'] 348 7187
+87it [02:44,  1.90s/it]['Q3 2014'] 330 6813
+86it [02:44,  1.86s/it]['Denmark'] 348 7181
+82it [02:45,  1.94s/it]['22.5'] 324 6683
+87it [02:44,  1.80s/it]['20%'] 348 7170
+85it [02:45,  1.86s/it]['+142%'] 330 6817
+86it [02:45,  1.87s/it]['248'] 365 7502
+84it [02:45,  1.97s/it]['1'] 348 7187
+88it [02:46,  1.88s/it]['Recurring phases of each great surge in the core countries'] 330 6806
+87it [02:46,  1.89s/it]['Q3 2014'] 330 6826
+87it [02:46,  1.87s/it]['4'] 342 7057
+83it [02:47,  1.91s/it]['$3.70'] 330 6819
+88it [02:46,  1.81s/it]['20%'] 348 7186
+86it [02:47,  1.88s/it]['Weekly if not daily'] 348 7165
+87it [02:47,  1.89s/it]['$1.50'] 347 7162
+85it [02:47,  1.97s/it]['1'] 348 7187
+89it [02:48,  1.86s/it]['90%'] 324 6687
+88it [02:48,  1.84s/it]['Dean Wampler and Alex Payne'] 352 7239
+88it [02:48,  1.95s/it]['Communicate'] 330 6804
+89it [02:48,  1.79s/it]['6'] 342 7062
+84it [02:49,  1.89s/it]['Print Traditionalists'] 348 7175
+87it [02:48,  1.88s/it]['75%'] 342 7049
+88it [02:49,  1.90s/it]['Checking two bags'] 354 7280
+86it [02:49,  1.95s/it]['1'] 348 7188
+90it [02:50,  1.86s/it]['90%'] 324 6713
+89it [02:50,  1.82s/it]['HDFS'] 352 7239['Passion']
+ 330 6814
+90it [02:50,  1.79s/it]89it [02:50,  1.98s/it]['2%'] 348 7167
+85it [02:51,  1.90s/it]['Print Traditionalists'] 348 7191
+88it [02:50,  1.90s/it]['Feature boxes'] 342 7048
+89it [02:51,  1.90s/it]['Subsidy from more expensive flights'] 354 7277
+87it [02:51,  1.97s/it]['Ed Catmull'] 348 7189
+91it [02:52,  1.88s/it]['London'] 330 6803
+90it [02:51,  1.79s/it]['Picture Set'] 330 6812
+91it [02:52,  1.79s/it]['SQL'] 352 7244
+90it [02:52,  1.97s/it]['10'] 342 7052
+86it [02:53,  1.89s/it]['42%'] 348 7182
+89it [02:52,  1.91s/it]['$2.58 Billion'] 342 7056
+90it [02:53,  1.93s/it]['$5.50'] 347 7153
+88it [02:53,  1.96s/it]['1200'] 330 6805
+91it [02:53,  1.79s/it]['5%'] 348 7191
+92it [02:54,  1.88s/it]['12'] 348 7173
+92it [02:53,  1.82s/it]['Car'] 348 7168
+91it [02:54,  1.94s/it]['Market Analysis, Business Planning, Go to Market'] 342 7047
+87it [02:55,  1.94s/it]['Samsung'] 330 6807
+90it [02:54,  1.85s/it]['15.1%'] 348 7170
+91it [02:55,  1.95s/it]['2014'] 348 7166
+89it [02:55,  1.96s/it]['47%'] 330 6804
+92it [02:55,  1.80s/it]['2%'] 348 7191
+93it [02:56,  1.88s/it]['20'] 348 7169
+93it [02:55,  1.84s/it]['Give false information'] 342 7051
+92it [02:56,  1.93s/it]['The URL in the browser window is www.opera.com.'] 330 6805
+91it [02:56,  1.91s/it]['The two components that were never used are "have-remote-pranswer" and "stable".'] 342 7046
+88it [02:57,  2.05s/it]['Elite Performers'] 330 6812
+92it [02:56,  1.90s/it]['1.2'] 342 7060
+90it [02:57,  1.94s/it]['67%'] 330 6805
+93it [02:57,  1.78s/it]['24%'] 348 7191
+94it [02:58,  1.89s/it]['8'] 348 7168
+94it [02:57,  1.83s/it]['Closing the windows without turning on A/C'] 348 7162
+93it [02:58,  1.96s/it]['252 MB'] 324 6679
+92it [02:58,  1.87s/it]['42%'] 330 6809
+93it [02:58,  1.87s/it]['SEP,10'] 348 7164
+89it [02:59,  2.02s/it]['December'] 330 6811
+94it [02:58,  1.76s/it]['2013'] 348 7175
+91it [02:59,  1.95s/it]['32%'] 348 7191
+95it [02:59,  1.89s/it]['There are three line managers in the diagram.'] 324 6674
+95it [02:59,  1.85s/it]['24%'] 348 7165
+94it [03:00,  1.96s/it]['200'] 348 7191
+93it [03:00,  1.91s/it]['Luxury consumers'] 348 7165
+94it [03:00,  1.91s/it]['4'] 348 7166
+90it [03:01,  2.00s/it]['Aged under 5'] 330 6802
+95it [03:00,  1.80s/it]['2013-18'] 342 7070
+92it [03:01,  1.97s/it]['8%'] 348 7191
+96it [03:01,  1.88s/it]['FUTURE'] 330 6810
+96it [03:01,  1.82s/it]['10%'] 342 7065
+95it [03:02,  1.93s/it]['70'] 342 7096
+94it [03:02,  1.90s/it]['February 2010'] 330 6808
+95it [03:02,  1.91s/it]['55%'] 330 6823
+96it [03:02,  1.80s/it]['Quality'] 348 7164
+91it [03:03,  1.98s/it]['10%'] 342 7089
+97it [03:03,  1.89s/it]['Travel Retail Value (US$)'] 348 7174
+93it [03:03,  2.00s/it]['55'] 330 6811
+97it [03:03,  1.80s/it]['Television'] 348 7170
+96it [03:03,  1.93s/it]['Mexico'] 348 7192
+95it [03:04,  1.90s/it]['45%'] 330 6827
+97it [03:04,  1.80s/it]['Delivers basic needs'] 324 6674
+96it [03:04,  1.92s/it]['Experience'] 348 7165
+92it [03:05,  1.97s/it]['1'] 324 6681
+98it [03:04,  1.80s/it]['Systole'] 348 7167
+94it [03:05,  2.00s/it]['10%'] 342 7085
+98it [03:05,  1.99s/it]['Television'] 342 7070
+97it [03:05,  1.91s/it]['Mexico'] 348 7222
+96it [03:06,  1.90s/it]['2011'] 342 7060
+98it [03:06,  1.83s/it]['15,8%'] 342 7048
+97it [03:06,  1.93s/it]['Actual place, actual situation, actual realistic decision'] 348 7164
+93it [03:07,  2.01s/it]['31%'] 348 7177
+99it [03:06,  1.85s/it]['50%'] 342 7086
+99it [03:07,  1.96s/it]['Uterine artery, iliac artery, iliac vein'] 348 7170
+95it [03:07,  2.05s/it]['Directories'] 348 7168
+98it [03:07,  1.90s/it]['2007'] 348 7177
+99it [03:08,  1.86s/it]['15%'] 330 6808
+98it [03:08,  1.89s/it]['2,146'] 342 7074
+97it [03:08,  2.00s/it]['15'] 365 7502
+94it [03:09,  2.01s/it]['13%'] 342 7056
+100it [03:08,  1.87s/it]['50%'] 342 7086
+100it [03:09,  1.94s/it]['United States, Australia, United Kingdom'] 342 7056
+96it [03:09,  2.09s/it]['-7.8%'] 348 7171
+99it [03:09,  1.92s/it]['2007'] 348 7177
+100it [03:10,  1.89s/it]['2013'] 354 7281
+99it [03:10,  1.91s/it]['1,454'] 348 7222
+98it [03:10,  2.01s/it]['1%'] 348 7195
+101it [03:10,  1.89s/it]['Use of MMA/PU Bond Paste'] 358 7359
+95it [03:11,  2.04s/it]['50%'] 342 7082
+101it [03:11,  1.93s/it]['Self service loans/returns'] 342 7058
+97it [03:11,  2.03s/it]['-16.1%'] 348 7194
+100it [03:11,  1.95s/it]['2011'] 348 7178
+101it [03:12,  1.91s/it]['Services'] 348 7171
+100it [03:12,  1.91s/it]['India'] 342 7056
+99it [03:12,  1.97s/it]['2.0'] 358 7384
+96it [03:13,  2.04s/it]['54'] 348 7207
+102it [03:12,  1.95s/it]['Sinusoidal'] 342 7056
+102it [03:13,  1.92s/it]['Expedia'] 365 7506
+98it [03:13,  2.03s/it]['Coronary artery'] 348 7165
+101it [03:13,  1.96s/it]['73%'] 343 7058
+102it [03:14,  1.90s/it]['Clearly defined'] 348 7171
+100it [03:14,  1.96s/it]['Company, Employees, Customers'] 342 7049
+101it [03:14,  2.01s/it]['14%'] 324 6716
+103it [03:15,  1.88s/it]['654'] 348 7173
+103it [03:14,  1.95s/it]['705.5'] 365 7501
+97it [03:15,  2.05s/it]['Higher'] 365 7499
+99it [03:15,  2.02s/it]['Leonard Euler'] 342 7065
+102it [03:15,  1.95s/it]['14%'] 343 7060
+103it [03:16,  1.91s/it]['Across service areas'] 348 7179
+101it [03:16,  1.95s/it]['99.67%'] 348 7169
+102it [03:16,  2.02s/it]['15%'] 324 6717
+104it [03:17,  1.84s/it]['Barista'] 342 7051
+104it [03:16,  1.93s/it]['Layup to preform is MUCH quicker than direct to skin mold'] 365 7503
+98it [03:18,  2.12s/it]['76%'] 342 7063
+100it [03:17,  1.99s/it]['A typical personal network'] 348 7165
+103it [03:17,  1.94s/it]['12%'] 343 7060
+104it [03:17,  1.90s/it]['Change Management'] 348 7171
+102it [03:17,  1.93s/it]['75%'] 324 6716
+105it [03:18,  1.82s/it]['99.67%'] 348 7170
+103it [03:18,  2.02s/it]['Barista'] 348 7169
+105it [03:18,  1.91s/it]['2,000'] 342 7053
+101it [03:19,  1.98s/it]['40'] 358 7364
+99it [03:20,  2.14s/it]['Concentric circles'] 348 7168
+104it [03:19,  1.95s/it]['12%'] 337 6943
+105it [03:19,  1.95s/it]['Scope, Time, Cost'] 348 7168
+103it [03:19,  1.94s/it]['75%'] 324 6716
+106it [03:20,  1.80s/it]['84%'] 330 6810
+104it [03:20,  1.96s/it]['A'] 342 7057
+106it [03:20,  1.89s/it]['Solutions Engineering'] 324 6679
+100it [03:22,  2.03s/it]['Application Integration'] 348 7165
+102it [03:21,  1.96s/it]['John Heltman'] 330 6818
+105it [03:21,  1.93s/it]['2%'] 337 6949
+106it [03:21,  1.93s/it]['26%'] 330 6812
+104it [03:21,  1.89s/it]['75%'] 324 6717
+107it [03:22,  1.79s/it]['84%'] 330 6809
+105it [03:22,  1.92s/it]['A'] 342 7058
+107it [03:22,  1.87s/it]['3'] 330 6821
+101it [03:23,  1.94s/it]['Andreas Mai'] 348 7169
+103it [03:23,  1.96s/it]['Jun 18, 2015'] 330 6816
+106it [03:23,  1.95s/it]['$44'] 330 6826
+107it [03:23,  1.89s/it]['Salesforce'] 330 6814
+105it [03:23,  1.86s/it]['67%'] 342 7092
+108it [03:24,  1.83s/it]['24%'] 342 7050
+106it [03:24,  1.91s/it]['Double-burst stimulation'] 348 7164
+108it [03:24,  1.88s/it]['Ralph Paglia'] 342 7055
+102it [03:25,  1.94s/it]['REALOGY'] 330 6810
+107it [03:25,  1.91s/it]['The new marketing is simple, instant, and relevant.'] 365 7498
+104it [03:25,  2.03s/it]['28.7%'] 330 6820
+108it [03:25,  1.88s/it]['$270K'] 330 6819
+106it [03:25,  1.87s/it]['1'] 348 7198
+109it [03:26,  1.85s/it]['1960'] 348 7168
+107it [03:25,  1.93s/it]['Famotidine'] 348 7174
+109it [03:26,  1.90s/it]['AutoTrader'] 348 7169
+103it [03:27,  1.94s/it]['3.3'] 330 6810
+108it [03:27,  1.89s/it]['2.2%'] 324 6693
+109it [03:27,  1.86s/it]['170'] 330 6836
+107it [03:27,  1.85s/it]['Google, WhatsApp, Instagram'] 365 7498
+105it [03:27,  2.04s/it]['1'] 348 7198
+110it [03:28,  1.86s/it]['4.5'] 324 6679
+108it [03:27,  1.89s/it]['Famotidine'] 342 7076
+110it [03:27,  1.90s/it]['3.3'] 330 6816
+109it [03:28,  1.86s/it]['VW'] 330 6817
+108it [03:28,  1.82s/it]['Contextual, Behavioral, Demographic, Geographic, Retargeted'] 348 7163
+104it [03:29,  2.02s/it]['2Q14'] 324 6696
+110it [03:29,  1.86s/it]['30%'] 348 7206
+111it [03:30,  1.88s/it]['Sagemcom'] 348 7163
+106it [03:29,  2.02s/it]['Holiday Inn'] 348 7166
+109it [03:29,  1.90s/it]['250'] 348 7176
+111it [03:29,  1.89s/it]['TRULIA.COM'] 324 6682
+110it [03:30,  1.85s/it]['GM'] 330 6829
+109it [03:30,  1.82s/it]['Enterprise Vault 11.0'] 330 6813
+111it [03:31,  1.88s/it]['Unparalleled campaign optimization'] 348 7170
+105it [03:31,  2.02s/it]['33%'] 348 7205
+112it [03:31,  1.90s/it]['61%'] 348 7171
+110it [03:31,  1.91s/it]['250'] 348 7204
+112it [03:31,  1.89s/it]['The current approaches are:\n\n1. Relational approach: table\n2. Document Database\n3. Graph Database'] 348 7162
+107it [03:31,  2.15s/it]['REALTOR.COM'] 324 6688
+111it [03:32,  1.82s/it]['19%'] 342 7049
+110it [03:32,  1.84s/it]['$ 600 mn'] 348 7167
+112it [03:33,  1.92s/it]['Car Dealers, Automotive Marketing Pros and Internet Sales Managers'] 348 7161
+106it [03:34,  2.05s/it]['64%'] 342 7050
+111it [03:33,  1.91s/it]['Ranitidine'] 348 7168
+113it [03:33,  1.90s/it]['The difference between Current Apps and New Apps During Next 12 Months in the category of 50+ Apps is 1%.'] 330 6843
+113it [03:34,  2.05s/it]['Slow read and slow insert'] 342 7048
+108it [03:33,  2.09s/it]['Paid'] 348 7169
+112it [03:34,  1.84s/it]['13001210056'] 348 7173
+111it [03:34,  1.93s/it]['1'] 348 7166
+113it [03:34,  1.91s/it]['Car dealers'] 348 7173
+107it [03:35,  2.01s/it]['56%'] 348 7174
+112it [03:35,  1.92s/it]['Defensive factors'] 348 7169
+114it [03:35,  1.92s/it]['Biotech landscape'] 342 7047
+109it [03:35,  2.03s/it]['The difference between Current Apps and New Apps During Next 12 Months in the category of 20-49 Apps is 3%.'] 330 6845
+114it [03:36,  2.20s/it]['US'] 348 7170
+113it [03:36,  1.95s/it]['Account profile'] 348 7164
+112it [03:36,  1.91s/it]['Bacteria'] 348 7172
+114it [03:36,  1.91s/it]['Erosion and steel corrosion'] 330 6806
+108it [03:37,  1.97s/it]['56%'] 342 7048
+113it [03:37,  1.92s/it]['38'] 342 7063
+115it [03:37,  1.90s/it]['Bumper grill & head light'] 348 7161
+110it [03:37,  2.03s/it]['United States'] 342 7066
+114it [03:38,  1.93s/it]['12%'] 348 7175
+113it [03:38,  1.93s/it]['The difference between Current Apps and New Apps During Next 12 Months in the category of 11-19 Apps is 1%.'] 330 6845
+115it [03:39,  2.28s/it]['Tooth surface'] 348 7170
+115it [03:38,  1.92s/it]['Cracks in concrete structures'] 330 6806
+109it [03:39,  1.93s/it]['Twitter'] 330 6805
+114it [03:39,  1.87s/it]['52'] 342 7064
+116it [03:39,  1.89s/it]['Bell, Grant Thornton, PwC'] 348 7166
+111it [03:39,  2.04s/it]['Canada'] 348 7191
+115it [03:40,  1.92s/it]['Cracks in concrete structures'] 330 6825
+110it [03:41,  1.91s/it]['2%'] 348 7191
+114it [03:40,  1.94s/it]['Fructose and glucose'] 348 7170
+116it [03:40,  1.94s/it]['17%'] 330 6805
+115it [03:40,  1.85s/it]['WeChat'] 348 7182
+117it [03:41,  1.88s/it]['The difference between Current Apps and New Apps During Next 12 Months in the category of 1-10 Apps is 25%.'] 330 6844
+116it [03:41,  2.36s/it]['Bell, Loblaw Companies Limited, Shell'] 348 7167
+112it [03:41,  2.04s/it]['Canada'] 348 7215
+116it [03:42,  1.91s/it]['BP'] 348 7172
+115it [03:42,  1.93s/it]['Sucrose'] 342 7048
+117it [03:42,  1.93s/it]['13.2 million'] 348 7175
+116it [03:42,  1.90s/it]['The three types of chemical damage to concrete are alkali-aggregate reaction (AAR/ASR), carbonation, and sulfate attack.'] 330 6806
+111it [03:43,  2.06s/it]['Vietnam'] 348 7172
+118it [03:43,  1.88s/it]['The difference between Current Apps and New Apps During Next 12 Months in the category of None is 22%.'] 330 6839
+117it [03:44,  2.35s/it]['50%'] 365 7502
+113it [03:43,  2.03s/it]['3'] 348 7168
+117it [03:44,  1.89s/it]['BP'] 348 7188
+116it [03:44,  1.92s/it]['7.2%'] 348 7166
+118it [03:44,  1.93s/it]['Excess bleeding'] 330 6806
+112it [03:45,  1.98s/it]['More than 8000'] 348 7169
+117it [03:45,  1.95s/it]['Turkey'] 348 7181
+119it [03:44,  1.88s/it]['27'] 348 7210
+118it [03:46,  2.23s/it]['Advanced Manufacturing Initiative'] 365 7496
+114it [03:45,  2.02s/it]['Does not exceed twenty five lakh rupees'] 348 7168
+118it [03:46,  1.93s/it]['11%'] 342 7068
+117it [03:46,  1.94s/it]['2011'] 348 7172
+119it [03:46,  1.94s/it]['Plastic shrinkage'] 330 6809
+113it [03:47,  1.93s/it]['17'] 348 7173
+120it [03:46,  1.88s/it]['$5.40 billion'] 348 7176
+118it [03:47,  1.97s/it]['27'] 348 7209
+119it [03:48,  2.13s/it]['Ralph Paglia'] 348 7167
+115it [03:47,  2.00s/it]['Does not exceed twenty five lakh rupees'] 348 7181
+119it [03:48,  1.96s/it]['Campos Basin'] 348 7182
+118it [03:48,  1.95s/it]['3.61 miles'] 342 7051
+120it [03:48,  1.94s/it]['Lower'] 342 7061
+114it [03:49,  1.90s/it]['177'] 348 7190
+121it [03:48,  1.88s/it]['$5.40 billion'] 348 7171
+119it [03:49,  1.99s/it]['57'] 348 7208
+120it [03:49,  2.06s/it]['APA Continuing Education credits'] 348 7163
+116it [03:49,  1.99s/it]['More than ten lakh rupees but does not exceed two crore rupees'] 348 7167
+120it [03:50,  2.04s/it]['Lower'] 348 7192
+115it [03:51,  1.90s/it]['Campos Basin'] 348 7195
+119it [03:50,  1.97s/it]['Morgan Spurlock'] 342 7048
+121it [03:50,  1.95s/it]['85'] 348 7174
+122it [03:50,  1.88s/it]['42%'] 342 7051
+120it [03:51,  1.97s/it]['54'] 348 7209
+121it [03:51,  2.01s/it]['The cost-based optimizations are: \n- Access method\n- Join order\n- Subquery strategy'] 330 6803
+117it [03:52,  2.06s/it]['Short-term'] 348 7167
+116it [03:53,  1.90s/it]['+124%'] 324 6677
+120it [03:52,  1.94s/it]['3'] 348 7170
+122it [03:52,  1.93s/it]['More than two crore rupees but does not exceed five core rupees'] 348 7190
+121it [03:52,  2.09s/it]['Aldactone'] 342 7057
+123it [03:52,  1.89s/it]['June 9, 2013'] 348 7166
+121it [03:53,  2.01s/it]['55'] 348 7208
+122it [03:53,  1.97s/it]['96%'] 365 7497
+118it [03:54,  2.04s/it]['NATIVE AD INVENTORY'] 324 6687
+121it [03:54,  1.92s/it]['6.32 miles'] 348 7171
+123it [03:54,  1.94s/it]['3'] 342 7051
+124it [03:54,  1.88s/it]['The employment shortfall remains elevated because of low labor force participation, mainly due to baby boomers retiring.'] 348 7164
+117it [03:55,  2.03s/it]['Technology and Skill innovation, Employment Generation, Entrepreneurial and sector development, Foreign export, Trade promotions'] 348 7165
+122it [03:54,  2.18s/it]['33%'] 348 7166
+122it [03:55,  1.98s/it]['3'] 348 7189
+123it [03:55,  1.93s/it]['Feedback, Assessment and Corrective Action'] 358 7354
+119it [03:56,  2.09s/it]['30B'] 342 7058
+124it [03:56,  1.93s/it]['Credibility, Logic, Emotion'] 348 7168
+122it [03:56,  1.97s/it]['10 mL'] 342 7063
+125it [03:56,  1.88s/it]['closer'] 348 7173
+118it [03:57,  1.99s/it]['Rob Jeppsen'] 342 7070
+124it [03:57,  1.93s/it]['200 times'] 348 7169
+123it [03:56,  1.97s/it]['Entrepreneurial and sector development, Foreign export, Trade promotions'] 342 7067
+123it [03:57,  2.16s/it]['Kienbaum'] 330 6823
+120it [03:58,  2.00s/it]['20'] 342 7064
+125it [03:58,  1.92s/it]['4'] 348 7167
+123it [03:58,  1.95s/it]['Vasopressin'] 342 7050
+126it [03:58,  1.90s/it]['Increase'] 348 7167
+119it [03:59,  1.95s/it]['Facebook'] 342 7053
+124it [03:58,  1.93s/it]['Lauren McNiff'] 348 7190
+125it [03:59,  1.93s/it]['8%'] 348 7164
+124it [03:58,  2.07s/it]['2000'] 324 6675
+126it [03:59,  1.88s/it]['39%'] 348 7169
+121it [03:59,  1.97s/it]['Peter Huntson'] 330 6828
+124it [03:59,  1.92s/it]['2.5 hours'] 330 6808
+120it [04:01,  1.91s/it]['Calcium Channel Blockers'] 342 7048
+127it [04:00,  1.92s/it]['90%'] 330 6806
+125it [04:00,  1.89s/it]['Dog'] 342 7071
+126it [04:01,  1.90s/it]['Share in manufacturing output'] 348 7171
+125it [04:00,  2.04s/it]['1999'] 324 6679
+127it [04:01,  1.85s/it]['2007'] 348 7165
+122it [04:01,  1.95s/it]['1'] 348 7168
+125it [04:01,  1.90s/it]['65%'] 342 7056
+128it [04:02,  1.92s/it]['2008'] 348 7169
+121it [04:03,  1.93s/it]['72%'] 348 7170
+126it [04:02,  1.91s/it]['Lisa Holden'] 348 7196
+127it [04:03,  1.90s/it]['Manufacturing output'] 348 7183
+126it [04:02,  2.00s/it]['Composite'] 348 7165
+128it [04:03,  1.87s/it]['10'] 348 7169
+123it [04:03,  1.94s/it]['64'] 342 7053
+126it [04:03,  1.89s/it]['6.4'] 348 7178
+129it [04:03,  1.92s/it]['Domestic travelers'] 348 7171
+122it [04:04,  1.93s/it]['RPO'] 330 6807
+127it [04:04,  1.87s/it]['Key spring'] 348 7199
+128it [04:05,  1.89s/it]['57%'] 348 7163
+127it [04:04,  1.97s/it]['2005'] 342 7054
+129it [04:05,  1.91s/it]['Internet distribution'] 342 7050
+124it [04:05,  1.92s/it]['Label B'] 348 7173
+127it [04:05,  1.90s/it]['Traveling'] 348 7171
+130it [04:05,  1.92s/it]['International arrivals'] 348 7182
+123it [04:06,  1.93s/it]['50 firms'] 330 6812
+128it [04:06,  1.86s/it]['20%'] 348 7169
+128it [04:06,  1.95s/it]['There are three systems (Civil, Mechanical, Electrical), two packages (Package 1, Package 2), and two areas (Area 1, Area 2) listed in the diagram.'] 354 7300
+129it [04:07,  2.20s/it]['5'] 348 7167
+130it [04:07,  1.91s/it]['The Bangladesh National Cricket Team'] 348 7165
+125it [04:07,  1.93s/it]['13%'] 348 7174
+128it [04:07,  1.91s/it]['269'] 348 7166
+124it [04:08,  1.94s/it]['mbeekman@pappasgroup.com'] 348 7184
+131it [04:08,  2.00s/it]['200 946'] 343 7054
+129it [04:08,  1.93s/it]['Retailers'] 342 7050
+129it [04:08,  1.93s/it]['3'] 354 7296
+130it [04:09,  2.11s/it]['655 m'] 342 7049
+131it [04:09,  1.93s/it]['32'] 348 7169
+129it [04:09,  1.90s/it]['4'] 348 7168
+125it [04:10,  1.93s/it]['The steps of Enterprise Mobile Swimlane are: Identify the MVP, Re-imagine for mobile, and Capture future opportunities.'] 330 6806
+126it [04:09,  2.06s/it]['2000'] 348 7181
+132it [04:09,  1.98s/it]['UK Independence Party (UKIP)'] 343 7054
+130it [04:10,  1.95s/it]['Retailers'] 342 7053
+130it [04:10,  1.92s/it]['Procurement'] 347 7169
+131it [04:11,  2.05s/it]['163'] 348 7177
+130it [04:11,  1.91s/it]['15'] 348 7179
+132it [04:11,  1.94s/it]['Re-imagined process'] 330 6805
+127it [04:11,  2.00s/it]['Paul Gordon Brown, PhD'] 348 7173
+126it [04:12,  1.94s/it]['Internet backbone'] 348 7183
+133it [04:11,  1.96s/it]['64TB'] 330 6807
+131it [04:12,  1.92s/it]['1 day'] 342 7059
+131it [04:12,  1.91s/it]['Engineering'] 347 7175
+132it [04:13,  1.99s/it]['English'] 348 7168
+131it [04:13,  1.90s/it]['Every 15 years'] 348 7167
+133it [04:13,  1.95s/it]['Diego Paranhos'] 348 7164
+128it [04:13,  1.99s/it]['Turkle'] 348 7181
+127it [04:14,  1.94s/it]['Internet backbone'] 348 7187
+134it [04:13,  1.94s/it]['Internal Audio Video'] 348 7164
+132it [04:14,  1.92s/it]['1 day'] 348 7182
+132it [04:14,  1.90s/it]['WBS'] 354 7302
+133it [04:15,  1.98s/it]['45,297'] 348 7170
+132it [04:15,  1.94s/it]['12,820'] 348 7180
+134it [04:15,  1.98s/it]['Danah Boyd'] 348 7172
+128it [04:16,  1.94s/it]['20'] 348 7182
+135it [04:15,  1.93s/it]['44%'] 348 7173
+133it [04:15,  1.93s/it]['Inconsistent reports'] 348 7165
+133it [04:16,  1.91s/it]['The outline of the gas absorption experiment includes objective, theory, equipment/schematic, procedure, calculations, results & discussion, conclusion, recommendations, references, and questions & answers.'] 348 7166
+129it [04:16,  2.24s/it]['2'] 342 7095
+134it [04:17,  1.93s/it]['Paging'] 348 7164
+133it [04:17,  1.92s/it]['20'] 342 7066
+135it [04:17,  1.96s/it]['20 nm'] 342 7061
+136it [04:17,  1.92s/it]['Four'] 348 7166
+134it [04:17,  1.90s/it]['Engaging Students through Social Media'] 348 7168
+129it [04:18,  1.98s/it]['Disparate data'] 342 7049
+134it [04:17,  1.91s/it]['Berlin'] 348 7164
+130it [04:18,  2.13s/it]['97.8'] 342 7073
+135it [04:19,  1.92s/it]['6'] 348 7166
+134it [04:18,  1.90s/it]['Africa'] 348 7182
+136it [04:19,  1.96s/it]['25%'] 330 6809
+137it [04:19,  1.89s/it]['Four'] 348 7164
+135it [04:19,  1.89s/it]['Innovators'] 348 7167
+130it [04:20,  1.98s/it]['disparate data'] 348 7180
+135it [04:19,  1.92s/it]['Tehran, Iran'] 354 7274
+131it [04:20,  2.09s/it]['7.6%'] 348 7191
+136it [04:21,  1.93s/it]['Segment number, Offset'] 348 7167
+135it [04:20,  1.91s/it]['2007'] 348 7163
+137it [04:21,  1.95s/it]['24%'] 330 6814
+138it [04:21,  1.87s/it]['66%'] 342 7066
+136it [04:21,  1.90s/it]['Completion'] 348 7168
+131it [04:22,  1.94s/it]['TV'] 365 7504
+136it [04:21,  1.93s/it]['1210'] 348 7163
+132it [04:22,  2.05s/it]['16'] 348 7189
+137it [04:23,  1.91s/it]['5'] 348 7164
+136it [04:22,  1.89s/it]['64'] 330 6812
+138it [04:23,  1.91s/it]['17%'] 330 6818
+139it [04:23,  1.85s/it]['Into growth and user experience'] 330 6807
+137it [04:23,  1.89s/it]['Designing the product'] 348 7163
+132it [04:24,  1.95s/it]['57%'] 365 7511
+137it [04:23,  1.94s/it]['Discover, Plan, Execute, Analyze'] 348 7169
+133it [04:24,  2.05s/it]['Ice Cream Sandwich'] 342 7050
+137it [04:24,  1.91s/it]['35%'] 330 6811
+139it [04:24,  1.87s/it]['Europe'] 330 6818
+140it [04:24,  1.82s/it]['The two years being compared in the circle graphs on the slide are 2010 and 2013.'] 348 7191
+138it [04:25,  2.10s/it]['Digital'] 330 6803
+138it [04:25,  1.84s/it]['Social media'] 358 7378
+138it [04:25,  1.94s/it]['A, B, C'] 348 7167
+134it [04:26,  2.02s/it]['The four steps of Prototyping & User Testing in the circular diagram on User Centered Design are: 1) Reviewer, 2) User Testing, 3) Prototyping, and 4) Wireframes.'] 348 7178
+133it [04:27,  2.26s/it]['69'] 330 6812
+140it [04:26,  1.86s/it]['South East Asia'] 330 6823
+141it [04:26,  1.81s/it]['Tyco'] 330 6829
+139it [04:27,  2.00s/it]['Android IceCreamSandwich(ICS) 4.0'] 348 7186
+138it [04:26,  1.98s/it]['34%'] 342 7051
+139it [04:27,  1.87s/it]['Over 1,000,000'] 330 6809
+139it [04:27,  1.96s/it]['8%'] 348 7170
+135it [04:28,  1.98s/it]['64'] 330 6809
+141it [04:28,  1.83s/it]['14'] 330 6819
+142it [04:28,  1.80s/it]['Euromonitor'] 330 6832
+140it [04:29,  1.95s/it]['Discovery, Concepting, Design, Wireframes'] 348 7208
+134it [04:29,  2.20s/it]['50%'] 348 7172
+139it [04:28,  1.97s/it]['Sakk'] 342 7049
+140it [04:29,  1.89s/it]['Over 1,000,000'] 330 6814
+140it [04:29,  1.97s/it]['36%'] 330 6809
+142it [04:30,  1.82s/it]['108'] 330 6833
+143it [04:30,  1.81s/it]['3'] 324 6699
+141it [04:30,  1.88s/it]['User Centered Design'] 348 7172
+135it [04:31,  2.13s/it]['Enjoy Connecting'] 348 7166
+140it [04:30,  1.94s/it]['20%'] 348 7169
+141it [04:31,  1.90s/it]['Easy to develop, fast to run, rich APIs in Java, Scala, Python, interactive shell, general execution graphs, in-memory caching, easy to code API, fault-tolerance, lineage for fault-tolerance, memory management leads to greater performance.'] 330 6802
+136it [04:31,  2.34s/it]['$7B annual revenue enterprise'] 324 6687
+141it [04:31,  1.93s/it]['174'] 330 6805
+143it [04:32,  1.82s/it]['Blue'] 330 6827
+142it [04:32,  1.85s/it]['Safe Care is Safer Care and Safe Surgery Saves Lives'] 348 7165
+144it [04:32,  1.93s/it]['446'] 348 7183
+136it [04:33,  2.06s/it]['Enjoy Connecting'] 348 7180
+141it [04:32,  1.93s/it]['3'] 348 7165
+142it [04:32,  1.89s/it]['57%'] 330 6804
+142it [04:33,  1.89s/it]['Anand Iyer is a Senior Product Manager at Cloudera.'] 330 6803
+137it [04:33,  2.26s/it]['1.4'] 330 6814
+144it [04:33,  1.81s/it]['Nigeria'] 324 6693
+143it [04:34,  1.82s/it]['Global Planner'] 348 7172
+142it [04:34,  1.92s/it]['Retinal Pigmented Epithelium'] 348 7163
+137it [04:35,  2.08s/it]['Safe surgery saves lives, Clean care is safer care'] 348 7179
+145it [04:34,  2.00s/it]['1.21 billion'] 348 7162
+143it [04:34,  1.92s/it]['Power'] 330 6808
+143it [04:35,  1.86s/it]['Darrell Heaps'] 348 7169
+138it [04:35,  2.17s/it]['0.4'] 324 6687
+145it [04:35,  1.81s/it]['Brazil'] 342 7084
+144it [04:36,  1.84s/it]['Speaker read slides'] 342 7049
+143it [04:36,  1.93s/it]['4'] 348 7165
+146it [04:36,  1.97s/it]['RPE'] 348 7186
+138it [04:37,  2.04s/it]['Symantec'] 324 6677
+144it [04:36,  1.89s/it]['Networking Equipment'] 330 6808
+144it [04:36,  1.83s/it]['2004'] 330 6806
+146it [04:37,  1.81s/it]['Genetic diversity, species diversity, ecosystem diversity'] 348 7168
+139it [04:37,  2.16s/it]['Brazil'] 342 7084
+145it [04:38,  1.84s/it]['Speaker read slides'] 342 7055
+144it [04:38,  1.91s/it]['$1,617 million'] 324 6679
+145it [04:38,  1.89s/it]['People, Place, Property'] 348 7171
+147it [04:38,  1.98s/it]['Drusen, accumulation of lipofuscin'] 348 7166
+139it [04:39,  2.07s/it]['33.0'] 342 7050
+145it [04:38,  1.86s/it]['2.9'] 330 6806
+147it [04:39,  1.80s/it]['Near-sightedness'] 330 6809
+140it [04:39,  2.06s/it]['population'] 342 7082
+146it [04:40,  1.85s/it]["Text so small couldn't read it"] 342 7063
+145it [04:40,  1.94s/it]['Infrastructure, fire, electrical mechanical'] 342 7063
+148it [04:40,  1.99s/it]['Complete and incomplete cord syndromes.'] 348 7168
+146it [04:40,  1.95s/it]['Macular degeneration'] 348 7166
+140it [04:41,  2.05s/it]['33.0'] 342 7055
+146it [04:40,  1.88s/it]['84'] 330 6821
+148it [04:41,  1.79s/it]['Dr. Walter Snelling'] 348 7166
+141it [04:41,  2.04s/it]['Population (in millions)'] 342 7082
+147it [04:42,  1.98s/it]['22.2%'] 348 7177
+146it [04:42,  1.95s/it]['Facial'] 348 7171
+149it [04:42,  1.95s/it]['1945'] 348 7162
+147it [04:42,  1.96s/it]['16.9'] 342 7052
+147it [04:42,  1.89s/it]['$1.12'] 342 7055
+141it [04:43,  2.04s/it]['15'] 330 6815
+149it [04:42,  1.78s/it]['Rep 2'] 348 7171
+142it [04:43,  2.01s/it]['Countries'] 342 7083
+148it [04:44,  1.94s/it]['22.2%'] 342 7069
+147it [04:44,  1.95s/it]['Aorta subclavian'] 342 7068
+150it [04:44,  1.95s/it]['3'] 330 6803
+150it [04:44,  1.77s/it]['16.9'] 342 7054
+148it [04:44,  1.90s/it]['150 years'] 348 7163
+148it [04:44,  1.98s/it]['Smartphone Users'] 348 7166
+142it [04:45,  2.00s/it]['Analytics + People'] 348 7160
+143it [04:45,  1.98s/it]['Glassdoor'] 348 7192
+149it [04:46,  1.93s/it]['4'] 342 7052
+151it [04:46,  1.92s/it]['Ozone'] 330 6804
+151it [04:46,  1.78s/it]['Hard'] 342 7051
+149it [04:46,  1.90s/it]['Apps'] 342 7048
+143it [04:47,  1.96s/it]['12.5 Billion'] 342 7039
+148it [04:46,  2.05s/it]['$3.9 billion'] 348 7170
+149it [04:46,  1.99s/it]['>1/3'] 348 7167
+144it [04:47,  1.97s/it]['Senior Content Marketing Manager'] 348 7188
+150it [04:48,  1.93s/it]['Sulfur dioxide emissions'] 330 6803
+152it [04:48,  1.81s/it]['Branchial fistula, branchial sac'] 348 7166
+152it [04:48,  1.94s/it]['Hard'] 342 7056
+150it [04:48,  1.88s/it]['Management transparency'] 348 7166
+144it [04:49,  1.94s/it]['25 Billion'] 348 7185
+149it [04:48,  2.01s/it]['Italy'] 348 7164
+150it [04:48,  1.96s/it]["1950's"] 330 6810
+145it [04:49,  1.93s/it]['Glassdoor.com'] 342 7077
+151it [04:49,  1.92s/it]['2.47'] 330 6809
+153it [04:50,  1.83s/it]['Ripening'] 348 7163
+151it [04:50,  1.90s/it]['PPP'] 330 6806
+151it [04:50,  1.92s/it]['Arianna Huffington'] 348 7165
+145it [04:51,  1.94s/it]['External auditory meatus, ectodermal aspect of tympanic membrane'] 348 7169
+153it [04:50,  2.01s/it]['6.3'] 348 7170
+150it [04:50,  2.00s/it]['Make Paths and Track Paths'] 348 7165
+146it [04:51,  1.95s/it]['1'] 348 7190
+152it [04:51,  1.90s/it]['5.3'] 324 6678
+154it [04:51,  1.82s/it]['174'] 330 6805
+152it [04:52,  1.89s/it]['#Morecolorful'] 342 7054
+152it [04:52,  1.91s/it]['7:25'] 348 7165
+146it [04:53,  1.94s/it]['nm.sspirit@gmail.com'] 342 7052
+154it [04:52,  1.99s/it]['6.3'] 342 7054
+151it [04:52,  1.97s/it]['The tasks covered in relation to testing include verification and validation.'] 330 6806
+147it [04:53,  1.98s/it]['Alicia Garibaldi'] 348 7185
+153it [04:53,  1.93s/it]['5.7'] 324 6683
+155it [04:53,  1.82s/it]['60%'] 330 6810
+153it [04:54,  1.88s/it]['95%'] 348 7165
+153it [04:54,  1.91s/it]['5'] 348 7169
+155it [04:54,  1.95s/it]['New York'] 348 7173
+147it [04:55,  1.93s/it]['2015'] 348 7175
+152it [04:54,  1.96s/it]['86%'] 342 7070
+154it [04:55,  1.92s/it]['Australia'] 330 6804
+156it [04:55,  1.80s/it]['Sine wave gratings and square wave gratings'] 342 7048
+148it [04:55,  2.10s/it]['5'] 342 7053
+156it [04:55,  1.92s/it]['December and January'] 348 7173
+148it [04:56,  1.92s/it]['NOT CONCERNED'] 348 7179
+154it [04:56,  1.94s/it]['$27 M'] 348 7170
+154it [04:56,  1.97s/it]['2015'] 342 7061
+153it [04:56,  1.95s/it]['11%'] 342 7069
+155it [04:57,  1.91s/it]['Cherry Mobile'] 330 6810
+157it [04:57,  1.79s/it]['SOMEWHAT HARDER'] 348 7172
+155it [04:58,  1.95s/it]['55%'] 348 7167
+155it [04:58,  1.95s/it]['6.58'] 342 7040
+154it [04:58,  1.95s/it]['Anther and Filament'] 348 7166
+157it [04:58,  2.02s/it]['World Class Automotive Supplier'] 348 7163
+149it [04:59,  1.99s/it]['10%'] 342 7068
+156it [04:59,  1.90s/it]['The overall IoT market forecast of 2013 was $11.1 trillion per year in 2025, while the overall IoT market forecast of 2025 was $3.9 trillion to $11.1 trillion per year.'] 348 7181
+149it [04:58,  2.49s/it]['Loss of pain, temperature'] 348 7168
+158it [04:59,  1.85s/it]['3%'] 348 7167
+156it [05:00,  1.94s/it]['$2000B'] 342 7053
+156it [05:00,  1.97s/it]['80,000 petabytes'] 342 7040
+155it [05:00,  1.97s/it]['Megasuppliers'] 348 7162
+150it [05:01,  1.98s/it]['Stamen, anther'] 348 7167
+158it [05:00,  2.00s/it]['Blue'] 342 7072
+157it [05:01,  1.89s/it]['Samsung, Huawei'] 342 7053
+150it [05:00,  2.32s/it]['Same side'] 348 7163
+159it [05:01,  1.86s/it]['MORE TECH COMPANIES WILL GO PUBLIC'] 348 7192
+157it [05:02,  1.97s/it]['50 billion'] 348 7165
+157it [05:02,  1.96s/it]['Light'] 348 7175
+159it [05:02,  1.97s/it]['Requirements Owner'] 348 7164
+156it [05:02,  1.96s/it]['Nonautomotive divisions'] 348 7166
+151it [05:03,  1.97s/it]['Darrell Heaps'] 348 7196
+158it [05:03,  1.91s/it]['Symmetry, ovary location, floral distribution, and reproductive variations.'] 342 7047
+151it [05:03,  2.29s/it]['Pain and temperature fibers'] 348 7170
+160it [05:03,  1.91s/it]['PayPal'] 348 7162
+158it [05:04,  1.95s/it]['4'] 348 7165
+158it [05:04,  1.95s/it]['2'] 348 7165
+160it [05:03,  1.94s/it]['Rayleigh wave'] 342 7050
+157it [05:03,  1.94s/it]['56'] 348 7166
+152it [05:04,  1.95s/it]['4'] 348 7181
+159it [05:05,  1.90s/it]['+477%'] 324 6678
+152it [05:04,  2.15s/it]['Shawl like distribution'] 342 7062
+161it [05:05,  2.01s/it]['19.7 million'] 330 6816
+159it [05:05,  1.94s/it]['3-8'] 348 7167
+159it [05:05,  1.95s/it]['Sensing and Intuitive'] 348 7166
+161it [05:05,  1.94s/it]['14'] 348 7186
+153it [05:06,  1.93s/it]['Rayleigh waves'] 342 7051
+158it [05:05,  1.94s/it]['Understanding Legal Landscape'] 348 7174
+160it [05:07,  1.91s/it]['All'] 348 7164
+153it [05:06,  2.05s/it]['Central cord syndrome'] 342 7054
+162it [05:07,  1.98s/it]['149%'] 330 6812
+160it [05:07,  1.92s/it]['Brazil'] 348 7161
+154it [05:08,  1.91s/it]['ENFJ'] 348 7166
+162it [05:07,  1.93s/it]['Ultramafic Rocks'] 348 7170
+159it [05:07,  1.96s/it]['1-800-330-0160'] 348 7164
+160it [05:08,  2.04s/it]['4'] 348 7181
+161it [05:09,  1.90s/it]['Marketing in the age of streams and the googlization of media'] 365 7496
+154it [05:08,  2.12s/it]['22%'] 348 7167
+163it [05:09,  1.96s/it]['64%'] 348 7173
+161it [05:09,  1.92s/it]['75+'] 348 7166
+155it [05:10,  1.90s/it]['PSB=.015'] 348 7180
+163it [05:09,  1.95s/it]['Unconsolidated Sediments'] 348 7173
+160it [05:09,  1.98s/it]['404 Errors'] 348 7162
+161it [05:10,  2.01s/it]['Legal Advisory and Opinion'] 342 7066
+162it [05:10,  1.91s/it]['110,351'] 342 7055
+155it [05:10,  2.08s/it]['Facebook'] 342 7060
+164it [05:11,  1.93s/it]['62%'] 330 6814
+162it [05:11,  1.89s/it]['Offline'] 348 7176
+156it [05:12,  1.88s/it]['PSB* = .015'] 348 7183
+164it [05:11,  1.98s/it]['Wave Fronts'] 348 7165
+161it [05:11,  1.97s/it]['Value Set Name'] 348 7163
+162it [05:12,  2.00s/it]['4'] 342 7066
+163it [05:12,  1.89s/it]['Germany'] 348 7165
+156it [05:12,  2.01s/it]['2008'] 348 7164
+165it [05:13,  1.94s/it]['75'] 330 6809
+163it [05:13,  1.86s/it]['False sense of simplicity'] 348 7167
+157it [05:14,  1.90s/it]['8'] 330 6828
+164it [05:14,  1.85s/it]['Follow a scent'] 348 7170
+162it [05:13,  1.96s/it]['Cost Center'] 342 7050
+163it [05:14,  1.97s/it]['Growth Rate of Potential Nominal GDP'] 348 7184
+165it [05:13,  2.02s/it]['2'] 348 7170
+166it [05:14,  1.92s/it]['Ken Walker joined Meineke as its President and CEO'] 342 7050
+157it [05:14,  2.04s/it]['2000'] 330 6809
+164it [05:15,  1.85s/it]['Challenges'] 348 7171
+158it [05:16,  1.90s/it]['10%'] 324 6701
+165it [05:16,  1.83s/it]['Intercompany'] 342 7061
+164it [05:15,  1.94s/it]['FRED'] 348 7179
+166it [05:15,  1.98s/it]['Michael Lykke Aagaard'] 348 7175
+163it [05:15,  1.98s/it]['235'] 348 7171
+167it [05:16,  1.92s/it]['41%'] 348 7179
+158it [05:16,  2.01s/it]['5'] 330 6805
+165it [05:16,  1.82s/it]['Integration'] 348 7164
+159it [05:18,  1.89s/it]['35%'] 324 6697
+166it [05:18,  1.82s/it]['7'] 348 7166
+164it [05:17,  1.94s/it]['2000'] 348 7179
+167it [05:17,  1.97s/it]['Expense'] 348 7169
+165it [05:18,  2.02s/it]['Windows 10'] 330 6807
+166it [05:18,  1.83s/it]['14.5%'] 348 7175
+159it [05:18,  1.99s/it]['2007-12'] 348 7168
+168it [05:18,  1.96s/it]['3'] 324 6690
+167it [05:19,  1.79s/it]['3'] 348 7166
+168it [05:19,  1.92s/it]['A centralized message broker is a hub in the Hub & Spoke topology that manages and routes messages between applications.'] 348 7163
+160it [05:20,  2.05s/it]['95%'] 348 7174
+165it [05:19,  1.93s/it]['Facebook'] 348 7167
+166it [05:19,  1.96s/it]['99%'] 330 6808
+167it [05:20,  1.82s/it]['7.4 million'] 348 7164
+160it [05:20,  1.99s/it]['Richard Barrett'] 348 7169
+169it [05:20,  1.96s/it]['23%'] 330 6829
+168it [05:21,  1.79s/it]['Stateful'] 348 7171
+169it [05:21,  1.90s/it]['21 Million'] 342 7055
+161it [05:22,  2.01s/it]['Over the phone'] 342 7062
+166it [05:21,  1.92s/it]['Facebook'] 348 7180
+167it [05:21,  1.92s/it]['68%'] 324 6680
+168it [05:22,  1.81s/it]['$3 trillion'] 342 7054
+161it [05:22,  1.97s/it]['Quantum energy field'] 348 7167
+170it [05:22,  1.96s/it]['Axis Title'] 342 7070
+169it [05:23,  1.81s/it]['21 Million'] 348 7187
+162it [05:24,  2.00s/it]['60-65%'] 348 7170
+167it [05:23,  1.94s/it]['2012'] 348 7166
+168it [05:23,  1.92s/it]['192.168.236.12'] 342 7049
+170it [05:23,  1.98s/it]['A global paradigm shift'] 342 7051
+169it [05:24,  1.85s/it]['$57'] 330 6820
+171it [05:24,  1.91s/it]['28%'] 348 7165
+162it [05:24,  1.95s/it]['KVM'] 342 7069
+170it [05:25,  1.83s/it]['41%'] 342 7059
+163it [05:26,  1.98s/it]['Classic Retention'] 348 7175
+168it [05:25,  1.93s/it]['Ubuntu'] 348 7169
+171it [05:25,  1.97s/it]['$250 million'] 348 7171
+169it [05:25,  1.94s/it]['517%'] 348 7163
+170it [05:26,  1.88s/it]['2015'] 330 6804
+172it [05:26,  1.88s/it]['UK'] 348 7168
+163it [05:26,  1.92s/it]['The difference between the highest and lowest values on the x-axis is 15 seconds.'] 342 7065
+171it [05:27,  1.97s/it]['661'] 342 7058
+169it [05:27,  1.92s/it]['41%'] 348 7196
+164it [05:28,  1.97s/it]['3'] 342 7050
+172it [05:27,  1.93s/it]['June 9, 2013'] 348 7166
+170it [05:27,  1.98s/it]['2012'] 330 6811
+173it [05:28,  1.86s/it]['Social@Ogilvy leads more than 50 brand content studios across the globe.'] 330 6812
+171it [05:28,  1.97s/it]['6.84 million'] 348 7177
+164it [05:28,  1.93s/it]['CPU Usage in Percent'] 342 7059
+172it [05:29,  1.95s/it]['43.0'] 342 7053
+170it [05:29,  1.91s/it]['12%'] 348 7172
+173it [05:29,  1.93s/it]['$412,200,000'] 342 7049
+165it [05:30,  2.02s/it]['June 9, 2013'] 348 7188
+171it [05:29,  2.02s/it]['2015'] 330 6811
+174it [05:30,  1.84s/it]['6.84 million'] 348 7171
+165it [05:30,  1.95s/it]['There are 2.5 million individual publishers on YouTube.'] 324 6673
+172it [05:30,  1.98s/it]['Docker'] 342 7057
+173it [05:31,  1.93s/it]['IOS / iPad'] 342 7057
+171it [05:31,  1.90s/it]['3%'] 348 7168
+174it [05:31,  1.92s/it]['2,271,600'] 342 7051
+166it [05:32,  2.03s/it]['Hong Kong'] 348 7167
+172it [05:31,  1.98s/it]['2015'] 330 6813
+175it [05:31,  1.83s/it]['Three billion'] 330 6813
+173it [05:32,  1.92s/it]['16,692'] 330 6808
+166it [05:32,  1.93s/it]['20'] 330 6827
+174it [05:33,  1.88s/it]['Predicted Speed'] 330 6807
+172it [05:32,  1.86s/it]['44%'] 348 7184
+175it [05:33,  1.92s/it]['Hong Kong'] 342 7078
+173it [05:33,  1.95s/it]['2015'] 324 6684
+176it [05:33,  1.81s/it]['356,560'] 348 7181
+167it [05:34,  2.03s/it]['Three billion metric tons'] 330 6809
+174it [05:34,  1.89s/it]['50%'] 330 6808
+167it [05:34,  1.88s/it]['3'] 330 6821
+175it [05:34,  1.84s/it]['Desktop computer'] 342 7053
+176it [05:34,  1.91s/it]['The name of the webpage where the popup "The Taste of Meaningful Content" appears is thebiglead.com.'] 330 6816
+173it [05:35,  1.99s/it]['2018'] 330 6805
+177it [05:35,  1.82s/it]['Increased'] 342 7058
+168it [05:36,  1.98s/it]['Whistleblower'] 348 7182
+174it [05:35,  1.96s/it]['50%'] 330 6805
+168it [05:35,  1.85s/it]['72%'] 348 7170
+175it [05:36,  1.91s/it]['Transactions USD Billions'] 330 6819
+176it [05:36,  1.84s/it]['Smartphone'] 348 7174
+177it [05:36,  1.90s/it]['1973/016172/08'] 330 6810
+174it [05:37,  2.02s/it]['$493.90'] 330 6820
+178it [05:37,  1.84s/it]['increased'] 348 7181
+169it [05:38,  1.98s/it]['Whistleblower'] 348 7203
+175it [05:37,  1.97s/it]['$1.12 Billion'] 342 7048
+169it [05:37,  1.89s/it]['21%'] 342 7054
+176it [05:37,  1.91s/it]['2017'] 330 6838
+177it [05:38,  1.83s/it]['Port'] 348 7165
+178it [05:38,  1.87s/it]['16.5%'] 324 6681
+179it [05:39,  1.84s/it]['Population with cellphone in HH'] 330 6818
+175it [05:39,  1.98s/it]['Mike'] 330 6809
+170it [05:40,  1.91s/it]['Releasing the classified documents'] 348 7180
+176it [05:39,  1.98s/it]['Sixth edition'] 348 7174
+170it [05:39,  1.90s/it]['$350 billion USD'] 330 6827
+178it [05:40,  1.85s/it]['Immediate assistance at any hour of the day'] 348 7167
+177it [05:39,  1.96s/it]['ovs-ofctl'] 348 7179
+179it [05:40,  1.89s/it]['2017'] 330 6811
+180it [05:41,  1.83s/it]['Population with cellphone in HH'] 330 6825
+176it [05:40,  1.94s/it]['Your Site'] 348 7170
+171it [05:42,  1.91s/it]['Releasing the classified documents'] 348 7194
+177it [05:41,  1.99s/it]['18'] 342 7046
+171it [05:41,  1.90s/it]['6'] 330 6823
+179it [05:42,  1.83s/it]['20%'] 342 7049
+178it [05:41,  1.94s/it]['Ovs-vsctl'] 348 7168
+180it [05:42,  1.89s/it]['Mobi data'] 330 6820
+177it [05:42,  1.90s/it]['20%'] 348 7169
+181it [05:42,  1.86s/it]['Copy'] 348 7161
+172it [05:43,  1.90s/it]['5%'] 330 6829
+180it [05:44,  1.83s/it]['33%'] 348 7175
+178it [05:43,  1.98s/it]['50%'] 348 7178
+172it [05:43,  1.91s/it]['2011'] 348 7169
+179it [05:43,  1.95s/it]['SoftBank'] 348 7164
+181it [05:44,  1.88s/it]['Mobi data'] 330 6823
+178it [05:44,  1.89s/it]['1.2 billion'] 348 7169
+182it [05:44,  1.91s/it]['Visitor Intent'] 348 7163
+173it [05:45,  1.91s/it]['green'] 330 6827
+181it [05:45,  1.82s/it]['33%'] 348 7195
+179it [05:45,  1.97s/it]['Non-Hispanic'] 348 7167
+180it [05:45,  1.95s/it]['Up to 2 hour reduction in bond cure time'] 365 7507
+173it [05:45,  2.00s/it]['2'] 348 7164
+182it [05:46,  1.86s/it]['Regional Office'] 342 7054
+179it [05:46,  1.89s/it]['Impulse'] 348 7167
+174it [05:47,  1.91s/it]['42.48 million'] 348 7163
+183it [05:47,  1.95s/it]['Handhelds'] 330 6824
+182it [05:47,  1.83s/it]['Implement workflows to support consistent processes and involving all relevant stakeholders'] 348 7166
+180it [05:47,  2.01s/it]['IT'] 348 7173
+181it [05:47,  1.93s/it]['50%'] 365 7503
+174it [05:47,  2.00s/it]['150'] 348 7180
+183it [05:48,  1.87s/it]['Regional Office'] 342 7075
+180it [05:48,  1.88s/it]['July 1-7'] 348 7166
+175it [05:49,  1.94s/it]['56%'] 330 6826
+183it [05:49,  1.83s/it]['2.315'] 348 7173
+184it [05:49,  1.98s/it]['Skills, Staffing'] 342 7049
+181it [05:49,  1.98s/it]['42%'] 342 7051
+182it [05:49,  1.92s/it]['2005'] 342 7051
+175it [05:49,  1.97s/it]['ADTECH'] 342 7053
+184it [05:49,  1.87s/it]['1990s'] 348 7173
+181it [05:50,  1.91s/it]['Red'] 330 6831
+184it [05:51,  1.80s/it]['Tracking retention involves managing funnels and campaign performances for a mobile app.'] 330 6806
+176it [05:51,  1.97s/it]['Q4'] 342 7047
+185it [05:51,  1.97s/it]['Home computer'] 342 7062
+183it [05:51,  1.91s/it]['Execution, Analytics, Central Hub, Integration Layer'] 348 7168
+182it [05:51,  2.02s/it]['72%'] 348 7177
+176it [05:51,  1.95s/it]['Aneustolic center'] 342 7054
+185it [05:51,  1.89s/it]['1990s'] 348 7187
+182it [05:52,  1.93s/it]['August 4, 2014'] 324 6696
+185it [05:53,  1.84s/it]['99.6%'] 342 7056
+186it [05:53,  1.98s/it]['The five core building block services for a mobile app, game, or device app are Compute, Storage, Networking, Analytics, and Databases.'] 324 6683
+177it [05:54,  2.11s/it]['38%'] 365 7503
+184it [05:53,  1.94s/it]['Digital banking'] 348 7174
+177it [05:53,  1.93s/it]['Vagus (CN10)'] 342 7054
+186it [05:53,  1.92s/it]['February 2006'] 348 7164
+183it [05:54,  1.95s/it]['10'] 348 7191
+186it [05:55,  1.86s/it]['3.6%'] 348 7178
+187it [05:55,  1.98s/it]['10'] 330 6805
+178it [05:55,  2.01s/it]['More than 40 million users'] 348 7165
+185it [05:55,  1.96s/it]['Prospecting & Client Profiles, Proposal Generation, Financial Assessment, Wealth Planning'] 348 7165
+178it [05:55,  2.02s/it]['Sensory (ascending) tracts'] 342 7065
+187it [05:55,  1.94s/it]['50'] 348 7167
+184it [05:56,  1.93s/it]['Blue'] 348 7190
+187it [05:57,  1.87s/it]['10'] 330 6824
+179it [05:57,  1.94s/it]['675.2'] 342 7052
+188it [05:57,  1.99s/it]['Tweets are limited to 140 characters.'] 348 7164
+186it [05:57,  2.01s/it]['96%'] 358 7354
+179it [05:57,  1.99s/it]['Pain and temperature affecting the arm, leg and rarely the trunk'] 348 7169
+188it [05:57,  2.00s/it]['10'] 348 7166
+185it [05:58,  1.91s/it]['Bangkok'] 348 7185
+188it [05:58,  1.88s/it]['1,984.7'] 342 7060
+189it [05:59,  2.00s/it]['Amazon SNS Mobile Push is a service that allows you to send push notifications to your mobile app users.'] 324 6673
+180it [05:59,  2.02s/it]['109 seats'] 330 6817
+180it [05:59,  1.95s/it]['Aerobic'] 348 7167
+187it [05:59,  1.99s/it]['Spinthalamic pathway'] 348 7193
+189it [05:59,  1.98s/it]['Residential'] 348 7170
+186it [05:59,  1.90s/it]['50'] 348 7197
+189it [06:00,  1.89s/it]['Amazon'] 324 6701
+181it [06:01,  1.93s/it]['Personal Travel & Tourism'] 342 7051
+190it [06:01,  1.99s/it]['560'] 324 6677
+181it [06:01,  1.90s/it]['75%'] 348 7167
+188it [06:01,  1.97s/it]['86243'] 342 7057
+190it [06:01,  1.95s/it]['1950'] 348 7188
+190it [06:02,  1.91s/it]['AUG 15-19, 2011'] 348 7164
+187it [06:02,  1.99s/it]['Kinesis Connector'] 330 6810
+182it [06:03,  1.89s/it]['British Virgin Islands'] 348 7173
+191it [06:02,  1.98s/it]['Spatial and temporal contrast sensitivity'] 348 7165
+182it [06:03,  1.92s/it]['17,8%'] 348 7173
+189it [06:03,  1.96s/it]['12'] 342 7066
+191it [06:03,  1.92s/it]['10%'] 330 6828
+191it [06:04,  1.87s/it]['18-24'] 348 7167
+188it [06:04,  1.98s/it]['$1.2Tn'] 324 6692
+183it [06:05,  1.87s/it]['$5'] 348 7180
+192it [06:04,  1.95s/it]['2'] 348 7166
+183it [06:05,  1.90s/it]['75%'] 330 6811
+190it [06:05,  1.91s/it]['[Group, Topic, Partition]'] 348 7163
+192it [06:05,  1.93s/it]['3'] 330 6819
+192it [06:06,  1.83s/it]['35-44'] 342 7065
+189it [06:06,  1.96s/it]['80%'] 330 6824
+184it [06:07,  1.84s/it]['1,200 hours'] 348 7173
+193it [06:06,  1.97s/it]['90%'] 324 6677
+191it [06:06,  1.86s/it]['2'] 348 7165
+184it [06:06,  1.88s/it]['51%'] 324 6695
+193it [06:08,  1.80s/it]['30,000'] 348 7184
+193it [06:07,  1.94s/it]['80%'] 324 6702
+185it [06:08,  1.81s/it]['4,882'] 348 7174
+190it [06:07,  1.96s/it]['President Carter'] 348 7170
+185it [06:08,  1.88s/it]['$11,000'] 348 7179
+194it [06:08,  1.99s/it]['$1.00'] 354 7276
+192it [06:08,  1.90s/it]['80%'] 348 7180
+194it [06:09,  1.82s/it]['28,000'] 348 7197
+194it [06:09,  1.95s/it]['0.38'] 348 7186
+186it [06:10,  1.85s/it]['4,882'] 348 7172
+191it [06:09,  1.96s/it]['None'] 348 7168
+195it [06:10,  1.96s/it]['9'] 348 7167
+193it [06:10,  1.89s/it]['In 2004, the SEC granted special permission to the five biggest US investment banks.'] 348 7171
+186it [06:11,  2.02s/it]['Light purple'] 348 7184
+195it [06:11,  1.84s/it]['65%'] 348 7174
+195it [06:11,  1.93s/it]['Korea, Rep., Estonia'] 348 7167
+187it [06:12,  1.89s/it]['10%'] 342 7048
+192it [06:11,  1.94s/it]['3'] 348 7167
+194it [06:12,  1.88s/it]['$10.00'] 348 7174
+196it [06:12,  1.98s/it]['1%'] 342 7071
+196it [06:13,  1.84s/it]['June 2009'] 342 7050
+187it [06:13,  2.01s/it]['Engineering'] 348 7180
+196it [06:13,  1.91s/it]['EARLY ADOPTERS'] 348 7174
+193it [06:13,  1.95s/it]['The painting shows a bird with wings, but it does not specify the type of bird.'] 348 7167
+188it [06:15,  2.02s/it]['75%'] 365 7499
+195it [06:14,  1.91s/it]['Speed to adoption'] 348 7171
+197it [06:14,  1.97s/it]['2'] 342 7071
+197it [06:15,  1.84s/it]['To develop core & access infrastructure'] 342 7053
+188it [06:15,  2.01s/it]['Richard Van Noorden'] 348 7169
+197it [06:15,  1.92s/it]['Hybrid Media'] 348 7171
+194it [06:15,  1.94s/it]['yellow'] 348 7175
+189it [06:16,  1.97s/it]['75%'] 365 7499
+196it [06:16,  1.93s/it]['2012'] 348 7176
+198it [06:16,  1.97s/it]['2'] 342 7073
+198it [06:17,  1.84s/it]['20%'] 330 6806
+189it [06:16,  1.94s/it]['PhD Graduation Rate'] 348 7192
+198it [06:17,  1.92s/it]['7'] 348 7164
+195it [06:17,  1.92s/it]['4'] 348 7166
+190it [06:18,  1.94s/it]['Current projects'] 342 7047
+197it [06:18,  1.92s/it]['59%'] 348 7177
+199it [06:18,  1.96s/it]['39%'] 348 7163
+190it [06:18,  1.92s/it]['13%'] 348 7188
+199it [06:19,  1.92s/it]['29'] 348 7181
+199it [06:18,  1.89s/it]['Seoul'] 354 7277
+196it [06:19,  1.91s/it]['2006'] 348 7175
+191it [06:20,  1.93s/it]['The Processes for the phase whose execution capability is to "Execute campaigns designed to span multiple online channels" are:\n\n1. Reporting\n2. Campaign tracking\n3. Segmentation\n4. Analytics\n5. Measurement\n6. Strategy\n7. Customer experience\n8. Customer contact strategy\n9. Content management\n10. Execution\n11. Optimization\n12. Multichannel integration\n13. Marketing asset management\n14. Brand strategy\n15. Business strategy\n16. Sales strategy\n17. Digital strategy\n18. Media strategy\n19. CRM strategy\n20. Communication strategy\n21. Online strategy\n22. Social strategy\n23. Mobile strategy\n24. Content management capability\n25. Execution capability\n26. Analytical capability\n27. Measurement strategy\n28. Articulation of strategies\n29. Understanding of digital solutions\n30. Understanding of business\n31. Understanding of audience\n32. Brand\n33. Technology\n34. Consumer\n35. Process collaboration\n36. Road map component description\n37. Road map category\n38. Resources\n39. Skills\n40. Processes\n41. Articulation of strategies\n42. Understanding of digital solutions\n43. Understanding of business\n44. Understanding of audience\n45. Brand\n46. Technology\n47. Consumer\n48. Process collaboration\n49. Road map component description\n50. Road map category\n51. Resources\n52. Skills\n53. Processes\n54. Articulation of strategies\n55. Understanding of digital solutions\n56. Understanding of business\n57. Understanding of audience\n58. Brand\n59. Technology\n60. Consumer\n61. Process collaboration\n62. Road map component description\n63. Road map category\n64. Resources\n65. Skills\n66. Processes\n67. Articulation of strategies\n68. Understanding of digital solutions\n69. Understanding of business\n70. Understanding of audience\n71. Brand\n72. Technology\n73. Consumer\n74. Process collaboration\n75. Road map component description\n76. Road map category\n77. Resources\n78. Skills\n79. Processes\n80. Articulation of strategies\n81. Understanding of digital solutions\n82. Understanding of business\n83. Understanding of audience\n84. Brand\n85. Technology\n86. Consumer\n87. Process collaboration\n88. Road map component description\n89. Road map category\n90. Resources\n91. Skills\n92. Processes\n93. Articulation of strategies\n94. Understanding of digital solutions\n95. Understanding of business\n96. Understanding of audience\n97. Brand\n98. Technology\n99. Consumer\n100. Process collaboration\n101. Road map component description\n102. Road map category\n103. Resources\n104. Skills\n105. Processes\n106. Articulation of strategies\n107. Understanding of digital solutions\n108. Understanding of business\n109. Understanding of audience\n110. Brand\n111. Technology\n112. Consumer\n113. Process collaboration\n114. Road map component description\n115. Road map category\n116. Resources\n117. Skills\n118. Processes\n119. Articulation of strategies\n120. Understanding of digital solutions\n121. Understanding of business\n122. Understanding of audience\n123. Brand\n124. Technology\n125. Consumer\n126. Process collaboration\n127. Road map component description\n128. Road map category\n129. Resources\n130. Skills\n131. Processes\n132. Articulation of strategies\n133. Understanding of digital solutions\n134. Understanding of business\n135. Understanding of audience\n136. Brand\n137. Technology\n138. Consumer\n139. Process collaboration\n140. Road map component description\n141. Road map category\n142. Resources\n143. Skills\n144. Processes\n145. Articulation of strategies\n146. Understanding of digital solutions\n147. Understanding of business\n148. Understanding of audience\n149. Brand\n150. Technology\n151. Consumer\n152. Process collaboration\n153. Road map'] 348 7178
+['21,000'] 348 7164
+183it [06:20, 10.08s/it]198it [06:20,  1.95s/it]['KPMG'] 348 7170
+200it [06:20,  1.97s/it]['31%'] 342 7051
+191it [06:20,  1.93s/it]['100%'] 348 7193
+200it [06:21,  1.93s/it]['Favorites'] 348 7178
+200it [06:20,  1.87s/it]['1394'] 354 7275
+197it [06:21,  1.92s/it]['16'] 342 7056
+192it [06:22,  1.90s/it]['four times'] 348 7168
+184it [06:22,  7.62s/it]['93%'] 324 6679
+192it [06:22,  1.88s/it]['110,000'] 348 7164
+199it [06:22,  1.97s/it]['Improved alignment/interaction with suppliers'] 342 7057
+201it [06:22,  1.98s/it]['155'] 342 7063
+201it [06:23,  1.92s/it]['@gatesfoundation'] 348 7166
+201it [06:22,  1.88s/it]['12'] 342 7058
+193it [06:24,  1.89s/it]['1394'] 347 7162
+198it [06:23,  1.98s/it]['Four times'] 348 7178
+185it [06:24,  5.90s/it]['$44,800'] 324 6678
+193it [06:24,  1.88s/it]['Twitter'] 342 7074
+202it [06:25,  1.89s/it]['2.13 MILLION'] 348 7174
+200it [06:24,  1.99s/it]['1.4'] 342 7053
+202it [06:24,  1.97s/it]['2'] 342 7059
+202it [06:24,  1.86s/it]['Requiem in D minor'] 342 7072
+194it [06:26,  1.92s/it]['1394'] 354 7280
+199it [06:25,  1.99s/it]['hiexpress.com'] 348 7168
+186it [06:26,  4.69s/it]['26%'] 348 7164
+194it [06:26,  1.90s/it]['8'] 342 7063
+203it [06:26,  1.87s/it]203it [06:27,  1.91s/it]
+['11'] 342 7072
+203it [06:26,  1.96s/it]203it [06:26,  1.90s/it]
+['32.95 million'] 342 7047
+201it [06:26,  1.99s/it]['7'] 348 7165
+203it [06:26,  1.94s/it]203it [06:26,  1.90s/it]
+['There are three requests visible in the image.'] 348 7173
+195it [06:28,  1.96s/it]['1394'] 354 7306
+200it [06:27,  1.99s/it]['Hiexpress.com'] 342 7071
+187it [06:28,  3.84s/it]['1999'] 348 7165
+195it [06:28,  1.91s/it]['Helpdesk calls'] 348 7162
+202it [06:28,  1.95s/it]202it [06:28,  1.92s/it]
+['Jeremy Marton and Jason Steinberg'] 348 7163
+196it [06:30,  1.97s/it]["(1960's~80's)"] 354 7277
+201it [06:29,  2.05s/it]['Marriott.com'] 348 7171
+188it [06:29,  3.25s/it]['Bangladesh played its first World Cup in England in 1999.'] 348 7167
+196it [06:30,  2.01s/it]['Facebook'] 348 7176
+197it [06:32,  1.93s/it]['61%'] 342 7055
+189it [06:31,  2.83s/it]['1910-1945'] 354 7272
+202it [06:31,  2.06s/it]['50%'] 323 6670
+197it [06:32,  1.93s/it]['Bad and Good'] 348 7178
+198it [06:34,  1.92s/it]['61%'] 348 7187
+190it [06:33,  2.55s/it]['Services'] 342 7057
+203it [06:33,  1.99s/it]203it [06:33,  1.94s/it]
+['50%'] 323 6664
+198it [06:34,  1.89s/it]['1989'] 342 7064
+199it [06:36,  1.92s/it]['80%'] 348 7165
+191it [06:35,  2.34s/it]['50%'] 323 6671
+199it [06:36,  1.91s/it]['10'] 342 7074
+200it [06:38,  1.96s/it]['What the Best Companies Do'] 348 7164
+192it [06:37,  2.21s/it]['15%'] 324 6676
+200it [06:37,  1.87s/it]['3.5'] 342 7069
+201it [06:40,  1.94s/it]['176%'] 348 7183
+193it [06:39,  2.12s/it]['$265 million'] 330 6808
+201it [06:39,  1.86s/it]['176%'] 348 7192
+194it [06:41,  2.05s/it]['Idade Gestacional (S)'] 342 7068
+202it [06:42,  1.95s/it]['Company culture'] 342 7052
+202it [06:41,  1.85s/it]202it [06:41,  1.99s/it]
+['Visits'] 348 7184
+195it [06:43,  1.98s/it]['Middle Cerebral Vm'] 342 7065
+203it [06:43,  1.95s/it]203it [06:43,  1.99s/it]
+['Visits'] 348 7200
+196it [06:44,  1.94s/it]['22%'] 348 7172
+197it [06:46,  1.93s/it]['61%'] 348 7174
+198it [06:48,  1.92s/it]['Scottish National Party'] 343 7052
+199it [06:50,  1.91s/it]['Evils'] 343 7067
+200it [06:52,  1.89s/it]['Evils'] 336 6945
+201it [06:54,  1.86s/it]['20%'] 336 6932
+202it [06:56,  1.85s/it]['26%'] 336 6944
+203it [06:57,  1.84s/it]203it [06:57,  2.06s/it]
+tensor(0.7895)
+avg vtokens tensor(343.1732)
+avg total tokens 7077.236744759556
+Evaluating slidevqa_val ...
+Results saved to ./res/slide-vqa/slidevqa_val_241227120834.json
+python utils/infographicsvqa_eval.py -g /gruntdata/heyuan67/zqp/SlideVQA/internvl_val_slidevqa_annotations.json -s ./res/slide-vqa/slidevqa_val_241227120834.json
+
+Overall ANLS: 0.6049
+write results to file ./res/slide-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/slide-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/slide-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/slide-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/slide-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/slide-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/slide-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/slide-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix-test2 ']'

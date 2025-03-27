@@ -1,0 +1,348 @@
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/
++ DATASET=vqa-slidevqa-val-unsupervised-cls-v4-top3_mix
++ GPUS=8
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/
+++ pwd
++ export PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ echo 'CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/'
+CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/
++ MASTER_PORT=62621
++ PORT=62621
++ GPUS=8
++ export MASTER_PORT=62621
++ MASTER_PORT=62621
++ export PORT=62621
++ PORT=62621
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix ']'
++ torchrun --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --nproc_per_node=8 --master_port=62621 infer_mpdocvqa_dynamic_unsupervised_cls4.py --checkpoint /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/ --max-pixels-low 200704 --max-pixels-high 802816 --datasets slidevqa_val --out-dir ./res/slide-vqa --dynamic --select-mode mix_topk --select-image-num 3
+datasets: ['slidevqa_val']
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets:datasets:  ['slidevqa_val']['slidevqa_val']
+
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+datasets: ['slidevqa_val']
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.15it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  5.06it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.35it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.27it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.15it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.29it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.21it/s]`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.73it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.69it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.81it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.16it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.97it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.79it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.99it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.78it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.38it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.25it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.58it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.48it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.90it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.80it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.48it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.94it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.82it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.02it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.43it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.65it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.53it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.62it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.15it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.45it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.37it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.75it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.63it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.68it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.60it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.72it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.61it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.08it/s]
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 569, in <module>
+[rank1]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank1]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 384, in evaluate_chat_model
+[rank1]:     for _, (inputs, questions, question_ids, annotations, num_token_list, messages_high, messages_low, answer_page_idxs, num_image_list) in tqdm(enumerate(dataloader)):
+[rank1]:   File "/root/miniconda3/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+[rank1]:     for obj in iterable:
+[rank1]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+[rank1]:     data = self._next_data()
+[rank1]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+[rank1]:     return self._process_data(data)
+[rank1]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+[rank1]:     data.reraise()
+[rank1]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+[rank1]:     raise exception
+[rank1]: KeyError: Caught KeyError in DataLoader worker process 0.
+[rank1]: Original Traceback (most recent call last):
+[rank1]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+[rank1]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank1]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+[rank1]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank1]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+[rank1]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank1]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 89, in __getitem__
+[rank1]:     image_paths, query, question_id, annotation, answer_page_idx = data['images'], data[
+[rank1]: KeyError: 'images'
+
+0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 569, in <module>
+[rank2]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank2]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 384, in evaluate_chat_model
+[rank2]:     for _, (inputs, questions, question_ids, annotations, num_token_list, messages_high, messages_low, answer_page_idxs, num_image_list) in tqdm(enumerate(dataloader)):
+[rank2]:   File "/root/miniconda3/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+[rank2]:     for obj in iterable:
+[rank2]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+[rank2]:     data = self._next_data()
+[rank2]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+[rank2]:     return self._process_data(data)
+[rank2]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+[rank2]:     data.reraise()
+[rank2]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+[rank2]:     raise exception
+[rank2]: KeyError: Caught KeyError in DataLoader worker process 0.
+[rank2]: Original Traceback (most recent call last):
+[rank2]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+[rank2]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank2]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+[rank2]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank2]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+[rank2]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank2]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 89, in __getitem__
+[rank2]:     image_paths, query, question_id, annotation, answer_page_idx = data['images'], data[
+[rank2]: KeyError: 'images'
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 569, in <module>
+[rank0]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank0]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 384, in evaluate_chat_model
+[rank0]:     for _, (inputs, questions, question_ids, annotations, num_token_list, messages_high, messages_low, answer_page_idxs, num_image_list) in tqdm(enumerate(dataloader)):
+[rank0]:   File "/root/miniconda3/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+[rank0]:     for obj in iterable:
+[rank0]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+[rank0]:     data = self._next_data()
+[rank0]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+[rank0]:     return self._process_data(data)
+[rank0]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+[rank0]:     data.reraise()
+[rank0]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+[rank0]:     raise exception
+[rank0]: KeyError: Caught KeyError in DataLoader worker process 0.
+[rank0]: Original Traceback (most recent call last):
+[rank0]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+[rank0]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank0]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+[rank0]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank0]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+[rank0]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank0]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 89, in __getitem__
+[rank0]:     image_paths, query, question_id, annotation, answer_page_idx = data['images'], data[
+[rank0]: KeyError: 'images'
+
+0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]
+0it [00:00, ?it/s]0it [00:00, ?it/s][rank4]: Traceback (most recent call last):
+[rank4]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 569, in <module>
+[rank4]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank4]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 384, in evaluate_chat_model
+[rank4]:     for _, (inputs, questions, question_ids, annotations, num_token_list, messages_high, messages_low, answer_page_idxs, num_image_list) in tqdm(enumerate(dataloader)):
+[rank4]:   File "/root/miniconda3/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+[rank4]:     for obj in iterable:
+[rank4]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+[rank4]:     data = self._next_data()
+[rank4]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+[rank4]:     return self._process_data(data)
+[rank4]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+[rank4]:     data.reraise()
+[rank4]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+[rank4]:     raise exception
+[rank4]: KeyError: Caught KeyError in DataLoader worker process 0.
+[rank4]: Original Traceback (most recent call last):
+[rank4]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+[rank4]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank4]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+[rank4]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank4]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+[rank4]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank4]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 89, in __getitem__
+[rank4]:     image_paths, query, question_id, annotation, answer_page_idx = data['images'], data[
+[rank4]: KeyError: 'images'
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+0it [00:00, ?it/s][rank5]: Traceback (most recent call last):
+[rank5]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 569, in <module>
+[rank5]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank5]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 384, in evaluate_chat_model
+[rank5]:     for _, (inputs, questions, question_ids, annotations, num_token_list, messages_high, messages_low, answer_page_idxs, num_image_list) in tqdm(enumerate(dataloader)):
+[rank5]:   File "/root/miniconda3/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+[rank5]:     for obj in iterable:
+[rank5]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+[rank5]:     data = self._next_data()
+[rank5]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+[rank5]:     return self._process_data(data)
+[rank5]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+[rank5]:     data.reraise()
+[rank5]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+[rank5]:     raise exception
+[rank5]: KeyError: Caught KeyError in DataLoader worker process 0.
+[rank5]: Original Traceback (most recent call last):
+[rank5]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+[rank5]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank5]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+[rank5]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank5]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+[rank5]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank5]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 89, in __getitem__
+[rank5]:     image_paths, query, question_id, annotation, answer_page_idx = data['images'], data[
+[rank5]: KeyError: 'images'
+
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 569, in <module>
+[rank3]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 384, in evaluate_chat_model
+[rank3]:     for _, (inputs, questions, question_ids, annotations, num_token_list, messages_high, messages_low, answer_page_idxs, num_image_list) in tqdm(enumerate(dataloader)):
+[rank3]:   File "/root/miniconda3/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+[rank3]:     for obj in iterable:
+[rank3]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+[rank3]:     data = self._next_data()
+[rank3]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+[rank3]:     return self._process_data(data)
+[rank3]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+[rank3]:     data.reraise()
+[rank3]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+[rank3]:     raise exception
+[rank3]: KeyError: Caught KeyError in DataLoader worker process 0.
+[rank3]: Original Traceback (most recent call last):
+[rank3]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+[rank3]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank3]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+[rank3]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank3]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+[rank3]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 89, in __getitem__
+[rank3]:     image_paths, query, question_id, annotation, answer_page_idx = data['images'], data[
+[rank3]: KeyError: 'images'
+
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 569, in <module>
+[rank7]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank7]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 384, in evaluate_chat_model
+[rank7]:     for _, (inputs, questions, question_ids, annotations, num_token_list, messages_high, messages_low, answer_page_idxs, num_image_list) in tqdm(enumerate(dataloader)):
+[rank7]:   File "/root/miniconda3/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+[rank7]:     for obj in iterable:
+[rank7]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+[rank7]:     data = self._next_data()
+[rank7]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+[rank7]:     return self._process_data(data)
+[rank7]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+[rank7]:     data.reraise()
+[rank7]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+[rank7]:     raise exception
+[rank7]: KeyError: Caught KeyError in DataLoader worker process 0.
+[rank7]: Original Traceback (most recent call last):
+[rank7]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+[rank7]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank7]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+[rank7]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank7]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+[rank7]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank7]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 89, in __getitem__
+[rank7]:     image_paths, query, question_id, annotation, answer_page_idx = data['images'], data[
+[rank7]: KeyError: 'images'
+
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 569, in <module>
+[rank6]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank6]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 384, in evaluate_chat_model
+[rank6]:     for _, (inputs, questions, question_ids, annotations, num_token_list, messages_high, messages_low, answer_page_idxs, num_image_list) in tqdm(enumerate(dataloader)):
+[rank6]:   File "/root/miniconda3/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+[rank6]:     for obj in iterable:
+[rank6]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+[rank6]:     data = self._next_data()
+[rank6]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+[rank6]:     return self._process_data(data)
+[rank6]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+[rank6]:     data.reraise()
+[rank6]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+[rank6]:     raise exception
+[rank6]: KeyError: Caught KeyError in DataLoader worker process 0.
+[rank6]: Original Traceback (most recent call last):
+[rank6]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+[rank6]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank6]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+[rank6]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank6]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+[rank6]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank6]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 89, in __getitem__
+[rank6]:     image_paths, query, question_id, annotation, answer_page_idx = data['images'], data[
+[rank6]: KeyError: 'images'
+
+W1216 18:19:27.911000 139749901450112 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 188208 closing signal SIGTERM
+W1216 18:19:27.912000 139749901450112 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 188210 closing signal SIGTERM
+W1216 18:19:27.913000 139749901450112 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 188211 closing signal SIGTERM
+W1216 18:19:27.913000 139749901450112 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 188212 closing signal SIGTERM
+W1216 18:19:27.914000 139749901450112 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 188213 closing signal SIGTERM
+W1216 18:19:27.914000 139749901450112 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 188214 closing signal SIGTERM
+W1216 18:19:27.915000 139749901450112 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 188215 closing signal SIGTERM
+E1216 18:19:28.557000 139749901450112 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 1 (pid: 188209) of binary: /root/miniconda3/bin/python
+Traceback (most recent call last):
+  File "/root/miniconda3/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/root/miniconda3/lib/python3.10/site-packages/zhenjin_utils/import_hooks/torchrun_args_hook.py", line 28, in new_run
+    return module.old_run(*func_args, **func_kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+infer_mpdocvqa_dynamic_unsupervised_cls4.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-12-16_18:19:27
+  host      : kmaker-kmaker-033145099100
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 188209)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
++ '[' vqa-slidevqa-val-unsupervised-cls-v4-top3_mix == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix ']'

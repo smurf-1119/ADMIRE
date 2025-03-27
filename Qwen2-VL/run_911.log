@@ -1,0 +1,397 @@
+nohup: ignoring input
+run sh: `/opt/conda/bin/python -m torch.distributed.run --nproc_per_node 8 /mntnlp/zqp/swift/swift/cli/sft.py --model_type qwen2-vl-7b-instruct --model_id_or_path /gruntdata/heyuan2/workspace/bobblair.wj/zqp/Qwen__Qwen2-VL-7B-Instruct --sft_type lora --dataset data/sft_dataset/train.jsonl --deepspeed default-zero2 --lora_rank 8 --lora_alpha 16 --target_modules AUTO --learning_rate 1e-4 --gradient_accumulation_steps 2 --freeze_vit False --eval_steps 200 --logging_steps 5 --batch_size 2 --dataloader_num_workers 1 --num_train_epochs 2`
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[INFO:swift] Successfully registered `/mntnlp/zqp/swift/swift/llm/data/dataset_info.json`
+[INFO:swift] No vLLM installed, if you are using vLLM, you will get `ImportError: cannot import name 'get_vllm_engine' from 'swift.llm'`
+[INFO:swift] No LMDeploy installed, if you are using LMDeploy, you will get `ImportError: cannot import name 'prepare_lmdeploy_engine_template' from 'swift.llm'`
+[INFO:swift] Start time of running main: 2024-09-11 20:52:49.559784
+[INFO:swift] Setting template_type: qwen2-vl
+[INFO:swift] Using deepspeed: {'fp16': {'enabled': 'auto', 'loss_scale': 0, 'loss_scale_window': 1000, 'initial_scale_power': 16, 'hysteresis': 2, 'min_loss_scale': 1}, 'bf16': {'enabled': 'auto'}, 'optimizer': {'type': 'AdamW', 'params': {'lr': 'auto', 'betas': 'auto', 'eps': 'auto', 'weight_decay': 'auto'}}, 'scheduler': {'type': 'WarmupCosineLR', 'params': {'total_num_steps': 'auto', 'warmup_num_steps': 'auto'}}, 'zero_optimization': {'stage': 2, 'offload_optimizer': {'device': 'none', 'pin_memory': True}, 'allgather_partitions': True, 'allgather_bucket_size': 200000000.0, 'overlap_comm': True, 'reduce_scatter': True, 'reduce_bucket_size': 200000000.0, 'contiguous_gradients': True}, 'gradient_accumulation_steps': 'auto', 'gradient_clipping': 'auto', 'steps_per_print': 2000, 'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'wall_clock_breakdown': False}
+[INFO:swift] Setting args.lazy_tokenize: True
+[2024-09-11 20:52:50,051] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-09-11 20:52:51,036] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-09-11 20:52:51,278] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-09-11 20:52:51,303] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-09-11 20:52:51,318] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-09-11 20:52:51,405] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-09-11 20:52:51,405] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-09-11 20:52:51,408] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-09-11 20:52:51,631] [INFO] [comm.py:652:init_distributed] cdb=None
+[2024-09-11 20:52:51,632] [INFO] [comm.py:683:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2024-09-11 20:52:52,903] [INFO] [comm.py:652:init_distributed] cdb=None
+[2024-09-11 20:52:53,125] [INFO] [comm.py:652:init_distributed] cdb=None
+[2024-09-11 20:52:53,146] [INFO] [comm.py:652:init_distributed] cdb=None
+[2024-09-11 20:52:53,149] [INFO] [comm.py:652:init_distributed] cdb=None
+[2024-09-11 20:52:53,172] [INFO] [comm.py:652:init_distributed] cdb=None
+[2024-09-11 20:52:53,181] [INFO] [comm.py:652:init_distributed] cdb=None
+[2024-09-11 20:52:53,222] [INFO] [comm.py:652:init_distributed] cdb=None
+[INFO:swift] output_dir: /mntnlp/zqp/physical_report/Qwen2-VL/output/qwen2-vl-7b-instruct/v2-20240911-205251
+[INFO:swift] args: SftArguments(model_type='qwen2-vl-7b-instruct', model_id_or_path='/gruntdata/heyuan2/workspace/bobblair.wj/zqp/Qwen__Qwen2-VL-7B-Instruct', model_revision='master', full_determinism=False, sft_type='lora', freeze_parameters=[], freeze_vit=False, freeze_parameters_ratio=0.0, additional_trainable_parameters=[], tuner_backend='peft', template_type='qwen2-vl', output_dir='/mntnlp/zqp/physical_report/Qwen2-VL/output/qwen2-vl-7b-instruct/v2-20240911-205251', add_output_dir_suffix=True, ddp_backend='nccl', ddp_find_unused_parameters=None, ddp_broadcast_buffers=None, ddp_timeout=1800, seed=42, resume_from_checkpoint=None, resume_only_model=False, ignore_data_skip=False, dtype='bf16', packing=False, train_backend='transformers', tp=1, pp=1, min_lr=None, sequence_parallel=False, model_kwargs=None, loss_name=None, dataset=['data/sft_dataset/train.jsonl'], val_dataset=[], dataset_seed=42, dataset_test_ratio=0.01, use_loss_scale=False, loss_scale_config_path='/mntnlp/zqp/swift/swift/llm/agent/default_loss_scale_config.json', system=None, tools_prompt='react_en', max_length=2048, truncation_strategy='delete', check_dataset_strategy='none', streaming=False, streaming_val_size=0, streaming_buffer_size=16384, model_name=[None, None], model_author=[None, None], quant_method=None, quantization_bit=0, hqq_axis=0, hqq_dynamic_config_path=None, bnb_4bit_comp_dtype='bf16', bnb_4bit_quant_type='nf4', bnb_4bit_use_double_quant=True, bnb_4bit_quant_storage=None, rescale_image=-1, target_modules='^(model)(?!.*(lm_head|output|emb|wte|shared)).*', target_regex=None, modules_to_save=[], lora_rank=8, lora_alpha=16, lora_dropout=0.05, lora_bias_trainable='none', lora_dtype='AUTO', lora_lr_ratio=None, use_rslora=False, use_dora=False, init_lora_weights='true', fourier_n_frequency=2000, fourier_scaling=300.0, rope_scaling=None, boft_block_size=4, boft_block_num=0, boft_n_butterfly_factor=1, boft_dropout=0.0, vera_rank=256, vera_projection_prng_key=0, vera_dropout=0.0, vera_d_initial=0.1, adapter_act='gelu', adapter_length=128, use_galore=False, galore_target_modules=None, galore_rank=128, galore_update_proj_gap=50, galore_scale=1.0, galore_proj_type='std', galore_optim_per_parameter=False, galore_with_embedding=False, galore_quantization=False, galore_proj_quant=False, galore_proj_bits=4, galore_proj_group_size=256, galore_cos_threshold=0.4, galore_gamma_proj=2, galore_queue_size=5, adalora_target_r=8, adalora_init_r=12, adalora_tinit=0, adalora_tfinal=0, adalora_deltaT=1, adalora_beta1=0.85, adalora_beta2=0.85, adalora_orth_reg_weight=0.5, ia3_feedforward_modules=[], llamapro_num_new_blocks=4, llamapro_num_groups=None, neftune_noise_alpha=None, neftune_backend='transformers', lisa_activated_layers=0, lisa_step_interval=20, reft_layer_key=None, reft_layers=None, reft_rank=4, reft_intervention_type='LoreftIntervention', reft_args=None, use_liger=False, gradient_checkpointing=True, deepspeed={'fp16': {'enabled': 'auto', 'loss_scale': 0, 'loss_scale_window': 1000, 'initial_scale_power': 16, 'hysteresis': 2, 'min_loss_scale': 1}, 'bf16': {'enabled': 'auto'}, 'optimizer': {'type': 'AdamW', 'params': {'lr': 'auto', 'betas': 'auto', 'eps': 'auto', 'weight_decay': 'auto'}}, 'scheduler': {'type': 'WarmupCosineLR', 'params': {'total_num_steps': 'auto', 'warmup_num_steps': 'auto'}}, 'zero_optimization': {'stage': 2, 'offload_optimizer': {'device': 'none', 'pin_memory': True}, 'allgather_partitions': True, 'allgather_bucket_size': 200000000.0, 'overlap_comm': True, 'reduce_scatter': True, 'reduce_bucket_size': 200000000.0, 'contiguous_gradients': True}, 'gradient_accumulation_steps': 'auto', 'gradient_clipping': 'auto', 'steps_per_print': 2000, 'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'wall_clock_breakdown': False}, batch_size=2, eval_batch_size=2, auto_find_batch_size=False, num_train_epochs=2, max_steps=-1, optim='adamw_torch', adam_beta1=0.9, adam_beta2=0.95, adam_epsilon=1e-08, learning_rate=0.0001, weight_decay=0.1, gradient_accumulation_steps=2, max_grad_norm=1, predict_with_generate=False, lr_scheduler_type='cosine', lr_scheduler_kwargs={}, warmup_ratio=0.05, warmup_steps=0, eval_steps=200, save_steps=200, save_only_model=False, save_total_limit=2, logging_steps=5, acc_steps=1, dataloader_num_workers=1, dataloader_pin_memory=True, dataloader_drop_last=False, push_to_hub=False, hub_model_id=None, hub_token=None, hub_private_repo=False, hub_strategy='every_save', test_oom_error=False, disable_tqdm=False, lazy_tokenize=True, preprocess_num_proc=1, use_flash_attn=None, ignore_args_error=False, check_model_is_latest=True, logging_dir='/mntnlp/zqp/physical_report/Qwen2-VL/output/qwen2-vl-7b-instruct/v2-20240911-205251/runs', report_to=['tensorboard'], acc_strategy='token', save_on_each_node=False, evaluation_strategy='steps', save_strategy='steps', save_safetensors=True, gpu_memory_fraction=None, include_num_input_tokens_seen=False, local_repo_path=None, custom_register_path=None, custom_dataset_info=None, device_map_config=None, device_max_memory=[], max_new_tokens=2048, do_sample=None, temperature=None, top_k=None, top_p=None, repetition_penalty=None, num_beams=1, fsdp='', fsdp_config=None, sequence_parallel_size=1, model_layer_cls_name=None, metric_warmup_step=0, fsdp_num=1, per_device_train_batch_size=None, per_device_eval_batch_size=None, eval_strategy=None, self_cognition_sample=0, train_dataset_mix_ratio=0.0, train_dataset_mix_ds=['ms-bench'], train_dataset_sample=-1, val_dataset_sample=None, safe_serialization=None, only_save_model=None, neftune_alpha=None, deepspeed_config_path=None, model_cache_dir=None, lora_dropout_p=None, lora_target_modules=[], lora_target_regex=None, lora_modules_to_save=[], boft_target_modules=[], boft_modules_to_save=[], vera_target_modules=[], vera_modules_to_save=[], ia3_target_modules=[], ia3_modules_to_save=[], custom_train_dataset_path=[], custom_val_dataset_path=[], device_map_config_path=None, push_hub_strategy=None)
+device_count: 8
+rank: 7, local_rank: 7, world_size: 8, local_world_size: 8
+device_count: 8
+rank: 6, local_rank: 6, world_size: 8, local_world_size: 8
+device_count: 8
+rank: 1, local_rank: 1, world_size: 8, local_world_size: 8
+[INFO:swift] Global seed set to 42
+device_count: 8device_count: 8
+
+rank: 2, local_rank: 2, world_size: 8, local_world_size: 8rank: 0, local_rank: 0, world_size: 8, local_world_size: 8
+
+device_count: 8
+rank: 3, local_rank: 3, world_size: 8, local_world_size: 8
+device_count: 8
+rank: 4, local_rank: 4, world_size: 8, local_world_size: 8
+device_count: 8
+rank: 5, local_rank: 5, world_size: 8, local_world_size: 8
+[INFO:swift] Loading the model using model_dir: /gruntdata/heyuan2/workspace/bobblair.wj/zqp/Qwen__Qwen2-VL-7B-Instruct
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+[INFO:swift] model_kwargs: {'low_cpu_mem_usage': True, 'device_map': {'': 0}}
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]./run.sh: line 18: 11291 Killed                  FPS=2 MAX_PIXELS=1003520 NPROC_PER_NODE=8 swift sft --model_type qwen2-vl-7b-instruct --model_id_or_path /gruntdata/heyuan2/workspace/bobblair.wj/zqp/Qwen__Qwen2-VL-7B-Instruct --sft_type lora --dataset data/sft_dataset/train.jsonl --deepspeed default-zero2 --lora_rank 8 --lora_alpha 16 --target_modules AUTO --learning_rate 1e-4 --gradient_accumulation_steps 2 --freeze_vit False --eval_steps 200 --logging_steps 5 --batch_size 2 --dataloader_num_workers 1 --num_train_epochs 2
+Loading checkpoint shards:  20%|██        | 1/5 [05:10<20:43, 310.89s/it]Loading checkpoint shards:  20%|██        | 1/5 [05:11<20:44, 311.12s/it]Loading checkpoint shards:  20%|██        | 1/5 [05:11<20:44, 311.10s/it]Loading checkpoint shards:  20%|██        | 1/5 [05:11<20:44, 311.14s/it]Loading checkpoint shards:  20%|██        | 1/5 [05:11<20:44, 311.14s/it]Loading checkpoint shards:  20%|██        | 1/5 [05:11<20:44, 311.14s/it]Loading checkpoint shards:  20%|██        | 1/5 [05:11<20:44, 311.17s/it]Loading checkpoint shards:  20%|██        | 1/5 [05:11<20:44, 311.15s/it]Loading checkpoint shards:  40%|████      | 2/5 [05:21<06:42, 134.11s/it]Loading checkpoint shards:  40%|████      | 2/5 [05:21<06:42, 134.22s/it]Loading checkpoint shards:  40%|████      | 2/5 [05:21<06:42, 134.21s/it]Loading checkpoint shards:  40%|████      | 2/5 [05:21<06:42, 134.25s/it]Loading checkpoint shards:  40%|████      | 2/5 [05:21<06:42, 134.30s/it]Loading checkpoint shards:  40%|████      | 2/5 [05:21<06:42, 134.26s/it]Loading checkpoint shards:  40%|████      | 2/5 [05:21<06:42, 134.26s/it]Loading checkpoint shards:  40%|████      | 2/5 [05:21<06:42, 134.26s/it]Loading checkpoint shards:  60%|██████    | 3/5 [06:32<03:31, 105.50s/it]Loading checkpoint shards:  60%|██████    | 3/5 [06:33<03:31, 105.60s/it]Loading checkpoint shards:  60%|██████    | 3/5 [06:33<03:31, 105.64s/it]Loading checkpoint shards:  60%|██████    | 3/5 [06:33<03:31, 105.61s/it]Loading checkpoint shards:  60%|██████    | 3/5 [06:33<03:31, 105.61s/it]Loading checkpoint shards:  60%|██████    | 3/5 [06:33<03:31, 105.61s/it]Loading checkpoint shards:  60%|██████    | 3/5 [06:33<03:31, 105.61s/it]Loading checkpoint shards:  60%|██████    | 3/5 [06:33<03:31, 105.63s/it]Loading checkpoint shards:  80%|████████  | 4/5 [06:43<01:07, 67.91s/it] Loading checkpoint shards:  80%|████████  | 4/5 [06:43<01:07, 67.98s/it] Loading checkpoint shards:  80%|████████  | 4/5 [06:43<01:07, 67.98s/it] Loading checkpoint shards:  80%|████████  | 4/5 [06:43<01:07, 67.99s/it] Loading checkpoint shards:  80%|████████  | 4/5 [06:43<01:07, 67.99s/it] Loading checkpoint shards:  80%|████████  | 4/5 [06:43<01:08, 68.00s/it] Loading checkpoint shards:  80%|████████  | 4/5 [06:43<01:07, 67.99s/it] Loading checkpoint shards:  80%|████████  | 4/5 [06:43<01:08, 68.01s/it] Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 44.36s/it]Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 81.15s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 44.34s/it]Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 81.17s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 44.34s/it]Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 81.16s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 44.35s/it]Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 81.17s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 44.35s/it]Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 81.17s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 44.35s/it]Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 81.16s/it]
+[INFO:swift] model.max_model_len: 32768
+[INFO:swift] model.hf_device_map: {'': 0}
+[INFO:swift] model_config: Qwen2VLConfig {
+  "_name_or_path": "/gruntdata/heyuan2/workspace/bobblair.wj/zqp/Qwen__Qwen2-VL-7B-Instruct",
+  "architectures": [
+    "Qwen2VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 28,
+  "model_type": "qwen2_vl",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.45.0.dev0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "in_chans": 3,
+    "model_type": "qwen2_vl",
+    "spatial_patch_size": 14
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 152064
+}
+
+[INFO:swift] model.generation_config: GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": 151645,
+  "max_new_tokens": 2048,
+  "pad_token_id": 151643,
+  "repetition_penalty": 1.05,
+  "temperature": 0.1,
+  "top_k": 1,
+  "top_p": 0.001
+}
+
+[INFO:swift] target_modules: ^(model)(?!.*(lm_head|output|emb|wte|shared)).*
+[INFO:swift] modules_to_save: []
+Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 44.36s/it]Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 81.17s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 44.37s/it]Loading checkpoint shards: 100%|██████████| 5/5 [06:45<00:00, 81.17s/it]
+[INFO:swift] lora_config: get_wrapped_class.<locals>.PeftWrapper(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path='/gruntdata/heyuan2/workspace/bobblair.wj/zqp/Qwen__Qwen2-VL-7B-Instruct', revision=None, task_type='CAUSAL_LM', inference_mode=False, r=8, target_modules='^(model)(?!.*(lm_head|output|emb|wte|shared)).*', lora_alpha=16, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=[], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_dtype=None, lorap_lr_ratio=None, lorap_emb_lr=1e-06)
+[INFO:swift] [base_model.model.visual.patch_embed.proj.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.norm1.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.norm1.bias]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.norm2.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.norm2.bias]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.attn.qkv.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.attn.qkv.bias]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.attn.proj.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.attn.proj.bias]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.mlp.fc1.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.mlp.fc1.bias]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.mlp.fc2.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.0.mlp.fc2.bias]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.1.norm1.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.1.norm1.bias]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.1.norm2.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.1.norm2.bias]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.1.attn.qkv.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.1.attn.qkv.bias]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] [base_model.model.visual.blocks.1.attn.proj.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
+[INFO:swift] ...
+[INFO:swift] PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): Qwen2VLForConditionalGeneration(
+      (visual): Qwen2VisionTransformerPretrainedModel(
+        (patch_embed): PatchEmbed(
+          (proj): Conv3d(3, 1280, kernel_size=(2, 14, 14), stride=(2, 14, 14), bias=False)
+        )
+        (rotary_pos_emb): VisionRotaryEmbedding()
+        (blocks): ModuleList(
+          (0-31): 32 x Qwen2VLVisionBlock(
+            (norm1): LayerNorm((1280,), eps=1e-06, elementwise_affine=True)
+            (norm2): LayerNorm((1280,), eps=1e-06, elementwise_affine=True)
+            (attn): VisionSdpaAttention(
+              (qkv): Linear(in_features=1280, out_features=3840, bias=True)
+              (proj): Linear(in_features=1280, out_features=1280, bias=True)
+            )
+            (mlp): VisionMlp(
+              (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+              (act): QuickGELUActivation()
+              (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+            )
+          )
+        )
+        (merger): PatchMerger(
+          (ln_q): LayerNorm((1280,), eps=1e-06, elementwise_affine=True)
+          (mlp): Sequential(
+            (0): Linear(in_features=5120, out_features=5120, bias=True)
+            (1): GELU(approximate='none')
+            (2): Linear(in_features=5120, out_features=3584, bias=True)
+          )
+        )
+      )
+      (model): Qwen2VLModel(
+        (embed_tokens): Embedding(152064, 3584)
+        (layers): ModuleList(
+          (0-27): 28 x Qwen2VLDecoderLayer(
+            (self_attn): Qwen2VLSdpaAttention(
+              (q_proj): lora.Linear(
+                (base_layer): Linear(in_features=3584, out_features=3584, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3584, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=3584, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (k_proj): lora.Linear(
+                (base_layer): Linear(in_features=3584, out_features=512, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3584, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=512, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (v_proj): lora.Linear(
+                (base_layer): Linear(in_features=3584, out_features=512, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3584, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=512, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=3584, out_features=3584, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3584, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=3584, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (rotary_emb): Qwen2VLRotaryEmbedding()
+            )
+            (mlp): Qwen2MLP(
+              (gate_proj): lora.Linear(
+                (base_layer): Linear(in_features=3584, out_features=18944, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3584, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=18944, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (up_proj): lora.Linear(
+                (base_layer): Linear(in_features=3584, out_features=18944, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3584, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=18944, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=18944, out_features=3584, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=18944, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=3584, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (act_fn): SiLU()
+            )
+            (input_layernorm): Qwen2RMSNorm((3584,), eps=1e-06)
+            (post_attention_layernorm): Qwen2RMSNorm((3584,), eps=1e-06)
+          )
+        )
+        (norm): Qwen2RMSNorm((3584,), eps=1e-06)
+        (rotary_emb): Qwen2VLRotaryEmbedding()
+      )
+      (lm_head): Linear(in_features=3584, out_features=152064, bias=False)
+    )
+  )
+)
+[INFO:swift] PeftModelForCausalLM: 8311.5607M Params (20.1851M Trainable [0.2429%]), 0.0019M Buffers.
+[INFO:swift] Setting model.config.use_cache: False
+[INFO:swift] Downloading the dataset from ModelScope, dataset_id: data/sft_dataset/train.jsonl
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mntnlp/zqp/swift/swift/cli/sft.py", line 5, in <module>
+[rank0]:     sft_main()
+[rank0]:   File "/mntnlp/zqp/swift/swift/utils/run_utils.py", line 32, in x_main
+[rank0]:     result = llm_x(args, **kwargs)
+[rank0]:   File "/mntnlp/zqp/swift/swift/llm/sft.py", line 274, in llm_sft
+[rank0]:     train_dataset, val_dataset = _get_train_val_dataset(args)
+[rank0]:   File "/mntnlp/zqp/swift/swift/llm/sft.py", line 33, in _get_train_val_dataset
+[rank0]:     train_dataset, val_dataset = get_dataset(
+[rank0]:   File "/mntnlp/zqp/swift/swift/llm/utils/dataset.py", line 2731, in get_dataset
+[rank0]:     dataset = get_function(
+[rank0]:   File "/mntnlp/zqp/swift/swift/llm/utils/dataset.py", line 476, in get_dataset_from_repo
+[rank0]:     dataset = load_ms_dataset(
+[rank0]:   File "/mntnlp/zqp/swift/swift/llm/utils/dataset.py", line 357, in load_ms_dataset
+[rank0]:     dataset = MsDataset.load(
+[rank0]:   File "/mntnlp/zqp/swift/swift/llm/utils/utils.py", line 85, in _msdataset_ddp_load
+[rank0]:     dataset = _old_msdataset_load(*args, **kwargs)
+[rank0]:   File "/opt/conda/lib/python3.8/site-packages/modelscope/msdatasets/ms_dataset.py", line 286, in load
+[rank0]:     dataset_id_on_hub, dataset_type = _api.get_dataset_id_and_type(
+[rank0]:   File "/opt/conda/lib/python3.8/site-packages/modelscope/hub/api.py", line 717, in get_dataset_id_and_type
+[rank0]:     datahub_raise_on_error(datahub_url, resp, r)
+[rank0]:   File "/opt/conda/lib/python3.8/site-packages/modelscope/hub/errors.py", line 156, in datahub_raise_on_error
+[rank0]:     request_id = rsp['RequestId']
+[rank0]: KeyError: 'RequestId'
+[rank0]:[W911 20:59:46.526454952 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W0911 20:59:48.139764 140328539830080 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 11817 closing signal SIGTERM
+W0911 20:59:48.140080 140328539830080 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 11818 closing signal SIGTERM
+W0911 20:59:48.140171 140328539830080 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 11819 closing signal SIGTERM
+W0911 20:59:48.140252 140328539830080 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 11820 closing signal SIGTERM
+W0911 20:59:48.140344 140328539830080 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 11821 closing signal SIGTERM
+W0911 20:59:48.140437 140328539830080 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 11822 closing signal SIGTERM
+W0911 20:59:48.140574 140328539830080 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 11823 closing signal SIGTERM
+E0911 20:59:49.784136 140328539830080 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 0 (pid: 11816) of binary: /opt/conda/bin/python
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/lib/python3.8/site-packages/torch/distributed/run.py", line 905, in <module>
+    main()
+  File "/opt/conda/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/opt/conda/lib/python3.8/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/opt/conda/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/opt/conda/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/mntnlp/zqp/swift/swift/cli/sft.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-09-11_20:59:48
+  host      : amed-55-033137098184
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 11816)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

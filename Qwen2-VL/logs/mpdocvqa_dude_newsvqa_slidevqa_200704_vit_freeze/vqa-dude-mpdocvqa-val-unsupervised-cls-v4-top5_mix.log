@@ -1,0 +1,88 @@
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa_200704_vit_freeze/1e-6/qwen2-vl-7b-instruct/v1-20241216-143438/checkpoint-9434/
++ DATASET=vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix
++ GPUS=2
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa_200704_vit_freeze/1e-6/qwen2-vl-7b-instruct/v1-20241216-143438/checkpoint-9434/
+++ pwd
++ export PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ echo 'CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa_200704_vit_freeze/1e-6/qwen2-vl-7b-instruct/v1-20241216-143438/checkpoint-9434/'
+CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa_200704_vit_freeze/1e-6/qwen2-vl-7b-instruct/v1-20241216-143438/checkpoint-9434/
++ MASTER_PORT=33008
++ PORT=62621
++ GPUS=2
++ export MASTER_PORT=33008
++ MASTER_PORT=33008
++ export PORT=62621
++ PORT=62621
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ torchrun --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --nproc_per_node=2 --master_port=33008 infer_mpdocvqa_dynamic_unsupervised_cls4.py --checkpoint /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa_200704_vit_freeze/1e-6/qwen2-vl-7b-instruct/v1-20241216-143438/checkpoint-9434/ --datasets dude_mpdocvqa_val --max-pixels-low 200704 --max-pixels-high 802816 --out-dir ./res/dude-mpdoc-vqa --dynamic --select-mode mix_topk --select-image-num 5
+datasets: ['dude_mpdocvqa_val']
+datasets: ['dude_mpdocvqa_val']
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 554, in <module>
+[rank1]:     torch.cuda.set_device(int(os.getenv('LOCAL_RANK', 0)))
+[rank1]:   File "/root/miniconda3/lib/python3.10/site-packages/torch/cuda/__init__.py", line 420, in set_device
+[rank1]:     torch._C._cuda_setDevice(device)
+[rank1]: RuntimeError: CUDA error: invalid device ordinal
+[rank1]: CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+[rank1]: For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+[rank1]: Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.41it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.33it/s][rank1]:[W1219 00:03:16.331490900 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.61it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.81it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.57it/s]
+W1219 00:03:17.091000 140653845339008 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 388222 closing signal SIGTERM
+E1219 00:03:17.205000 140653845339008 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 1 (pid: 388224) of binary: /root/miniconda3/bin/python
+Traceback (most recent call last):
+  File "/root/miniconda3/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/root/miniconda3/lib/python3.10/site-packages/zhenjin_utils/import_hooks/torchrun_args_hook.py", line 28, in new_run
+    return module.old_run(*func_args, **func_kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+infer_mpdocvqa_dynamic_unsupervised_cls4.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-12-19_00:03:17
+  host      : kmaker-kmaker-033145099100
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 388224)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix ']'

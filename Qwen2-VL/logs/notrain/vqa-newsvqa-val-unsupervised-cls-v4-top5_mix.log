@@ -1,0 +1,837 @@
++ CHECKPOINT=/gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct
++ DATASET=vqa-newsvqa-val-unsupervised-cls-v4-top5_mix
++ GPUS=8
++ CHECKPOINT=/gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct
+++ pwd
++ export PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ echo 'CHECKPOINT: /gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct'
+CHECKPOINT: /gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct
++ MASTER_PORT=20027
++ PORT=62621
++ GPUS=8
++ export MASTER_PORT=20027
++ MASTER_PORT=20027
++ export PORT=62621
++ PORT=62621
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix ']'
++ torchrun --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --nproc_per_node=8 --master_port=20027 infer_mpdocvqa_dynamic_unsupervised_cls4.py --checkpoint /gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct --max-pixels-low 200704 --max-pixels-high 802816 --datasets newsvqa_val --out-dir ./res/news-vqa --dynamic --select-mode mix_topk --select-image-num 5
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.99it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.88it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.25it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  4.12it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.98it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00,  4.27it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  4.26it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.36it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.23it/s]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00,  4.27it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.80it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.58it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.62it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.56it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.60it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  3.54it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.38it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.21it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  4.31it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.99it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.91it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.96it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.94it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00,  3.96it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  4.59it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  3.99it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  3.99it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  4.03it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  4.03it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00,  4.04it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00,  4.45it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:01<00:00,  4.04it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:01<00:00,  4.04it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00,  4.08it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00,  4.08it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:01<00:00,  4.05it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.40it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.12it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.04it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.16it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.07it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.14it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.05it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.14it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.06it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.09it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  4.02it/s]
+0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]['MODI GOVT'] 432 9269
+1it [00:03,  3.99s/it]["How it'll react to vaccines"] 432 9269
+1it [00:04,  4.06s/it]['Air emergency'] 425 9137
+1it [00:03,  3.70s/it]['UK, South Africa, Brazil, Bangladesh, Botswana, China, Mauritius'] 432 9266
+1it [00:04,  4.16s/it]['Blockchain Gaming + Decentralised Finance'] 432 9265
+1it [00:03,  3.82s/it]['Crypto'] 432 9270
+1it [00:03,  3.62s/it]['370'] 432 9273
+1it [00:03,  3.63s/it]['South Africa, U.K., EU countries, Brazil'] 432 9277
+1it [00:03,  3.85s/it]['RBI'] 432 9266
+2it [00:06,  3.02s/it]['Experts'] 432 9272
+2it [00:06,  3.03s/it]['Centre'] 432 9267
+2it [00:05,  2.86s/it]['BV Nagarathna'] 425 9141
+2it [00:06,  3.13s/it]['Yes'] 432 9268
+2it [00:06,  2.93s/it]['Private crypto'] 432 9266
+2it [00:05,  2.86s/it]['MODI GOVT'] 425 9139
+2it [00:06,  2.89s/it]['South Africa'] 432 9277
+2it [00:06,  2.96s/it]['Parl'] 432 9267
+3it [00:08,  2.70s/it]["Omicron-variant of 'Concern'"] 432 9271
+3it [00:08,  2.78s/it]['Air emergency meet'] 432 9270
+3it [00:08,  2.62s/it]['August 16'] 425 9148
+3it [00:08,  2.80s/it]['Basic knowledge of blockchain gaming and decentralized finance.'] 432 9268
+3it [00:08,  2.74s/it]['SEBI'] 432 9267
+3it [00:08,  2.61s/it]['Crypto Bill'] 425 9139
+3it [00:08,  2.63s/it]['Botswana'] 432 9277
+3it [00:08,  2.67s/it]['All PVT Cryptocurrencies'] 432 9267
+4it [00:11,  2.59s/it]['Young People'] 432 9272
+4it [00:11,  2.59s/it]['Non-smokers'] 432 9268
+4it [00:10,  2.51s/it]['3'] 432 9274
+4it [00:11,  2.64s/it]['OMICRON SCARE'] 432 9266
+4it [00:11,  2.60s/it]['For people to declare these assets'] 425 9138
+4it [00:10,  2.53s/it]['Winter Session'] 432 9270
+4it [00:10,  2.51s/it]['Botswana'] 432 9277
+4it [00:10,  2.54s/it]['Yes'] 432 9268
+5it [00:13,  2.51s/it]['Omicron'] 432 9277
+5it [00:13,  2.49s/it]['Severe lung damage'] 432 9266
+5it [00:13,  2.46s/it]['Yes'] 432 9270
+5it [00:13,  2.49s/it]['Neeraj Chopra'] 432 9275
+5it [00:13,  2.60s/it]['Central Bank'] 432 9268
+5it [00:13,  2.47s/it]['Winter session'] 432 9268
+5it [00:13,  2.46s/it]['Botswana'] 432 9277
+5it [00:13,  2.47s/it]['Yes'] 432 9270
+6it [00:15,  2.45s/it]['Omicron'] 425 9141
+6it [00:15,  2.44s/it]['Non-smokers'] 432 9270
+6it [00:15,  2.40s/it]['Over 200 points'] 425 9136
+6it [00:15,  2.46s/it]['2nd Cabinet Committee'] 432 9274
+6it [00:16,  2.56s/it]['Fiat currency'] 432 9268
+6it [00:15,  2.44s/it]['PRIVATE CRYPTOCURRENCY'] 432 9266
+6it [00:15,  2.44s/it]['China'] 432 9277
+6it [00:15,  2.41s/it]['Yes'] 425 9136
+7it [00:18,  2.39s/it]['India'] 432 9280
+7it [00:18,  2.39s/it]['Severe asthma'] 425 9136
+7it [00:17,  2.37s/it]['Sensex'] 432 9271
+7it [00:18,  2.43s/it]['Afghanistan'] 432 9271
+7it [00:18,  2.52s/it]['Banking systems'] 425 9132
+7it [00:17,  2.41s/it]['MODI GOVT'] 425 9136
+7it [00:17,  2.42s/it]['China'] 432 9277
+7it [00:17,  2.38s/it]['No'] 432 9266
+8it [00:20,  2.37s/it]['South Africa'] 432 9271
+8it [00:20,  2.37s/it]['83%'] 432 9268
+8it [00:19,  2.34s/it]['Nifty'] 425 9137
+8it [00:20,  2.38s/it]['Yes'] 432 9265
+8it [00:20,  2.39s/it]['Zimbabwe'] 432 9277
+8it [00:20,  2.37s/it]['Jaishankar'] 432 9277
+8it [00:21,  2.51s/it]['Bill to bar PVT Cryptos'] 425 9138
+8it [00:20,  2.43s/it]['Yes'] 432 9265
+9it [00:22,  2.35s/it]['India'] 425 9146
+9it [00:22,  2.33s/it]['Bronchial asthma'] 432 9267
+9it [00:22,  2.35s/it]['100'] 425 9136
+9it [00:22,  2.37s/it]['Yes'] 432 9267
+9it [00:22,  2.39s/it]['Zimbabwe'] 432 9277
+9it [00:22,  2.38s/it]['NY'] 432 9272
+9it [00:23,  2.48s/it]['Winter Session'] 432 9268
+9it [00:22,  2.41s/it]["Centre's curb"] 432 9267
+10it [00:25,  2.37s/it]['Indian govt calls for stricter screening.'] 432 9281
+10it [00:25,  2.39s/it]['Toxic air'] 432 9266
+10it [00:24,  2.34s/it]['New Covid variant'] 432 9264
+10it [00:25,  2.37s/it]['Merits of own CBDC'] 432 9267
+10it [00:24,  2.41s/it]['SINGAPORE'] 432 9277
+10it [00:24,  2.39s/it]['26'] 432 9271
+10it [00:24,  2.39s/it]['TTP, ISIS, AL QAEDA'] 432 9267
+10it [00:26,  2.51s/it]['Laundering, terror financing'] 432 9266
+11it [00:27,  2.39s/it]['12'] 432 9276
+11it [00:27,  2.37s/it]['Millions'] 432 9268
+11it [00:26,  2.32s/it]['Market'] 432 9267
+11it [00:27,  2.35s/it]['Britcoin'] 432 9268
+11it [00:27,  2.39s/it]['Parl'] 432 9269
+11it [00:27,  2.38s/it]['SINGAPORE'] 432 9277
+11it [00:27,  2.39s/it]['NATO'] 432 9269
+11it [00:28,  2.48s/it]['Over promise'] 432 9269
+12it [00:29,  2.39s/it]['Test-Track-Treat'] 432 9274
+12it [00:29,  2.39s/it]['Delhi-NCR'] 432 9265
+12it [00:29,  2.33s/it]['Sensex, Nifty'] 432 9265
+12it [00:29,  2.36s/it]['Advanced'] 432 9268
+12it [00:29,  2.38s/it]['Cards'] 432 9267
+12it [00:29,  2.36s/it]['SA, Hong Kong & Botswana'] 432 9273
+12it [00:29,  2.42s/it]['J&K'] 432 9272
+12it [00:31,  2.46s/it]['Experts, Players'] 432 9269
+13it [00:32,  2.39s/it]['Health Secy'] 432 9276
+13it [00:32,  2.38s/it]['Respiratory Ailments'] 432 9266
+13it [00:31,  2.35s/it]['Red'] 432 9268
+13it [00:32,  2.35s/it]["RBI's Official Digital Currency"] 432 9267
+13it [00:32,  2.39s/it]['Before 2022 Winter Olympics'] 432 9268
+13it [00:32,  2.41s/it]['RT-PCR'] 432 9276
+13it [00:32,  2.41s/it]['Afghanistan'] 432 9275
+13it [00:33,  2.46s/it]['Tech'] 432 9269
+14it [00:34,  2.37s/it]["India's Genomic Consortium"] 425 9143
+14it [00:34,  2.38s/it]['Bronze'] 263 5720
+14it [00:33,  2.08s/it]['Stay indoors'] 432 9270
+14it [00:33,  2.33s/it]['41'] 263 5726
+15it [00:35,  1.90s/it]['Yes'] 432 9270
+14it [00:34,  2.39s/it]['creation of rbi issued digital currency'] 432 9267
+14it [00:34,  2.42s/it]['RT-PCR'] 432 9273
+14it [00:34,  2.41s/it]['EU'] 432 9273
+14it [00:36,  2.45s/it]['Yes'] 432 9270
+15it [00:36,  2.36s/it]['variant'] 432 9270
+15it [00:37,  2.36s/it]['Double percentage of hospital visits from 22% to 44%'] 432 9268
+15it [00:36,  2.43s/it]['Tokyo 2020'] 263 5723
+16it [00:36,  1.81s/it]["Simplifies execution of govt's monetary policy"] 432 9266
+15it [00:37,  2.44s/it]['Laundering, terror financing'] 432 9265
+15it [00:37,  2.44s/it]['U.P. GOVT'] 432 9267
+15it [00:37,  2.43s/it]['Yes'] 425 9134
+16it [00:39,  2.35s/it]['56 Crore'] 432 9272
+15it [00:38,  2.45s/it]['Rajesh Bhushan'] 432 9269
+16it [00:39,  2.38s/it]['2024'] 263 5723
+17it [00:38,  1.72s/it]['INDIA TODAY'] 425 9136
+16it [00:38,  2.39s/it]['Paris'] 263 5724
+18it [00:39,  1.65s/it]['Yes'] 425 9143
+16it [00:39,  2.40s/it]['Over promise'] 432 9268
+16it [00:39,  2.42s/it]['Pakistan'] 432 9276
+16it [00:39,  2.42s/it]['Regulate'] 432 9269
+17it [00:41,  2.36s/it]['U.P'] 432 9273
+16it [00:40,  2.45s/it]['States & UTs'] 432 9278
+17it [00:41,  2.39s/it]['no action taken yet'] 432 9272
+17it [00:41,  2.37s/it]['Silver'] 263 5725
+19it [00:41,  1.58s/it]['No'] 432 9272
+17it [00:41,  2.38s/it]['Experts, Players'] 432 9270
+17it [00:41,  2.40s/it]['Poor Air'] 432 9274
+17it [00:41,  2.41s/it]['Freestyle wrestling'] 256 5594
+20it [00:42,  1.55s/it]['7.9%'] 425 9136
+18it [00:44,  2.38s/it]['1300CR'] 432 9277
+17it [00:43,  2.46s/it]['Health Secy'] 432 9268
+18it [00:44,  2.40s/it]['Delhi govt'] 425 9134
+18it [00:43,  2.35s/it]['Bronze'] 263 5722
+21it [00:44,  1.53s/it]['Yes'] 432 9267
+18it [00:43,  2.36s/it]['Regulate & not stop crypto'] 432 9268
+18it [00:44,  2.43s/it]['Indian hockey team'] 432 9266
+18it [00:44,  2.41s/it]['Over 8 Lakh Crore'] 432 9266
+19it [00:46,  2.41s/it]['Indian government'] 432 9271
+19it [00:46,  2.39s/it]['Welterweight boxing'] 263 5722
+22it [00:45,  1.53s/it]['ALIGARH BE NAMED HARIGARH'] 432 9271
+18it [00:46,  2.53s/it]['HOLD MEET ON POLLUTION'] 432 9264
+19it [00:45,  2.38s/it]['No'] 425 9138
+19it [00:46,  2.33s/it]['PV SINDHU'] 256 5593
+23it [00:47,  1.53s/it]['Stop Crypto'] 432 9269
+19it [00:46,  2.41s/it]['golden temple'] 432 9266
+19it [00:46,  2.40s/it]['No'] 432 9266
+20it [00:48,  2.38s/it]['Health Secy'] 432 9275
+20it [00:49,  2.39s/it]['SC TO CENTRE'] 432 9270
+20it [00:48,  2.37s/it]['J&K'] 432 9276
+19it [00:48,  2.51s/it]['Bronze'] 263 5723
+24it [00:48,  1.51s/it]['No'] 432 9270
+20it [00:48,  2.32s/it]['Promote underlying crypto tech'] 432 9268
+20it [00:49,  2.42s/it]['Indian hockey team'] 432 9266
+20it [00:49,  2.40s/it]['$1BN'] 432 9269
+21it [00:51,  2.39s/it]['Bronze'] 263 5720
+25it [00:49,  1.50s/it]['TESTING'] 432 9273
+21it [00:51,  2.38s/it]['States'] 432 9270
+21it [00:50,  2.35s/it]['Best Olympic Performance'] 432 9270
+20it [00:51,  2.49s/it]['Yes'] 432 9269
+21it [00:50,  2.32s/it]['32'] 263 5726
+26it [00:51,  1.50s/it]['Messi'] 432 9267
+21it [00:51,  2.40s/it]['Arvind Kejriwal'] 432 9273
+21it [00:51,  2.43s/it]['600%'] 432 9268
+22it [00:53,  2.39s/it]['3'] 432 9278
+22it [00:53,  2.36s/it]['fight pollution'] 432 9268
+22it [00:52,  2.33s/it]['Centre'] 263 5723
+27it [00:52,  1.48s/it]['Honouring Tokyo Heroes'] 432 9271
+21it [00:53,  2.50s/it]['Omicron'] 432 9265
+22it [00:53,  2.33s/it]['India'] 432 9277
+22it [00:53,  2.39s/it]['Tokyo returnees'] 263 5723
+28it [00:54,  1.49s/it]['Champs'] 432 9267
+22it [00:53,  2.40s/it]['Virtual coin'] 432 9266
+23it [00:56,  2.39s/it]['S-Africa'] 425 9147
+23it [00:56,  2.36s/it]['lockdown'] 432 9270
+23it [00:55,  2.32s/it]['Olympic performance'] 432 9272
+22it [00:55,  2.48s/it]['Bronze'] 263 5724
+29it [00:55,  1.49s/it]['The virus'] 432 9271
+23it [00:55,  2.31s/it]['PM'] 432 9269
+23it [00:56,  2.39s/it]['one'] 432 9268
+23it [00:56,  2.39s/it]['El Salvador'] 432 9267
+24it [00:58,  2.39s/it]["'AT RISK' CLASS"] 425 9147
+24it [00:58,  2.38s/it]['499'] 432 9270
+24it [00:57,  2.32s/it]['Freestyle wrestling'] 256 5592
+30it [00:57,  1.48s/it]['Neeraj Chopra'] 432 9283
+23it [00:58,  2.48s/it]['Omicron'] 432 9265
+24it [00:57,  2.32s/it]['Gold'] 263 5724
+31it [00:58,  1.48s/it]['new variant'] 432 9266
+24it [00:58,  2.38s/it]['two'] 432 9268
+24it [00:58,  2.39s/it]['$3 trillion'] 425 9137
+25it [01:00,  2.39s/it]['Nov 12'] 432 9267
+25it [00:59,  2.33s/it]['Test, Treat, Trace and Vaccinate'] 432 9277
+25it [01:00,  2.42s/it]["Men's Javelin Throw"] 432 9278
+24it [01:00,  2.48s/it]['First Gold in Track & Field'] 263 5722
+32it [01:00,  1.51s/it]['India'] 432 9269
+25it [01:00,  2.31s/it]['Mutation'] 432 9268
+25it [01:00,  2.36s/it]['four'] 432 9268
+25it [01:01,  2.38s/it]['Prominent Businesses'] 425 9137
+26it [01:03,  2.37s/it]['318'] 432 9270
+26it [01:02,  2.33s/it]['Red carpet welcome'] 263 5723
+33it [01:01,  1.50s/it]['VACCINATE'] 432 9282
+26it [01:03,  2.40s/it]['Gold'] 432 9282
+25it [01:03,  2.45s/it]['PM Modi'] 432 9267
+26it [01:02,  2.31s/it]['Flights'] 425 9143
+26it [01:03,  2.36s/it]['Tokyo'] 432 9268
+26it [01:03,  2.39s/it]['Canada'] 425 9137
+27it [01:05,  2.37s/it]['Delhi'] 425 9134
+34it [01:04,  1.75s/it]['November 16'] 432 9265
+27it [01:04,  2.35s/it]['Omicron'] 425 9140
+27it [01:05,  2.39s/it]['Mirabai Chanu'] 432 9286
+26it [01:05,  2.45s/it]['Top govt officials'] 432 9265
+27it [01:04,  2.32s/it]['New variant'] 432 9266
+27it [01:05,  2.36s/it]['Six in London Olympics'] 432 9269
+27it [01:05,  2.41s/it]['Yes'] 432 9272
+28it [01:07,  2.36s/it]["Capital's"] 432 9269
+35it [01:06,  1.93s/it]['Jets'] 432 9266
+28it [01:06,  2.34s/it]['SC'] 432 9269
+28it [01:08,  2.36s/it]['Weightlifting'] 432 9283
+27it [01:08,  2.42s/it]['30+'] 432 9278
+28it [01:07,  2.32s/it]["Hon'ble PM"] 425 9137
+28it [01:08,  2.37s/it]['Silver'] 432 9270
+28it [01:08,  2.39s/it]['Delhi'] 432 9270
+36it [01:08,  2.05s/it]['neither money nor foreign currency'] 425 9138
+29it [01:10,  2.47s/it]['Sky high feats'] 432 9266
+29it [01:09,  2.43s/it]['Centre & States'] 432 9269
+29it [01:10,  2.45s/it]['Silver'] 432 9284
+28it [01:10,  2.40s/it]['Mutation'] 432 9264
+29it [01:09,  2.40s/it]['SC pollution hearing'] 432 9268
+37it [01:11,  2.15s/it]['November 27th'] 432 9265
+29it [01:10,  2.48s/it]['Tokyo'] 432 9271
+29it [01:10,  2.48s/it]['Centre'] 432 9268
+30it [01:11,  2.38s/it]['Yes'] 432 9269
+30it [01:12,  2.43s/it]['Court order to act'] 432 9270
+30it [01:13,  2.42s/it]['Yes'] 432 9268
+30it [01:11,  2.36s/it]['Ravi Kumar Dahiya'] 432 9287
+29it [01:13,  2.51s/it]['429'] 432 9265
+38it [01:13,  2.24s/it]['Prime Minister'] 432 9266
+30it [01:13,  2.46s/it]['4'] 432 9271
+30it [01:13,  2.44s/it]['Anti-pollution plan'] 432 9267
+31it [01:14,  2.38s/it]['Yes'] 432 9270
+31it [01:15,  2.41s/it]['Delhi'] 432 9266
+31it [01:15,  2.39s/it]['South Africa'] 432 9269
+31it [01:14,  2.34s/it]["MEN'S 57KG FREESTYLE WRESTLING"] 432 9284
+30it [01:15,  2.55s/it]['Centre, Delhi'] 432 9268
+39it [01:16,  2.29s/it]['41'] 432 9271
+31it [01:15,  2.41s/it]['Centre, States'] 432 9268
+32it [01:16,  2.38s/it]['No'] 432 9265
+32it [01:17,  2.40s/it]['Covid-19 Public Health Response'] 432 9265
+31it [01:15,  2.49s/it]['Breath'] 432 9266
+32it [01:17,  2.37s/it]['Botswana, Hong Kong & Israel'] 432 9269
+32it [01:16,  2.37s/it]['Silver'] 432 9288
+31it [01:18,  2.49s/it]['Air Quality'] 432 9265
+40it [01:18,  2.32s/it]['Indian'] 432 9266
+33it [01:18,  2.37s/it]['Tokyo'] 432 9270
+32it [01:18,  2.41s/it]['Yes'] 432 9264
+33it [01:20,  2.38s/it]['World'] 432 9265
+32it [01:18,  2.45s/it]['Entry of non essential vehicles'] 432 9264
+33it [01:20,  2.38s/it]['Skirt immune response'] 432 9268
+33it [01:18,  2.36s/it]['Lovlina Borgohain'] 432 9284
+32it [01:20,  2.48s/it]['Silver'] 432 9270
+33it [01:20,  2.39s/it]['Talent Hunt'] 432 9267
+34it [01:21,  2.36s/it]['OMICRON ALERT'] 432 9267
+41it [01:20,  2.35s/it]['Fight'] 432 9270
+33it [01:20,  2.41s/it]['Blockchain software'] 432 9269
+34it [01:22,  2.39s/it]['Schools & Colleges'] 432 9266
+34it [01:22,  2.39s/it]['Young people'] 432 9269
+34it [01:21,  2.35s/it]["Women's Welterweight Boxing"] 432 9284
+33it [01:23,  2.49s/it]['India'] 432 9267
+34it [01:22,  2.39s/it]['Weightlifting'] 432 9271
+34it [01:22,  2.39s/it]['A woman in a white jacket and glasses is speaking.'] 432 9265
+35it [01:23,  2.42s/it]['Exchanges or brokers'] 432 9267
+35it [01:24,  2.41s/it]['Next order'] 432 9267
+35it [01:24,  2.38s/it]['India'] 432 9268
+42it [01:23,  2.44s/it]['Britain'] 432 9274
+35it [01:23,  2.33s/it]['Bronze'] 432 9285
+34it [01:25,  2.45s/it]['Centre'] 432 9271
+35it [01:25,  2.38s/it]['Indian crypto exchanges'] 432 9267
+36it [01:26,  2.40s/it]['VARIANT HIGHLY TRANSMISSIBLE'] 432 9265
+35it [01:25,  2.44s/it]['Delhi govt staff'] 432 9266
+36it [01:27,  2.38s/it]['Investor panic'] 432 9267
+36it [01:27,  2.41s/it]['PM Modi'] 432 9267
+43it [01:25,  2.41s/it]['Japan'] 432 9267
+36it [01:25,  2.31s/it]['PV Sindhu'] 432 9285
+35it [01:27,  2.43s/it]['Testing'] 432 9273
+36it [01:27,  2.38s/it]['Talent Hunt'] 432 9266
+37it [01:28,  2.39s/it]['No'] 425 9136
+37it [01:29,  2.39s/it]['100%'] 432 9272
+37it [01:29,  2.38s/it]['HIGHLY'] 432 9272
+36it [01:27,  2.43s/it]['India'] 432 9273
+44it [01:28,  2.40s/it]['People'] 425 9135
+37it [01:28,  2.30s/it]['Badminton'] 432 9284
+36it [01:30,  2.42s/it]['Genome sequence'] 432 9274
+37it [01:29,  2.38s/it]['0'] 432 9278
+38it [01:30,  2.37s/it]['PM'] 432 9268
+45it [01:30,  2.38s/it]['A lethal virus'] 432 9273
+37it [01:30,  2.42s/it]['Construction or demolition activity'] 432 9266
+38it [01:32,  2.39s/it]['purely as digital entries'] 432 9266
+38it [01:32,  2.42s/it]['3'] 432 9269
+38it [01:30,  2.30s/it]['Bronze'] 432 9286
+37it [01:32,  2.41s/it]['Fast tracks report'] 432 9274
+38it [01:32,  2.41s/it]['Techies with crypto knowledge'] 432 9266
+39it [01:33,  2.39s/it]['ICMR'] 432 9270
+38it [01:32,  2.42s/it]['No'] 432 9267
+39it [01:34,  2.41s/it]['TOP OFFICIALS'] 432 9266
+46it [01:33,  2.41s/it]['1000'] 432 9267
+39it [01:34,  2.41s/it]['Global travel curbs'] 432 9266
+39it [01:32,  2.33s/it]["Men's hockey team"] 425 9142
+38it [01:35,  2.40s/it]['Centre'] 425 9138
+39it [01:34,  2.39s/it]['Not mentioned'] 432 9268
+40it [01:35,  2.37s/it]['Omicron'] 425 9134
+39it [01:34,  2.42s/it]['Misleading advertising'] 425 9135
+40it [01:36,  2.40s/it]['CNG Buses'] 425 9132
+40it [01:36,  2.41s/it]['W.H.O'] 432 9265
+47it [01:35,  2.42s/it]['The road ahead'] 432 9265
+40it [01:35,  2.34s/it]['Bronze'] 432 9277
+39it [01:37,  2.39s/it]['talk'] 432 9267
+41it [01:37,  2.35s/it]['NEW VARIANT'] 432 9268
+40it [01:37,  2.39s/it]['Yes'] 432 9268
+41it [01:39,  2.39s/it]['PM'] 425 9135
+48it [01:37,  2.39s/it]['372'] 425 9137
+41it [01:39,  2.39s/it]['Vigilant Screening'] 432 9265
+40it [01:37,  2.42s/it]['PM'] 432 9266
+41it [01:37,  2.33s/it]['BAJRANG PUNIA'] 432 9287
+40it [01:39,  2.42s/it]['Exchanges'] 432 9266
+42it [01:40,  2.34s/it]['Alert'] 432 9273
+41it [01:39,  2.37s/it]['No coin or paper'] 432 9268
+42it [01:41,  2.40s/it]['Gopal Rai'] 432 9267
+42it [01:41,  2.39s/it]['Mutations'] 432 9268
+41it [01:39,  2.41s/it]['Hold key meet'] 432 9265
+49it [01:40,  2.41s/it]['W.H.O'] 432 9269
+42it [01:39,  2.34s/it]["MEN'S 65KG FREESTYLE WRESTLING"] 432 9284
+41it [01:42,  2.50s/it]['Professionals'] 432 9269
+43it [01:42,  2.35s/it]['PM'] 432 9272
+42it [01:41,  2.37s/it]['Mining'] 432 9271
+43it [01:44,  2.39s/it]['India'] 432 9268
+42it [01:42,  2.39s/it]["Delhi's Environment Minister"] 432 9266
+43it [01:44,  2.39s/it]['Randeep Surjewala'] 432 9264
+50it [01:42,  2.42s/it]['Vaccination coverage'] 432 9265
+43it [01:42,  2.36s/it]['Bronze'] 432 9288
+42it [01:45,  2.47s/it]['Professionals'] 432 9266
+44it [01:44,  2.36s/it]['Covid norms'] 432 9271
+43it [01:44,  2.39s/it]['Yes'] 432 9271
+44it [01:46,  2.38s/it]['Fresh curbs'] 432 9269
+43it [01:44,  2.40s/it]['African countries'] 432 9279
+51it [01:45,  2.40s/it]['police and transport dept'] 432 9275
+44it [01:46,  2.42s/it]['The pandemic'] 432 9265
+44it [01:44,  2.36s/it]['Smiling'] 432 9263
+45it [01:47,  2.35s/it]["MEN'S 65KG FREESTYLE WRESTLING"] 432 9278
+43it [01:47,  2.53s/it]['Omicron threat'] 432 9267
+44it [01:46,  2.40s/it]['RBI'] 432 9266
+45it [01:48,  2.37s/it]['States'] 432 9272
+44it [01:46,  2.38s/it]['Farmers'] 432 9268
+45it [01:48,  2.40s/it]['New variant'] 432 9273
+45it [01:47,  2.36s/it]['Omicron'] 432 9272
+52it [01:47,  2.40s/it]['Techies with crypto knowledge'] 432 9268
+46it [01:49,  2.37s/it]['2012'] 434 8900
+44it [01:50,  2.48s/it]['Fresh curbs'] 432 9272
+45it [01:49,  2.40s/it]['India'] 432 9269
+45it [01:49,  2.37s/it]['All private cryptocurrencies'] 432 9267
+46it [01:51,  2.38s/it]['Centre, States'] 425 9135
+46it [01:51,  2.39s/it]['Intensive containment'] 432 9265
+46it [01:49,  2.37s/it]['Omicron'] 432 9278
+53it [01:50,  2.41s/it]['no'] 432 9267
+47it [01:52,  2.35s/it]['States'] 432 9269
+46it [01:51,  2.39s/it]['Neeraj Chopra'] 441 9037
+45it [01:52,  2.47s/it]['Yes'] 432 9268
+47it [01:53,  2.37s/it]['Kerala'] 432 9271
+46it [01:51,  2.37s/it]['Air crisis'] 425 9133
+47it [01:53,  2.37s/it]['Active surveillance'] 432 9265
+47it [01:51,  2.36s/it]['Randeep Surjewala'] 432 9273
+54it [01:52,  2.45s/it]['No'] 432 9266
+48it [01:54,  2.33s/it]['Test, Trace & Treat'] 432 9269
+47it [01:53,  2.42s/it]['yes'] 432 9270
+48it [01:55,  2.38s/it]['68.46M JAVELIN'] 434 8898
+46it [01:55,  2.50s/it]['RT-PCR'] 432 9269
+47it [01:53,  2.39s/it]['Citizens'] 425 9137
+48it [01:54,  2.35s/it]['Schools, colleges'] 432 9265
+48it [01:55,  2.38s/it]['Modi government'] 432 9272
+55it [01:54,  2.43s/it]['What kind of talent are exchanges looking for?'] 432 9268
+49it [01:56,  2.40s/it]['TREAT'] 432 9274
+48it [01:56,  2.42s/it]['Inbound Travellers'] 425 9141
+48it [01:56,  2.38s/it]['U16 National Junior'] 441 9036
+47it [01:57,  2.48s/it]["Centre's curbs"] 432 9267
+49it [01:58,  2.41s/it]['Yes'] 432 9267
+49it [01:56,  2.36s/it]['Till further notice'] 432 9269
+49it [01:58,  2.39s/it]['@rssurjewala'] 432 9274
+56it [01:57,  2.43s/it]['Talent'] 432 9267
+50it [01:59,  2.38s/it]['Test'] 432 9274
+49it [01:58,  2.41s/it]['Gujarat'] 432 9272
+49it [01:58,  2.38s/it]['2016'] 434 8894
+48it [01:59,  2.46s/it]['Yes'] 432 9265
+50it [02:00,  2.40s/it]['Delhiites'] 432 9264
+50it [02:00,  2.39s/it]['Timely 2nd dose'] 432 9268
+50it [01:58,  2.40s/it]['67%'] 425 9136
+57it [01:59,  2.41s/it]['improve'] 432 9269
+51it [02:01,  2.36s/it]['Omicron'] 432 9266
+50it [02:01,  2.41s/it]['RT-PCR'] 432 9270
+50it [02:01,  2.39s/it]['SC'] 432 9268
+51it [02:03,  2.37s/it]['Neeraj Chopra'] 441 9031
+49it [02:02,  2.45s/it]['MODI GOVT'] 432 9269
+51it [02:03,  2.42s/it]['Omicron'] 432 9267
+51it [02:01,  2.39s/it]['India'] 425 9142
+58it [02:02,  2.38s/it]['15-30%'] 432 9270
+52it [02:03,  2.37s/it]['pollution'] 432 9269
+52it [02:05,  2.37s/it]['International passengers'] 432 9272
+51it [02:03,  2.41s/it]['New variant of coronavirus'] 432 9267
+51it [02:03,  2.44s/it]['Yes'] 432 9265
+52it [02:05,  2.41s/it]['Stricter Screening'] 432 9268
+52it [02:03,  2.40s/it]['A RECORD 86.48M THROW'] 434 8893
+50it [02:04,  2.49s/it]['U.P GOVT'] 425 9135
+59it [02:04,  2.39s/it]['NFT drops on 27th December'] 432 9268
+53it [02:06,  2.40s/it]['Delhi traders'] 432 9266
+53it [02:07,  2.38s/it]['1 week'] 432 9272
+52it [02:06,  2.43s/it]['Gujarat'] 432 9271
+52it [02:06,  2.42s/it]['Blockchain technology'] 432 9266
+53it [02:08,  2.41s/it]['Pakistan'] 432 9276
+60it [02:06,  2.37s/it]['Test-Track-Treat'] 432 9269
+53it [02:06,  2.42s/it]['Junior World Championships'] 441 9037
+51it [02:07,  2.45s/it]['NFT'] 432 9264
+54it [02:08,  2.37s/it]['India'] 432 9272
+53it [02:08,  2.39s/it]['Lockdown'] 432 9266
+54it [02:10,  2.38s/it]['Yes'] 425 9136
+54it [02:10,  2.39s/it]['Quarantine'] 425 9136
+53it [02:08,  2.42s/it]['Poor Air'] 432 9271
+61it [02:09,  2.38s/it]['Delhi government'] 425 9136
+52it [02:09,  2.44s/it]["India's Genomic Consortium"] 432 9266
+54it [02:08,  2.44s/it]['27th December'] 432 9266
+55it [02:11,  2.36s/it]['to cut pollution'] 432 9268
+55it [02:12,  2.38s/it]['Ledger'] 425 9136
+55it [02:12,  2.39s/it]["COVID+ INBOUND TRAVELLERS'"] 432 9274
+54it [02:10,  2.43s/it]['S Africa'] 432 9272
+54it [02:10,  2.41s/it]['U.P.'] 432 9273
+62it [02:11,  2.39s/it]['Oppn'] 432 9269
+53it [02:12,  2.44s/it]['MODI GOVT'] 425 9136
+55it [02:11,  2.42s/it]['Chakra the invincible'] 432 9273
+56it [02:13,  2.37s/it]['Delhi'] 432 9266
+56it [02:15,  2.39s/it]['12'] 432 9276
+55it [02:13,  2.41s/it]['Peer-to-peer network'] 432 9264
+56it [02:15,  2.41s/it]["K'TAKA"] 425 9142
+55it [02:13,  2.41s/it]['Winter Session'] 425 9137
+56it [02:13,  2.39s/it]['U.P.'] 432 9272
+63it [02:13,  2.39s/it]['GOVT'] 432 9266
+54it [02:14,  2.43s/it]["Stan Lee's 99th Birthday"] 432 9264
+57it [02:15,  2.39s/it]['lockdown'] 432 9269
+57it [02:17,  2.38s/it]['No'] 432 9267
+57it [02:17,  2.39s/it]['RT-PCR'] 432 9273
+56it [02:15,  2.41s/it]['Pakistan'] 432 9276
+64it [02:16,  2.38s/it]['PRIVATE CRYPTOCURRENCIES'] 425 9140
+57it [02:15,  2.40s/it]['Travellers from 12 high risk nations'] 432 9272
+56it [02:15,  2.47s/it]['20'] 432 9265
+55it [02:16,  2.42s/it]['NFT'] 432 9268
+58it [02:18,  2.36s/it]['Construction activities'] 432 9264
+58it [02:19,  2.38s/it]['Yes'] 432 9274
+58it [02:19,  2.38s/it]['International passengers'] 425 9141
+57it [02:18,  2.41s/it]["RBI's digital currency"] 432 9269
+58it [02:18,  2.41s/it]['PM'] 432 9268
+56it [02:19,  2.42s/it]['last 2 weeks'] 432 9274
+57it [02:18,  2.47s/it]['SHOULD WE BAN PAK INDUSTRY?'] 432 9271
+65it [02:19,  2.47s/it]['99th'] 432 9268
+59it [02:20,  2.34s/it]['Nov 21'] 432 9269
+59it [02:22,  2.38s/it]['MAINSTREAM USERS'] 432 9273
+59it [02:22,  2.39s/it]["'High-risk' area"] 432 9275
+58it [02:20,  2.43s/it]['Samples'] 425 9140
+58it [02:20,  2.43s/it]['PM'] 432 9267
+57it [02:21,  2.41s/it]['as Centre plans to table crypto bill'] 432 9266
+59it [02:20,  2.44s/it]['Pak Industry'] 432 9277
+66it [02:21,  2.44s/it]['NFT'] 425 9132
+60it [02:22,  2.31s/it]['Essential goods trucks'] 432 9265
+60it [02:24,  2.40s/it]['To exchange or dispose assets'] 432 9269
+60it [02:24,  2.41s/it]['Must quarantine'] 425 9140
+59it [02:22,  2.40s/it]['Genome sequencing'] 425 9141
+59it [02:22,  2.42s/it]['India'] 432 9269
+60it [02:23,  2.41s/it]['No date mentioned'] 432 9269
+58it [02:24,  2.42s/it]['CJI'] 432 9269
+67it [02:23,  2.42s/it]['Stan Lee'] 432 9269
+61it [02:24,  2.30s/it]['GOVT OFFICES'] 432 9268
+61it [02:27,  2.41s/it]["K'TAKA"] 425 9139
+60it [02:25,  2.40s/it]['Experts'] 425 9141
+61it [02:25,  2.38s/it]['Genome sequencing reports'] 425 9144
+60it [02:25,  2.41s/it]['A digital currency made of complex codes, secured by cryptography'] 432 9263
+61it [02:27,  2.47s/it]['11'] 432 9269
+59it [02:26,  2.43s/it]['December 10'] 432 9269
+68it [02:26,  2.42s/it]["To celebrate Stan Lee's 99th birthday"] 432 9266
+62it [02:27,  2.35s/it]['PVT OFFICES'] 432 9270
+62it [02:29,  2.41s/it]['Maharashtra'] 425 9142
+61it [02:27,  2.39s/it]['By cryptography'] 432 9264
+62it [02:29,  2.44s/it]['Fast-tracked'] 425 9148
+61it [02:27,  2.42s/it]['PM Modi'] 432 9274
+62it [02:27,  2.43s/it]['SC'] 432 9270
+69it [02:28,  2.40s/it]['Maharashtra'] 425 9137
+60it [02:29,  2.43s/it]['2012'] 432 9266
+63it [02:29,  2.40s/it]['PM'] 432 9272
+63it [02:32,  2.47s/it]['World'] 425 9140
+63it [02:30,  2.39s/it]['S African Travellers'] 432 9266
+62it [02:30,  2.47s/it]['Delhi'] 432 9270
+70it [02:30,  2.39s/it]['South Africa, Brazil, China'] 432 9277
+62it [02:30,  2.44s/it]['Maharashtra'] 432 9268
+61it [02:31,  2.44s/it]['Tech that serves as ledger to record crypto deals'] 432 9263
+63it [02:32,  2.54s/it]['Stan Lee'] 432 9266
+64it [02:32,  2.36s/it]['PM'] 432 9274
+64it [02:34,  2.44s/it]['Fight'] 432 9267
+64it [02:32,  2.38s/it]['Quarantine'] 425 9136
+63it [02:32,  2.45s/it]['Clean Air'] 432 9271
+71it [02:33,  2.40s/it]['Government'] 432 9267
+62it [02:33,  2.43s/it]['South Africa, Brazil, China'] 432 9277
+63it [02:33,  2.53s/it]['In wallets at a crypto exchange or a private wallet'] 432 9264
+64it [02:35,  2.55s/it]['Chakra the invincible'] 432 9265
+65it [02:34,  2.35s/it]['New variant'] 432 9272
+65it [02:36,  2.42s/it]['India'] 432 9272
+65it [02:34,  2.37s/it]['TN'] 432 9271
+64it [02:35,  2.42s/it]['Yes'] 425 9134
+63it [02:36,  2.41s/it]['Delhi'] 432 9276
+72it [02:35,  2.45s/it]['Villages'] 432 9266
+64it [02:35,  2.49s/it]['Omicron'] 432 9265
+65it [02:37,  2.50s/it]['CO-'] 432 9270
+66it [02:36,  2.33s/it]['ALL MPS'] 432 9271
+66it [02:39,  2.39s/it]['Shield'] 432 9275
+66it [02:37,  2.36s/it]['Health Officials'] 432 9270
+65it [02:37,  2.41s/it]['Construction of hospitals'] 432 9265
+73it [02:38,  2.44s/it]['Yes'] 432 9268
+66it [02:39,  2.44s/it]['Very poor'] 425 9139
+64it [02:38,  2.48s/it]['Punjab & Haryana villages'] 432 9270
+65it [02:37,  2.50s/it]["NFT TO CELEBRATE STAN LEE'S 99TH BIRTHDAY"] 432 9265
+67it [02:39,  2.46s/it]['PM Modi'] 432 9273
+67it [02:41,  2.38s/it]['Omicron'] 425 9133
+67it [02:39,  2.36s/it]["INT'L AIRPORTS"] 432 9270
+66it [02:39,  2.43s/it]['India'] 432 9266
+67it [02:42,  2.40s/it]['celebrate'] 432 9265
+66it [02:40,  2.45s/it]['DELHI AIR POLLUTION PLAN'] 425 9135
+65it [02:41,  2.48s/it]['Yogi Govt. said that Pak is causing smog in Delhi.'] 432 9273
+74it [02:40,  2.51s/it]['NDTV'] 432 9264
+68it [02:41,  2.40s/it]['New variant'] 432 9267
+68it [02:43,  2.37s/it]['New variant'] 432 9268
+68it [02:42,  2.36s/it]['Genome sequence testing'] 432 9270
+67it [02:42,  2.44s/it]['PM'] 432 9266
+68it [02:44,  2.37s/it]['Tokyo'] 432 9267
+67it [02:42,  2.42s/it]['Schools, colleges'] 425 9138
+66it [02:43,  2.46s/it]['Trucks carrying non-essential commodities'] 432 9265
+75it [02:43,  2.49s/it]['Superheroes'] 432 9265
+69it [02:44,  2.36s/it]['India'] 425 9139
+69it [02:46,  2.34s/it]['Concern'] 432 9273
+69it [02:44,  2.36s/it]['PM'] 432 9266
+69it [02:46,  2.35s/it]['M.P.'] 432 9270
+68it [02:44,  2.43s/it]['2024'] 432 9268
+68it [02:45,  2.42s/it]['Nov 26'] 425 9139
+67it [02:46,  2.44s/it]['ACTION PLAN'] 425 9141
+76it [02:45,  2.44s/it]['Stan Lee'] 432 9268
+70it [02:46,  2.33s/it]['Travel norms'] 432 9271
+70it [02:48,  2.33s/it]['Omicron'] 432 9270
+70it [02:46,  2.35s/it]['Delhi'] 425 9143
+69it [02:47,  2.40s/it]["Hon'ble Prime Minister"] 432 9267
+70it [02:49,  2.40s/it]['Paris'] 425 9140
+69it [02:47,  2.39s/it]['Yes'] 432 9270
+68it [02:48,  2.41s/it]['Centre'] 432 9270
+77it [02:48,  2.41s/it]['Chakra the invincible'] 432 9267
+71it [02:48,  2.35s/it]['REVISED'] 432 9274
+71it [02:50,  2.33s/it]['Come home'] 263 5721
+70it [02:48,  2.11s/it]['PM'] 425 9142
+71it [02:49,  2.33s/it]['L-G'] 425 9141
+70it [02:49,  2.38s/it]['IN LIGHT OF NEW VARIANT'] 425 9134
+71it [02:51,  2.40s/it]['Trucks'] 432 9269
+69it [02:51,  2.41s/it]['Schools'] 432 9266
+78it [02:50,  2.41s/it]['Number of people'] 425 9132
+72it [02:51,  2.33s/it]['YEH DIL MAANGE MORE'] 263 5719
+71it [02:50,  1.95s/it]['12'] 432 9272
+72it [02:53,  2.32s/it]['27th November 2021'] 432 9274
+72it [02:51,  2.38s/it]['Emergency'] 425 9139
+71it [02:51,  2.36s/it]['India'] 263 5723
+72it [02:51,  1.80s/it]['Clusters'] 432 9267
+72it [02:53,  2.38s/it]['Home'] 432 9269
+70it [02:53,  2.39s/it]['Combat Air Pollution'] 425 9136
+79it [02:52,  2.40s/it]['Crypto spaces'] 432 9270
+73it [02:53,  2.32s/it]['Paris'] 263 5721
+73it [02:53,  1.69s/it]['The new variant'] 432 9271
+73it [02:55,  2.32s/it]["Hon'ble Prime Minister"] 432 9275
+73it [02:53,  2.40s/it]['Today'] 432 9267
+72it [02:54,  2.35s/it]['Intensive containment'] 425 9133
+73it [02:56,  2.36s/it]['yes'] 432 9271
+71it [02:55,  2.40s/it]['To combat air pollution'] 432 9274
+80it [02:55,  2.40s/it]['Paris'] 263 5723
+74it [02:54,  1.61s/it]['GameFi'] 432 9268
+74it [02:55,  2.32s/it]['India'] 432 9272
+74it [02:57,  2.30s/it]['Neeraj Chopra'] 256 5589
+75it [02:56,  1.59s/it]['Centre'] 432 9267
+73it [02:56,  2.34s/it]['Covid-19 Public Health Response'] 432 9273
+74it [02:56,  2.44s/it]['Active surveillance'] 432 9265
+74it [02:58,  2.36s/it]['Friday'] 432 9271
+72it [02:58,  2.39s/it]['FIVE-MEMBER'] 432 9279
+81it [02:57,  2.41s/it]['Decentralised Finance'] 432 9267
+75it [02:57,  2.33s/it]['Gold'] 263 5723
+76it [02:57,  1.54s/it]['Omicron'] 432 9272
+75it [02:59,  2.32s/it]['All NCR states'] 432 9268
+74it [02:58,  2.35s/it]['Omicron Alert'] 432 9267
+75it [02:58,  2.43s/it]['Citizens'] 425 9137
+75it [03:00,  2.35s/it]['Silver'] 263 5725
+77it [02:59,  1.50s/it]['very poor'] 432 9266
+73it [03:00,  2.39s/it]['No one'] 425 9133
+76it [03:00,  2.31s/it]['17'] 432 9277
+82it [03:00,  2.39s/it]['International passengers'] 432 9278
+76it [03:02,  2.31s/it]['Weightlifting'] 263 5726
+78it [03:00,  1.49s/it]['Omicron Alert'] 432 9269
+76it [03:01,  2.42s/it]['hold emergency center states meet'] 432 9268
+75it [03:01,  2.39s/it]['Yes'] 425 9135
+76it [03:03,  2.33s/it]['Decentralised Finance'] 432 9267
+77it [03:02,  2.32s/it]['very poor'] 432 9267
+74it [03:02,  2.39s/it]['400'] 432 9274
+83it [03:02,  2.38s/it]['The Champions'] 263 5719
+79it [03:02,  1.48s/it]['14-day travel details'] 432 9273
+77it [03:04,  2.33s/it]['Silver'] 263 5725
+80it [03:03,  1.47s/it]['Delhi govt'] 425 9134
+76it [03:03,  2.40s/it]['New variant of concern'] 425 9138
+77it [03:03,  2.43s/it]['States'] 432 9272
+77it [03:05,  2.35s/it]['Blockchain'] 432 9270
+78it [03:04,  2.31s/it]['406'] 432 9274
+84it [03:04,  2.39s/it]['very poor'] 432 9268
+75it [03:05,  2.40s/it]['14-day'] 432 9278
+78it [03:06,  2.32s/it]["Men's 57kg Freestyle Wrestling"] 256 5594
+81it [03:05,  1.52s/it]['Omicron'] 432 9272
+78it [03:06,  2.42s/it]['Mulls lockdown'] 432 9269
+77it [03:06,  2.40s/it]['Timely 2nd dose'] 432 9268
+78it [03:08,  2.39s/it]['Address issues in traditional gaming'] 432 9264
+79it [03:07,  2.34s/it]['Bronze'] 263 5722
+82it [03:06,  1.50s/it]['402'] 432 9274
+85it [03:07,  2.38s/it]['Every year'] 432 9273
+76it [03:07,  2.42s/it]['FLYERS'] 425 9147
+79it [03:09,  2.31s/it]['Welterweight boxing'] 263 5722
+83it [03:08,  1.51s/it]['30+'] 432 9276
+79it [03:08,  2.41s/it]['Centre, States'] 432 9266
+78it [03:08,  2.40s/it]['Travel restrictions'] 432 9265
+79it [03:10,  2.38s/it]['Traditional Gaming'] 432 9265
+80it [03:09,  2.33s/it]['402'] 432 9274
+86it [03:09,  2.38s/it]['OMICRON'] 432 9268
+77it [03:10,  2.41s/it]['Saina Nehwal'] 256 5593
+84it [03:09,  1.50s/it]['RT-PCR REPORT'] 432 9272
+80it [03:11,  2.32s/it]['No'] 432 9271
+80it [03:12,  2.36s/it]['Non-essential construction'] 432 9264
+79it [03:10,  2.40s/it]['B.1.1529'] 432 9272
+80it [03:11,  2.44s/it]['Bronze'] 263 5723
+85it [03:11,  1.48s/it]['Financial rewards'] 425 9135
+81it [03:11,  2.32s/it]['389'] 432 9274
+87it [03:11,  2.38s/it]['FLIGHTS REVIVAL'] 432 9266
+78it [03:12,  2.43s/it]['NEGATIVE'] 425 9143
+81it [03:13,  2.31s/it]['Gold'] 263 5720
+86it [03:12,  1.48s/it]['SC'] 432 9270
+80it [03:13,  2.38s/it]['Narendra Modi'] 425 9141
+81it [03:15,  2.37s/it]['Omicron'] 425 9142
+81it [03:13,  2.41s/it]['After completing games'] 425 9134
+82it [03:14,  2.32s/it]['389'] 432 9273
+88it [03:14,  2.38s/it]['SCENARIO'] 432 9269
+79it [03:15,  2.42s/it]['41'] 263 5726
+87it [03:13,  1.47s/it]['Post-arrival COVID test'] 432 9277
+82it [03:16,  2.34s/it]['Taste max medal glory'] 256 5588
+88it [03:15,  1.48s/it]['Transport, Traffic'] 425 9132
+81it [03:15,  2.38s/it]['Yes'] 432 9269
+82it [03:17,  2.37s/it]['Highly transmissible'] 432 9273
+82it [03:15,  2.41s/it]['Coffee & Crypto'] 432 9266
+83it [03:16,  2.33s/it]['370'] 432 9273
+89it [03:16,  2.37s/it]89it [03:16,  2.21s/it]
+['FLIGHTS REVIVAL'] 432 9267
+80it [03:17,  2.44s/it]['7-Day'] 432 9277
+83it [03:18,  2.33s/it]['Ashok Hotel'] 263 5721
+89it [03:16,  1.48s/it]89it [03:16,  2.21s/it]
+['Tomorrow'] 432 9268
+82it [03:17,  2.37s/it]['30+'] 432 9275
+83it [03:19,  2.36s/it]['South Africa'] 425 9136
+83it [03:18,  2.38s/it]['Asset owner'] 432 9268
+84it [03:18,  2.33s/it]['India'] 425 9137
+81it [03:19,  2.40s/it]['Foreign flyers testing negative'] 432 9275
+84it [03:20,  2.34s/it]['SET UP TASK FORCE'] 425 9141
+83it [03:20,  2.37s/it]['South Africa'] 432 9270
+84it [03:22,  2.37s/it]['Omicron'] 425 9141
+84it [03:20,  2.37s/it]['Tokenised digital collectibles to use in games'] 432 9265
+85it [03:21,  2.39s/it]["INT'L FLIGHTS"] 432 9271
+82it [03:22,  2.42s/it]['14-day self monitoring'] 432 9270
+85it [03:23,  2.35s/it]['Government'] 432 9267
+84it [03:22,  2.35s/it]['Skirt immune response'] 432 9268
+85it [03:24,  2.37s/it]['Botswana, Hong Kong & Israel'] 425 9141
+85it [03:22,  2.39s/it]['GameFi'] 432 9270
+86it [03:23,  2.37s/it]['Monitoring'] 432 9272
+83it [03:24,  2.40s/it]['14-day'] 432 9275
+86it [03:25,  2.35s/it]['Crytpo'] 432 9267
+85it [03:24,  2.36s/it]['no'] 432 9272
+86it [03:27,  2.37s/it]['Omicron-variant'] 425 9140
+86it [03:25,  2.40s/it]['Next big thing in crypto world'] 432 9264
+87it [03:26,  2.38s/it]['2nd dose'] 432 9272
+84it [03:27,  2.40s/it]['Random Testing'] 432 9272
+87it [03:27,  2.34s/it]['PRIVATE CRYPTO'] 432 9264
+86it [03:27,  2.37s/it]['young people'] 432 9268
+87it [03:29,  2.37s/it]['Israel'] 425 9144
+87it [03:27,  2.36s/it]['Decentralised Finance'] 432 9270
+88it [03:28,  2.38s/it]['India'] 432 9274
+88it [03:30,  2.33s/it]['2nd dose'] 425 9136
+85it [03:29,  2.40s/it]['Cryptoasset'] 432 9268
+87it [03:29,  2.35s/it]['12'] 432 9270
+88it [03:31,  2.37s/it]['Omicron-variant'] 432 9271
+88it [03:29,  2.37s/it]['Decentralised Finance'] 432 9268
+89it [03:30,  2.37s/it]89it [03:30,  2.37s/it]
+['South Africa'] 432 9277
+89it [03:32,  2.32s/it]89it [03:32,  2.39s/it]
+['Experts'] 432 9269
+86it [03:31,  2.38s/it]['Government'] 425 9136
+88it [03:31,  2.31s/it]['Genomic Scientists'] 432 9268
+89it [03:34,  2.37s/it]['Experts'] 432 9274
+89it [03:32,  2.35s/it]89it [03:34,  2.41s/it]
+89it [03:32,  2.38s/it]
+['variant'] 432 9265
+87it [03:34,  2.38s/it]['Legal tender, currency'] 432 9266
+89it [03:34,  2.32s/it]89it [03:34,  2.41s/it]
+['India'] 432 9268
+88it [03:36,  2.36s/it]['HOME SECY MEET'] 432 9270
+89it [03:39,  2.40s/it]89it [03:39,  2.46s/it]
+tensor(0.)
+avg vtokens tensor(421.4368)
+avg total tokens 9045.969101123595
+Evaluating newsvqa_val ...
+Results saved to ./res/news-vqa/newsvqa_val_241227111236.json
+python utils/infographicsvqa_eval.py -g /gruntdata/heyuan67/zqp/NewsVQA/ICDAR2023/annotation/swift_newsvideoqa_version_2_val_release2.json -s ./res/news-vqa/newsvqa_val_241227111236.json
+
+Overall ANLS: 0.6980
+write results to file ./res/news-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/news-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/news-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/news-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/news-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/news-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/news-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
+write results to file ./res/news-vqa/models_Qwen__Qwen2-VL-7B-Instruct.txt
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix-test2 ']'

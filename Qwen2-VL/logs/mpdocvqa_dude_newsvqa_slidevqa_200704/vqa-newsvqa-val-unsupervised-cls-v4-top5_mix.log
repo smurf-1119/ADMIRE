@@ -1,0 +1,908 @@
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/
++ DATASET=vqa-newsvqa-val-unsupervised-cls-v4-top5_mix
++ GPUS=8
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/
+++ pwd
++ export PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ echo 'CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/'
+CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/
++ MASTER_PORT=56219
++ PORT=62621
++ GPUS=8
++ export MASTER_PORT=56219
++ MASTER_PORT=56219
++ export PORT=62621
++ PORT=62621
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix ']'
++ torchrun --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --nproc_per_node=8 --master_port=56219 infer_mpdocvqa_dynamic_unsupervised_cls4.py --checkpoint /gruntdata/heyuan67/zqp/qp_lm_models/llamafactory/mpdocvqa_dude_newsvqa_slidevqa_448/full/sft_all/ --max-pixels-low 200704 --max-pixels-high 802816 --datasets newsvqa_val --out-dir ./res/news-vqa --dynamic --select-mode mix_topk --select-image-num 5
+datasets: ['newsvqa_val']
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]datasets: ['newsvqa_val']
+datasets:datasets: datasets: ['newsvqa_val'] 
+['newsvqa_val']['newsvqa_val']
+
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.19it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.93it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.12it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.36it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.16it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.34it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.45it/s]You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.85it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.99it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.05it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.10it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.31it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.21it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.18it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.04it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.20it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.05it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.22it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.10it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.44it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.77it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.71it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.68it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.50it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.93it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.01it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.78it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.76it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.61it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.10it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.96it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.89it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.79it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.88it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.77it/s]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.74it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.63it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.35it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.20it/s]
+0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]0it [00:00, ?it/s]'Tensor' object has no attribute 'append'
+1it [00:03,  3.86s/it]'Tensor' object has no attribute 'append'
+1it [00:03,  3.88s/it]'Tensor' object has no attribute 'append'
+1it [00:04,  4.05s/it]'Tensor' object has no attribute 'append'
+1it [00:04,  4.06s/it]'Tensor' object has no attribute 'append'
+1it [00:04,  4.10s/it]'Tensor' object has no attribute 'append'
+1it [00:04,  4.11s/it]'Tensor' object has no attribute 'append'
+2it [00:06,  2.96s/it]'Tensor' object has no attribute 'append'
+1it [00:03,  3.73s/it]'Tensor' object has no attribute 'append'
+1it [00:03,  3.79s/it]'Tensor' object has no attribute 'append'
+2it [00:06,  3.00s/it]'Tensor' object has no attribute 'append'
+2it [00:06,  3.10s/it]'Tensor' object has no attribute 'append'
+2it [00:06,  3.12s/it]'Tensor' object has no attribute 'append'
+2it [00:06,  3.13s/it]'Tensor' object has no attribute 'append'
+2it [00:06,  3.12s/it]'Tensor' object has no attribute 'append'
+3it [00:08,  2.69s/it]'Tensor' object has no attribute 'append'
+2it [00:06,  3.02s/it]'Tensor' object has no attribute 'append'
+2it [00:06,  2.97s/it]'Tensor' object has no attribute 'append'
+3it [00:08,  2.81s/it]'Tensor' object has no attribute 'append'
+3it [00:08,  2.82s/it]'Tensor' object has no attribute 'append'
+3it [00:09,  2.84s/it]'Tensor' object has no attribute 'append'
+3it [00:09,  2.87s/it]'Tensor' object has no attribute 'append'
+3it [00:09,  2.83s/it]'Tensor' object has no attribute 'append'
+4it [00:10,  2.58s/it]'Tensor' object has no attribute 'append'
+3it [00:08,  2.76s/it]'Tensor' object has no attribute 'append'
+3it [00:08,  2.69s/it]'Tensor' object has no attribute 'append'
+4it [00:11,  2.68s/it]'Tensor' object has no attribute 'append'
+4it [00:11,  2.65s/it]'Tensor' object has no attribute 'append'
+4it [00:11,  2.68s/it]'Tensor' object has no attribute 'append'
+4it [00:11,  2.68s/it]'Tensor' object has no attribute 'append'
+4it [00:11,  2.67s/it]'Tensor' object has no attribute 'append'
+5it [00:13,  2.51s/it]'Tensor' object has no attribute 'append'
+4it [00:11,  2.62s/it]'Tensor' object has no attribute 'append'
+4it [00:10,  2.57s/it]'Tensor' object has no attribute 'append'
+5it [00:13,  2.57s/it]'Tensor' object has no attribute 'append'
+5it [00:13,  2.55s/it]'Tensor' object has no attribute 'append'
+5it [00:13,  2.61s/it]'Tensor' object has no attribute 'append'
+5it [00:13,  2.58s/it]'Tensor' object has no attribute 'append'
+5it [00:14,  2.62s/it]'Tensor' object has no attribute 'append'
+6it [00:15,  2.46s/it]'Tensor' object has no attribute 'append'
+5it [00:13,  2.54s/it]'Tensor' object has no attribute 'append'
+5it [00:13,  2.50s/it]'Tensor' object has no attribute 'append'
+6it [00:16,  2.51s/it]'Tensor' object has no attribute 'append'
+6it [00:16,  2.56s/it]'Tensor' object has no attribute 'append'
+6it [00:16,  2.53s/it]'Tensor' object has no attribute 'append'
+6it [00:16,  2.57s/it]'Tensor' object has no attribute 'append'
+6it [00:16,  2.57s/it]'Tensor' object has no attribute 'append'
+7it [00:18,  2.45s/it]'Tensor' object has no attribute 'append'
+6it [00:15,  2.52s/it]'Tensor' object has no attribute 'append'
+6it [00:16,  2.65s/it]'Tensor' object has no attribute 'append'
+7it [00:18,  2.46s/it]'Tensor' object has no attribute 'append'
+7it [00:18,  2.51s/it]'Tensor' object has no attribute 'append'
+7it [00:18,  2.50s/it]'Tensor' object has no attribute 'append'
+7it [00:18,  2.52s/it]'Tensor' object has no attribute 'append'
+8it [00:20,  2.42s/it]'Tensor' object has no attribute 'append'
+7it [00:18,  2.53s/it]'Tensor' object has no attribute 'append'
+7it [00:18,  2.51s/it]'Tensor' object has no attribute 'append'
+7it [00:18,  2.60s/it]'Tensor' object has no attribute 'append'
+8it [00:20,  2.45s/it]'Tensor' object has no attribute 'append'
+8it [00:21,  2.49s/it]'Tensor' object has no attribute 'append'
+8it [00:21,  2.49s/it]'Tensor' object has no attribute 'append'
+8it [00:21,  2.49s/it]'Tensor' object has no attribute 'append'
+9it [00:22,  2.42s/it]'Tensor' object has no attribute 'append'
+8it [00:21,  2.52s/it]'Tensor' object has no attribute 'append'
+8it [00:21,  2.54s/it]'Tensor' object has no attribute 'append'
+8it [00:21,  2.53s/it]'Tensor' object has no attribute 'append'
+9it [00:23,  2.43s/it]'Tensor' object has no attribute 'append'
+9it [00:23,  2.49s/it]'Tensor' object has no attribute 'append'
+10it [00:25,  2.40s/it]'Tensor' object has no attribute 'append'
+9it [00:23,  2.46s/it]'Tensor' object has no attribute 'append'
+9it [00:23,  2.47s/it]'Tensor' object has no attribute 'append'
+9it [00:23,  2.47s/it]'Tensor' object has no attribute 'append'
+9it [00:23,  2.50s/it]'Tensor' object has no attribute 'append'
+9it [00:23,  2.48s/it]'Tensor' object has no attribute 'append'
+10it [00:25,  2.43s/it]'Tensor' object has no attribute 'append'
+11it [00:27,  2.38s/it]'Tensor' object has no attribute 'append'
+10it [00:26,  2.48s/it]'Tensor' object has no attribute 'append'
+10it [00:26,  2.45s/it]'Tensor' object has no attribute 'append'
+10it [00:26,  2.47s/it]'Tensor' object has no attribute 'append'
+10it [00:26,  2.50s/it]'Tensor' object has no attribute 'append'
+10it [00:25,  2.48s/it]'Tensor' object has no attribute 'append'
+10it [00:26,  2.49s/it]'Tensor' object has no attribute 'append'
+11it [00:28,  2.47s/it]'Tensor' object has no attribute 'append'
+12it [00:30,  2.39s/it]'Tensor' object has no attribute 'append'
+11it [00:28,  2.45s/it]'Tensor' object has no attribute 'append'
+11it [00:28,  2.44s/it]'Tensor' object has no attribute 'append'
+11it [00:28,  2.45s/it]'Tensor' object has no attribute 'append'
+11it [00:28,  2.48s/it]'Tensor' object has no attribute 'append'
+11it [00:28,  2.45s/it]'Tensor' object has no attribute 'append'
+11it [00:28,  2.47s/it]'Tensor' object has no attribute 'append'
+12it [00:30,  2.45s/it]'Tensor' object has no attribute 'append'
+13it [00:32,  2.39s/it]'Tensor' object has no attribute 'append'
+12it [00:30,  2.47s/it]'Tensor' object has no attribute 'append'
+12it [00:31,  2.46s/it]'Tensor' object has no attribute 'append'
+12it [00:31,  2.48s/it]'Tensor' object has no attribute 'append'
+12it [00:31,  2.47s/it]'Tensor' object has no attribute 'append'
+12it [00:30,  2.44s/it]'Tensor' object has no attribute 'append'
+12it [00:30,  2.44s/it]'Tensor' object has no attribute 'append'
+14it [00:34,  2.37s/it]'Tensor' object has no attribute 'append'
+13it [00:33,  2.46s/it]'Tensor' object has no attribute 'append'
+13it [00:33,  2.44s/it]'Tensor' object has no attribute 'append'
+13it [00:33,  2.46s/it]'Tensor' object has no attribute 'append'
+13it [00:33,  2.48s/it]'Tensor' object has no attribute 'append'
+13it [00:33,  2.46s/it]'Tensor' object has no attribute 'append'
+13it [00:33,  2.47s/it]'Tensor' object has no attribute 'append'
+14it [00:34,  2.15s/it]'Tensor' object has no attribute 'append'
+13it [00:33,  2.47s/it]'Tensor' object has no attribute 'append'
+15it [00:37,  2.36s/it]'Tensor' object has no attribute 'append'
+14it [00:35,  2.44s/it]'Tensor' object has no attribute 'append'
+14it [00:36,  2.47s/it]'Tensor' object has no attribute 'append'
+14it [00:36,  2.43s/it]'Tensor' object has no attribute 'append'
+14it [00:35,  2.47s/it]'Tensor' object has no attribute 'append'
+15it [00:36,  1.95s/it]'Tensor' object has no attribute 'append'
+14it [00:35,  2.50s/it]'Tensor' object has no attribute 'append'
+14it [00:35,  2.44s/it]'Tensor' object has no attribute 'append'
+16it [00:37,  1.81s/it]'Tensor' object has no attribute 'append'
+16it [00:39,  2.36s/it]'Tensor' object has no attribute 'append'
+15it [00:38,  2.42s/it]'Tensor' object has no attribute 'append'
+15it [00:38,  2.44s/it]'Tensor' object has no attribute 'append'
+15it [00:38,  2.43s/it]'Tensor' object has no attribute 'append'
+15it [00:38,  2.48s/it]'Tensor' object has no attribute 'append'
+17it [00:39,  1.74s/it]'Tensor' object has no attribute 'append'
+15it [00:38,  2.51s/it]'Tensor' object has no attribute 'append'
+15it [00:38,  2.47s/it]'Tensor' object has no attribute 'append'
+17it [00:41,  2.35s/it]'Tensor' object has no attribute 'append'
+16it [00:40,  2.41s/it]'Tensor' object has no attribute 'append'
+18it [00:40,  1.65s/it]'Tensor' object has no attribute 'append'
+16it [00:40,  2.46s/it]'Tensor' object has no attribute 'append'
+16it [00:40,  2.44s/it]'Tensor' object has no attribute 'append'
+16it [00:40,  2.46s/it]'Tensor' object has no attribute 'append'
+16it [00:40,  2.49s/it]'Tensor' object has no attribute 'append'
+16it [00:40,  2.44s/it]'Tensor' object has no attribute 'append'
+19it [00:42,  1.60s/it]'Tensor' object has no attribute 'append'
+18it [00:44,  2.36s/it]'Tensor' object has no attribute 'append'
+17it [00:42,  2.44s/it]'Tensor' object has no attribute 'append'
+17it [00:43,  2.48s/it]'Tensor' object has no attribute 'append'
+17it [00:43,  2.47s/it]'Tensor' object has no attribute 'append'
+17it [00:43,  2.47s/it]'Tensor' object has no attribute 'append'
+20it [00:43,  1.57s/it]'Tensor' object has no attribute 'append'
+17it [00:43,  2.48s/it]'Tensor' object has no attribute 'append'
+17it [00:43,  2.42s/it]'Tensor' object has no attribute 'append'
+19it [00:46,  2.37s/it]'Tensor' object has no attribute 'append'
+21it [00:45,  1.55s/it]'Tensor' object has no attribute 'append'
+18it [00:45,  2.44s/it]'Tensor' object has no attribute 'append'
+18it [00:45,  2.46s/it]'Tensor' object has no attribute 'append'
+18it [00:45,  2.46s/it]'Tensor' object has no attribute 'append'
+18it [00:46,  2.50s/it]'Tensor' object has no attribute 'append'
+22it [00:46,  1.54s/it]'Tensor' object has no attribute 'append'
+18it [00:45,  2.41s/it]'Tensor' object has no attribute 'append'
+18it [00:45,  2.50s/it]'Tensor' object has no attribute 'append'
+20it [00:48,  2.35s/it]'Tensor' object has no attribute 'append'
+19it [00:47,  2.45s/it]'Tensor' object has no attribute 'append'
+19it [00:48,  2.45s/it]'Tensor' object has no attribute 'append'
+19it [00:48,  2.46s/it]'Tensor' object has no attribute 'append'
+23it [00:48,  1.54s/it]'Tensor' object has no attribute 'append'
+19it [00:48,  2.48s/it]'Tensor' object has no attribute 'append'
+19it [00:47,  2.40s/it]'Tensor' object has no attribute 'append'
+19it [00:48,  2.48s/it]'Tensor' object has no attribute 'append'
+21it [00:51,  2.34s/it]'Tensor' object has no attribute 'append'
+24it [00:49,  1.52s/it]'Tensor' object has no attribute 'append'
+20it [00:50,  2.43s/it]'Tensor' object has no attribute 'append'
+20it [00:50,  2.45s/it]'Tensor' object has no attribute 'append'
+20it [00:50,  2.44s/it]'Tensor' object has no attribute 'append'
+20it [00:50,  2.47s/it]'Tensor' object has no attribute 'append'
+25it [00:51,  1.50s/it]'Tensor' object has no attribute 'append'
+20it [00:50,  2.39s/it]'Tensor' object has no attribute 'append'
+22it [00:53,  2.35s/it]'Tensor' object has no attribute 'append'
+20it [00:50,  2.49s/it]'Tensor' object has no attribute 'append'
+21it [00:52,  2.42s/it]'Tensor' object has no attribute 'append'
+26it [00:52,  1.50s/it]'Tensor' object has no attribute 'append'
+21it [00:53,  2.43s/it]'Tensor' object has no attribute 'append'
+21it [00:53,  2.44s/it]'Tensor' object has no attribute 'append'
+21it [00:53,  2.46s/it]'Tensor' object has no attribute 'append'
+21it [00:52,  2.39s/it]'Tensor' object has no attribute 'append'
+27it [00:54,  1.49s/it]'Tensor' object has no attribute 'append'
+23it [00:55,  2.36s/it]'Tensor' object has no attribute 'append'
+21it [00:53,  2.52s/it]'Tensor' object has no attribute 'append'
+22it [00:55,  2.44s/it]'Tensor' object has no attribute 'append'
+22it [00:55,  2.42s/it]'Tensor' object has no attribute 'append'
+22it [00:55,  2.44s/it]'Tensor' object has no attribute 'append'
+28it [00:55,  1.50s/it]'Tensor' object has no attribute 'append'
+22it [00:55,  2.48s/it]'Tensor' object has no attribute 'append'
+22it [00:54,  2.39s/it]'Tensor' object has no attribute 'append'
+24it [00:58,  2.36s/it]'Tensor' object has no attribute 'append'
+22it [00:55,  2.48s/it]'Tensor' object has no attribute 'append'
+29it [00:57,  1.49s/it]'Tensor' object has no attribute 'append'
+23it [00:57,  2.43s/it]'Tensor' object has no attribute 'append'
+23it [00:57,  2.43s/it]'Tensor' object has no attribute 'append'
+23it [00:57,  2.43s/it]'Tensor' object has no attribute 'append'
+23it [00:58,  2.48s/it]'Tensor' object has no attribute 'append'
+30it [00:58,  1.49s/it]'Tensor' object has no attribute 'append'
+23it [00:57,  2.40s/it]'Tensor' object has no attribute 'append'
+25it [01:00,  2.39s/it]'Tensor' object has no attribute 'append'
+23it [00:58,  2.45s/it]'Tensor' object has no attribute 'append'
+24it [00:59,  2.42s/it]'Tensor' object has no attribute 'append'
+31it [01:00,  1.49s/it]'Tensor' object has no attribute 'append'
+24it [01:00,  2.43s/it]'Tensor' object has no attribute 'append'
+24it [01:00,  2.41s/it]'Tensor' object has no attribute 'append'
+24it [01:00,  2.48s/it]'Tensor' object has no attribute 'append'
+24it [00:59,  2.40s/it]'Tensor' object has no attribute 'append'
+26it [01:03,  2.38s/it]'Tensor' object has no attribute 'append'
+32it [01:01,  1.48s/it]'Tensor' object has no attribute 'append'
+24it [01:00,  2.45s/it]'Tensor' object has no attribute 'append'
+25it [01:02,  2.43s/it]'Tensor' object has no attribute 'append'
+25it [01:02,  2.41s/it]'Tensor' object has no attribute 'append'
+25it [01:02,  2.48s/it]'Tensor' object has no attribute 'append'
+33it [01:03,  1.48s/it]'Tensor' object has no attribute 'append'
+25it [01:03,  2.45s/it]'Tensor' object has no attribute 'append'
+25it [01:02,  2.40s/it]'Tensor' object has no attribute 'append'
+27it [01:05,  2.39s/it]'Tensor' object has no attribute 'append'
+25it [01:02,  2.43s/it]'Tensor' object has no attribute 'append'
+26it [01:04,  2.45s/it]'Tensor' object has no attribute 'append'
+26it [01:05,  2.42s/it]'Tensor' object has no attribute 'append'
+26it [01:05,  2.49s/it]'Tensor' object has no attribute 'append'
+34it [01:05,  1.76s/it]'Tensor' object has no attribute 'append'
+26it [01:05,  2.48s/it]'Tensor' object has no attribute 'append'
+26it [01:04,  2.42s/it]'Tensor' object has no attribute 'append'
+28it [01:07,  2.37s/it]'Tensor' object has no attribute 'append'
+26it [01:05,  2.45s/it]'Tensor' object has no attribute 'append'
+27it [01:07,  2.42s/it]'Tensor' object has no attribute 'append'
+27it [01:07,  2.44s/it]'Tensor' object has no attribute 'append'
+27it [01:07,  2.47s/it]'Tensor' object has no attribute 'append'
+35it [01:07,  1.95s/it]'Tensor' object has no attribute 'append'
+27it [01:08,  2.46s/it]'Tensor' object has no attribute 'append'
+27it [01:07,  2.43s/it]'Tensor' object has no attribute 'append'
+29it [01:10,  2.46s/it]'Tensor' object has no attribute 'append'
+27it [01:07,  2.44s/it]'Tensor' object has no attribute 'append'
+28it [01:09,  2.40s/it]'Tensor' object has no attribute 'append'
+28it [01:10,  2.43s/it]'Tensor' object has no attribute 'append'
+28it [01:10,  2.44s/it]'Tensor' object has no attribute 'append'
+36it [01:10,  2.09s/it]'Tensor' object has no attribute 'append'
+28it [01:10,  2.43s/it]'Tensor' object has no attribute 'append'
+28it [01:09,  2.43s/it]'Tensor' object has no attribute 'append'
+30it [01:12,  2.42s/it]'Tensor' object has no attribute 'append'
+28it [01:10,  2.45s/it]'Tensor' object has no attribute 'append'
+29it [01:12,  2.46s/it]'Tensor' object has no attribute 'append'
+37it [01:12,  2.18s/it]'Tensor' object has no attribute 'append'
+29it [01:12,  2.53s/it]'Tensor' object has no attribute 'append'
+29it [01:12,  2.52s/it]'Tensor' object has no attribute 'append'
+29it [01:13,  2.54s/it]'Tensor' object has no attribute 'append'
+31it [01:15,  2.43s/it]'Tensor' object has no attribute 'append'
+29it [01:12,  2.48s/it]'Tensor' object has no attribute 'append'
+29it [01:13,  2.57s/it]'Tensor' object has no attribute 'append'
+30it [01:14,  2.43s/it]'Tensor' object has no attribute 'append'
+38it [01:15,  2.28s/it]'Tensor' object has no attribute 'append'
+30it [01:15,  2.49s/it]'Tensor' object has no attribute 'append'
+30it [01:15,  2.50s/it]'Tensor' object has no attribute 'append'
+30it [01:15,  2.56s/it]'Tensor' object has no attribute 'append'
+32it [01:17,  2.41s/it]'Tensor' object has no attribute 'append'
+30it [01:14,  2.45s/it]'Tensor' object has no attribute 'append'
+31it [01:16,  2.41s/it]'Tensor' object has no attribute 'append'
+30it [01:15,  2.56s/it]'Tensor' object has no attribute 'append'
+39it [01:17,  2.34s/it]'Tensor' object has no attribute 'append'
+31it [01:17,  2.49s/it]'Tensor' object has no attribute 'append'
+31it [01:17,  2.48s/it]'Tensor' object has no attribute 'append'
+31it [01:18,  2.50s/it]'Tensor' object has no attribute 'append'
+33it [01:19,  2.38s/it]'Tensor' object has no attribute 'append'
+31it [01:16,  2.44s/it]'Tensor' object has no attribute 'append'
+32it [01:19,  2.40s/it]'Tensor' object has no attribute 'append'
+31it [01:18,  2.56s/it]'Tensor' object has no attribute 'append'
+40it [01:20,  2.36s/it]'Tensor' object has no attribute 'append'
+32it [01:20,  2.48s/it]'Tensor' object has no attribute 'append'
+32it [01:20,  2.47s/it]'Tensor' object has no attribute 'append'
+34it [01:22,  2.37s/it]'Tensor' object has no attribute 'append'
+32it [01:20,  2.51s/it]'Tensor' object has no attribute 'append'
+32it [01:19,  2.50s/it]'Tensor' object has no attribute 'append'
+33it [01:21,  2.38s/it]'Tensor' object has no attribute 'append'
+32it [01:20,  2.51s/it]'Tensor' object has no attribute 'append'
+41it [01:22,  2.39s/it]'Tensor' object has no attribute 'append'
+33it [01:22,  2.45s/it]'Tensor' object has no attribute 'append'
+33it [01:22,  2.47s/it]'Tensor' object has no attribute 'append'
+35it [01:24,  2.36s/it]'Tensor' object has no attribute 'append'
+33it [01:23,  2.51s/it]'Tensor' object has no attribute 'append'
+33it [01:21,  2.48s/it]'Tensor' object has no attribute 'append'
+34it [01:23,  2.39s/it]'Tensor' object has no attribute 'append'
+33it [01:23,  2.47s/it]'Tensor' object has no attribute 'append'
+42it [01:24,  2.38s/it]'Tensor' object has no attribute 'append'
+34it [01:24,  2.44s/it]'Tensor' object has no attribute 'append'
+34it [01:25,  2.46s/it]'Tensor' object has no attribute 'append'
+36it [01:26,  2.36s/it]'Tensor' object has no attribute 'append'
+34it [01:25,  2.48s/it]'Tensor' object has no attribute 'append'
+34it [01:24,  2.46s/it]'Tensor' object has no attribute 'append'
+35it [01:26,  2.41s/it]'Tensor' object has no attribute 'append'
+34it [01:25,  2.45s/it]'Tensor' object has no attribute 'append'
+43it [01:27,  2.39s/it]'Tensor' object has no attribute 'append'
+35it [01:27,  2.43s/it]'Tensor' object has no attribute 'append'
+35it [01:27,  2.44s/it]'Tensor' object has no attribute 'append'
+37it [01:29,  2.36s/it]'Tensor' object has no attribute 'append'
+35it [01:28,  2.47s/it]'Tensor' object has no attribute 'append'
+35it [01:26,  2.45s/it]'Tensor' object has no attribute 'append'
+36it [01:28,  2.42s/it]'Tensor' object has no attribute 'append'
+35it [01:27,  2.45s/it]'Tensor' object has no attribute 'append'
+44it [01:29,  2.39s/it]'Tensor' object has no attribute 'append'
+36it [01:29,  2.42s/it]'Tensor' object has no attribute 'append'
+36it [01:30,  2.45s/it]'Tensor' object has no attribute 'append'
+38it [01:31,  2.41s/it]'Tensor' object has no attribute 'append'
+36it [01:30,  2.48s/it]'Tensor' object has no attribute 'append'
+36it [01:29,  2.43s/it]'Tensor' object has no attribute 'append'
+37it [01:31,  2.40s/it]'Tensor' object has no attribute 'append'
+36it [01:30,  2.44s/it]'Tensor' object has no attribute 'append'
+37it [01:32,  2.42s/it]'Tensor' object has no attribute 'append'
+45it [01:32,  2.45s/it]'Tensor' object has no attribute 'append'
+37it [01:32,  2.45s/it]'Tensor' object has no attribute 'append'
+39it [01:34,  2.42s/it]'Tensor' object has no attribute 'append'
+37it [01:33,  2.46s/it]'Tensor' object has no attribute 'append'
+37it [01:31,  2.42s/it]'Tensor' object has no attribute 'append'
+38it [01:33,  2.39s/it]'Tensor' object has no attribute 'append'
+37it [01:32,  2.44s/it]'Tensor' object has no attribute 'append'
+38it [01:34,  2.42s/it]'Tensor' object has no attribute 'append'
+46it [01:34,  2.44s/it]'Tensor' object has no attribute 'append'
+38it [01:34,  2.45s/it]'Tensor' object has no attribute 'append'
+40it [01:36,  2.43s/it]'Tensor' object has no attribute 'append'
+38it [01:35,  2.46s/it]'Tensor' object has no attribute 'append'
+38it [01:33,  2.41s/it]'Tensor' object has no attribute 'append'
+39it [01:35,  2.39s/it]'Tensor' object has no attribute 'append'
+38it [01:35,  2.43s/it]'Tensor' object has no attribute 'append'
+39it [01:36,  2.41s/it]'Tensor' object has no attribute 'append'
+47it [01:37,  2.44s/it]'Tensor' object has no attribute 'append'
+39it [01:37,  2.45s/it]'Tensor' object has no attribute 'append'
+41it [01:39,  2.41s/it]'Tensor' object has no attribute 'append'
+39it [01:37,  2.44s/it]'Tensor' object has no attribute 'append'
+39it [01:36,  2.43s/it]'Tensor' object has no attribute 'append'
+40it [01:38,  2.39s/it]'Tensor' object has no attribute 'append'
+39it [01:37,  2.44s/it]'Tensor' object has no attribute 'append'
+40it [01:39,  2.41s/it]'Tensor' object has no attribute 'append'
+48it [01:39,  2.43s/it]'Tensor' object has no attribute 'append'
+40it [01:39,  2.44s/it]'Tensor' object has no attribute 'append'
+42it [01:41,  2.39s/it]'Tensor' object has no attribute 'append'
+40it [01:38,  2.44s/it]'Tensor' object has no attribute 'append'
+40it [01:40,  2.48s/it]'Tensor' object has no attribute 'append'
+41it [01:40,  2.39s/it]'Tensor' object has no attribute 'append'
+40it [01:40,  2.45s/it]'Tensor' object has no attribute 'append'
+41it [01:41,  2.42s/it]'Tensor' object has no attribute 'append'
+49it [01:42,  2.43s/it]'Tensor' object has no attribute 'append'
+43it [01:43,  2.38s/it]'Tensor' object has no attribute 'append'
+41it [01:42,  2.44s/it]'Tensor' object has no attribute 'append'
+41it [01:41,  2.43s/it]'Tensor' object has no attribute 'append'
+41it [01:42,  2.46s/it]'Tensor' object has no attribute 'append'
+42it [01:43,  2.41s/it]'Tensor' object has no attribute 'append'
+41it [01:42,  2.43s/it]'Tensor' object has no attribute 'append'
+42it [01:44,  2.41s/it]'Tensor' object has no attribute 'append'
+44it [01:46,  2.37s/it]'Tensor' object has no attribute 'append'
+50it [01:44,  2.46s/it]'Tensor' object has no attribute 'append'
+42it [01:44,  2.44s/it]'Tensor' object has no attribute 'append'
+42it [01:45,  2.44s/it]'Tensor' object has no attribute 'append'
+42it [01:43,  2.43s/it]'Tensor' object has no attribute 'append'
+43it [01:45,  2.39s/it]'Tensor' object has no attribute 'append'
+42it [01:44,  2.41s/it]'Tensor' object has no attribute 'append'
+43it [01:46,  2.43s/it]'Tensor' object has no attribute 'append'
+45it [01:48,  2.37s/it]'Tensor' object has no attribute 'append'
+51it [01:47,  2.45s/it]'Tensor' object has no attribute 'append'
+43it [01:47,  2.45s/it]'Tensor' object has no attribute 'append'
+43it [01:46,  2.44s/it]'Tensor' object has no attribute 'append'
+44it [01:47,  2.38s/it]'Tensor' object has no attribute 'append'
+43it [01:47,  2.48s/it]'Tensor' object has no attribute 'append'
+43it [01:47,  2.41s/it]'Tensor' object has no attribute 'append'
+44it [01:49,  2.44s/it]'Tensor' object has no attribute 'append'
+46it [01:50,  2.38s/it]'Tensor' object has no attribute 'append'
+52it [01:49,  2.45s/it]'Tensor' object has no attribute 'append'
+44it [01:49,  2.46s/it]'Tensor' object has no attribute 'append'
+44it [01:48,  2.43s/it]'Tensor' object has no attribute 'append'
+45it [01:50,  2.39s/it]'Tensor' object has no attribute 'append'
+44it [01:50,  2.46s/it]'Tensor' object has no attribute 'append'
+44it [01:49,  2.41s/it]'Tensor' object has no attribute 'append'
+47it [01:53,  2.36s/it]'Tensor' object has no attribute 'append'
+45it [01:51,  2.46s/it]'Tensor' object has no attribute 'append'
+53it [01:51,  2.45s/it]'Tensor' object has no attribute 'append'
+45it [01:52,  2.45s/it]'Tensor' object has no attribute 'append'
+45it [01:51,  2.43s/it]'Tensor' object has no attribute 'append'
+46it [01:52,  2.40s/it]'Tensor' object has no attribute 'append'
+45it [01:52,  2.45s/it]'Tensor' object has no attribute 'append'
+45it [01:52,  2.40s/it]'Tensor' object has no attribute 'append'
+48it [01:55,  2.35s/it]'Tensor' object has no attribute 'append'
+46it [01:54,  2.44s/it]'Tensor' object has no attribute 'append'
+54it [01:54,  2.48s/it]'Tensor' object has no attribute 'append'
+46it [01:54,  2.44s/it]'Tensor' object has no attribute 'append'
+46it [01:53,  2.44s/it]'Tensor' object has no attribute 'append'
+47it [01:55,  2.39s/it]'Tensor' object has no attribute 'append'
+46it [01:55,  2.46s/it]'Tensor' object has no attribute 'append'
+46it [01:54,  2.41s/it]'Tensor' object has no attribute 'append'
+49it [01:57,  2.35s/it]'Tensor' object has no attribute 'append'
+47it [01:56,  2.46s/it]'Tensor' object has no attribute 'append'
+55it [01:56,  2.47s/it]'Tensor' object has no attribute 'append'
+47it [01:56,  2.43s/it]'Tensor' object has no attribute 'append'
+48it [01:57,  2.39s/it]'Tensor' object has no attribute 'append'
+47it [01:55,  2.44s/it]'Tensor' object has no attribute 'append'
+47it [01:57,  2.45s/it]'Tensor' object has no attribute 'append'
+47it [01:56,  2.41s/it]'Tensor' object has no attribute 'append'
+50it [02:00,  2.35s/it]'Tensor' object has no attribute 'append'
+48it [01:58,  2.44s/it]'Tensor' object has no attribute 'append'
+48it [01:59,  2.44s/it]'Tensor' object has no attribute 'append'
+56it [01:59,  2.48s/it]'Tensor' object has no attribute 'append'
+49it [01:59,  2.42s/it]'Tensor' object has no attribute 'append'
+48it [01:58,  2.45s/it]'Tensor' object has no attribute 'append'
+48it [02:00,  2.44s/it]'Tensor' object has no attribute 'append'
+48it [01:59,  2.42s/it]'Tensor' object has no attribute 'append'
+51it [02:02,  2.37s/it]'Tensor' object has no attribute 'append'
+49it [02:01,  2.43s/it]'Tensor' object has no attribute 'append'
+49it [02:01,  2.43s/it]'Tensor' object has no attribute 'append'
+57it [02:01,  2.47s/it]'Tensor' object has no attribute 'append'
+50it [02:02,  2.42s/it]'Tensor' object has no attribute 'append'
+49it [02:00,  2.44s/it]'Tensor' object has no attribute 'append'
+49it [02:02,  2.45s/it]'Tensor' object has no attribute 'append'
+49it [02:01,  2.44s/it]'Tensor' object has no attribute 'append'
+52it [02:05,  2.39s/it]'Tensor' object has no attribute 'append'
+50it [02:03,  2.44s/it]'Tensor' object has no attribute 'append'
+58it [02:04,  2.45s/it]'Tensor' object has no attribute 'append'
+50it [02:04,  2.43s/it]'Tensor' object has no attribute 'append'
+51it [02:04,  2.44s/it]'Tensor' object has no attribute 'append'
+50it [02:03,  2.47s/it]'Tensor' object has no attribute 'append'
+50it [02:05,  2.45s/it]'Tensor' object has no attribute 'append'
+50it [02:04,  2.44s/it]'Tensor' object has no attribute 'append'
+53it [02:07,  2.38s/it]'Tensor' object has no attribute 'append'
+51it [02:06,  2.44s/it]'Tensor' object has no attribute 'append'
+51it [02:06,  2.41s/it]'Tensor' object has no attribute 'append'
+59it [02:06,  2.45s/it]'Tensor' object has no attribute 'append'
+52it [02:07,  2.42s/it]'Tensor' object has no attribute 'append'
+51it [02:07,  2.44s/it]'Tensor' object has no attribute 'append'
+51it [02:05,  2.46s/it]'Tensor' object has no attribute 'append'
+51it [02:06,  2.45s/it]'Tensor' object has no attribute 'append'
+54it [02:09,  2.37s/it]'Tensor' object has no attribute 'append'
+52it [02:08,  2.42s/it]'Tensor' object has no attribute 'append'
+52it [02:08,  2.40s/it]'Tensor' object has no attribute 'append'
+60it [02:09,  2.43s/it]'Tensor' object has no attribute 'append'
+53it [02:09,  2.41s/it]'Tensor' object has no attribute 'append'
+52it [02:09,  2.43s/it]'Tensor' object has no attribute 'append'
+52it [02:08,  2.46s/it]'Tensor' object has no attribute 'append'
+52it [02:09,  2.46s/it]'Tensor' object has no attribute 'append'
+55it [02:12,  2.37s/it]'Tensor' object has no attribute 'append'
+53it [02:11,  2.41s/it]'Tensor' object has no attribute 'append'
+53it [02:11,  2.41s/it]'Tensor' object has no attribute 'append'
+61it [02:11,  2.42s/it]'Tensor' object has no attribute 'append'
+54it [02:12,  2.40s/it]'Tensor' object has no attribute 'append'
+53it [02:12,  2.42s/it]'Tensor' object has no attribute 'append'
+53it [02:10,  2.47s/it]'Tensor' object has no attribute 'append'
+53it [02:11,  2.46s/it]'Tensor' object has no attribute 'append'
+56it [02:14,  2.39s/it]'Tensor' object has no attribute 'append'
+54it [02:13,  2.44s/it]'Tensor' object has no attribute 'append'
+54it [02:13,  2.41s/it]'Tensor' object has no attribute 'append'
+62it [02:13,  2.43s/it]'Tensor' object has no attribute 'append'
+55it [02:14,  2.41s/it]'Tensor' object has no attribute 'append'
+54it [02:14,  2.42s/it]'Tensor' object has no attribute 'append'
+54it [02:13,  2.49s/it]'Tensor' object has no attribute 'append'
+54it [02:14,  2.46s/it]'Tensor' object has no attribute 'append'
+57it [02:17,  2.43s/it]'Tensor' object has no attribute 'append'
+55it [02:15,  2.43s/it]'Tensor' object has no attribute 'append'
+55it [02:16,  2.41s/it]'Tensor' object has no attribute 'append'
+63it [02:16,  2.43s/it]'Tensor' object has no attribute 'append'
+56it [02:16,  2.42s/it]'Tensor' object has no attribute 'append'
+55it [02:17,  2.42s/it]'Tensor' object has no attribute 'append'
+55it [02:15,  2.48s/it]'Tensor' object has no attribute 'append'
+55it [02:16,  2.47s/it]'Tensor' object has no attribute 'append'
+58it [02:19,  2.40s/it]'Tensor' object has no attribute 'append'
+56it [02:18,  2.40s/it]'Tensor' object has no attribute 'append'
+56it [02:18,  2.48s/it]'Tensor' object has no attribute 'append'
+64it [02:18,  2.41s/it]'Tensor' object has no attribute 'append'
+57it [02:19,  2.41s/it]'Tensor' object has no attribute 'append'
+56it [02:19,  2.40s/it]'Tensor' object has no attribute 'append'
+56it [02:18,  2.46s/it]'Tensor' object has no attribute 'append'
+59it [02:21,  2.40s/it]'Tensor' object has no attribute 'append'
+56it [02:19,  2.47s/it]'Tensor' object has no attribute 'append'
+57it [02:20,  2.40s/it]'Tensor' object has no attribute 'append'
+57it [02:21,  2.48s/it]'Tensor' object has no attribute 'append'
+65it [02:21,  2.45s/it]'Tensor' object has no attribute 'append'
+58it [02:21,  2.42s/it]'Tensor' object has no attribute 'append'
+57it [02:21,  2.40s/it]'Tensor' object has no attribute 'append'
+57it [02:20,  2.47s/it]'Tensor' object has no attribute 'append'
+60it [02:24,  2.42s/it]'Tensor' object has no attribute 'append'
+57it [02:21,  2.47s/it]'Tensor' object has no attribute 'append'
+58it [02:23,  2.39s/it]'Tensor' object has no attribute 'append'
+58it [02:23,  2.46s/it]'Tensor' object has no attribute 'append'
+66it [02:23,  2.45s/it]'Tensor' object has no attribute 'append'
+59it [02:24,  2.43s/it]'Tensor' object has no attribute 'append'
+58it [02:24,  2.41s/it]'Tensor' object has no attribute 'append'
+58it [02:23,  2.48s/it]'Tensor' object has no attribute 'append'
+61it [02:26,  2.41s/it]'Tensor' object has no attribute 'append'
+58it [02:24,  2.46s/it]'Tensor' object has no attribute 'append'
+59it [02:25,  2.42s/it]'Tensor' object has no attribute 'append'
+59it [02:25,  2.47s/it]'Tensor' object has no attribute 'append'
+67it [02:26,  2.45s/it]'Tensor' object has no attribute 'append'
+59it [02:26,  2.42s/it]'Tensor' object has no attribute 'append'
+60it [02:26,  2.47s/it]'Tensor' object has no attribute 'append'
+59it [02:25,  2.48s/it]'Tensor' object has no attribute 'append'
+59it [02:26,  2.46s/it]'Tensor' object has no attribute 'append'
+62it [02:29,  2.52s/it]'Tensor' object has no attribute 'append'
+60it [02:28,  2.42s/it]'Tensor' object has no attribute 'append'
+60it [02:28,  2.47s/it]'Tensor' object has no attribute 'append'
+68it [02:28,  2.46s/it]'Tensor' object has no attribute 'append'
+60it [02:29,  2.40s/it]'Tensor' object has no attribute 'append'
+61it [02:29,  2.45s/it]'Tensor' object has no attribute 'append'
+60it [02:28,  2.44s/it]'Tensor' object has no attribute 'append'
+60it [02:28,  2.46s/it]'Tensor' object has no attribute 'append'
+63it [02:31,  2.48s/it]'Tensor' object has no attribute 'append'
+61it [02:30,  2.42s/it]'Tensor' object has no attribute 'append'
+61it [02:30,  2.46s/it]'Tensor' object has no attribute 'append'
+69it [02:31,  2.44s/it]'Tensor' object has no attribute 'append'
+61it [02:31,  2.41s/it]'Tensor' object has no attribute 'append'
+62it [02:31,  2.49s/it]'Tensor' object has no attribute 'append'
+61it [02:30,  2.43s/it]'Tensor' object has no attribute 'append'
+61it [02:31,  2.45s/it]'Tensor' object has no attribute 'append'
+64it [02:34,  2.44s/it]'Tensor' object has no attribute 'append'
+62it [02:33,  2.42s/it]'Tensor' object has no attribute 'append'
+70it [02:33,  2.43s/it]'Tensor' object has no attribute 'append'
+62it [02:33,  2.48s/it]'Tensor' object has no attribute 'append'
+62it [02:34,  2.46s/it]'Tensor' object has no attribute 'append'
+63it [02:34,  2.52s/it]'Tensor' object has no attribute 'append'
+62it [02:32,  2.48s/it]'Tensor' object has no attribute 'append'
+62it [02:33,  2.46s/it]'Tensor' object has no attribute 'append'
+65it [02:36,  2.44s/it]'Tensor' object has no attribute 'append'
+63it [02:35,  2.46s/it]'Tensor' object has no attribute 'append'
+71it [02:35,  2.43s/it]'Tensor' object has no attribute 'append'
+63it [02:36,  2.58s/it]'Tensor' object has no attribute 'append'
+63it [02:36,  2.44s/it]'Tensor' object has no attribute 'append'
+64it [02:36,  2.56s/it]'Tensor' object has no attribute 'append'
+63it [02:35,  2.45s/it]'Tensor' object has no attribute 'append'
+66it [02:39,  2.43s/it]'Tensor' object has no attribute 'append'
+63it [02:36,  2.53s/it]'Tensor' object has no attribute 'append'
+64it [02:38,  2.43s/it]'Tensor' object has no attribute 'append'
+72it [02:38,  2.43s/it]'Tensor' object has no attribute 'append'
+64it [02:38,  2.54s/it]'Tensor' object has no attribute 'append'
+64it [02:38,  2.42s/it]'Tensor' object has no attribute 'append'
+64it [02:37,  2.43s/it]'Tensor' object has no attribute 'append'
+65it [02:39,  2.52s/it]'Tensor' object has no attribute 'append'
+67it [02:41,  2.43s/it]'Tensor' object has no attribute 'append'
+64it [02:38,  2.49s/it]'Tensor' object has no attribute 'append'
+65it [02:40,  2.42s/it]'Tensor' object has no attribute 'append'
+73it [02:40,  2.43s/it]'Tensor' object has no attribute 'append'
+65it [02:41,  2.53s/it]'Tensor' object has no attribute 'append'
+65it [02:41,  2.44s/it]'Tensor' object has no attribute 'append'
+66it [02:41,  2.47s/it]'Tensor' object has no attribute 'append'
+65it [02:40,  2.41s/it]'Tensor' object has no attribute 'append'
+68it [02:43,  2.39s/it]'Tensor' object has no attribute 'append'
+65it [02:41,  2.47s/it]'Tensor' object has no attribute 'append'
+66it [02:42,  2.40s/it]'Tensor' object has no attribute 'append'
+74it [02:43,  2.46s/it]'Tensor' object has no attribute 'append'
+66it [02:43,  2.50s/it]'Tensor' object has no attribute 'append'
+66it [02:43,  2.44s/it]'Tensor' object has no attribute 'append'
+67it [02:44,  2.43s/it]'Tensor' object has no attribute 'append'
+66it [02:42,  2.42s/it]'Tensor' object has no attribute 'append'
+69it [02:46,  2.38s/it]'Tensor' object has no attribute 'append'
+66it [02:43,  2.46s/it]'Tensor' object has no attribute 'append'
+67it [02:45,  2.40s/it]'Tensor' object has no attribute 'append'
+75it [02:45,  2.48s/it]'Tensor' object has no attribute 'append'
+67it [02:45,  2.48s/it]'Tensor' object has no attribute 'append'
+67it [02:46,  2.45s/it]'Tensor' object has no attribute 'append'
+68it [02:46,  2.41s/it]'Tensor' object has no attribute 'append'
+67it [02:45,  2.43s/it]'Tensor' object has no attribute 'append'
+70it [02:48,  2.36s/it]'Tensor' object has no attribute 'append'
+67it [02:46,  2.46s/it]'Tensor' object has no attribute 'append'
+68it [02:47,  2.38s/it]'Tensor' object has no attribute 'append'
+76it [02:48,  2.48s/it]'Tensor' object has no attribute 'append'
+68it [02:48,  2.49s/it]'Tensor' object has no attribute 'append'
+68it [02:48,  2.43s/it]'Tensor' object has no attribute 'append'
+69it [02:48,  2.41s/it]'Tensor' object has no attribute 'append'
+68it [02:47,  2.43s/it]'Tensor' object has no attribute 'append'
+71it [02:50,  2.39s/it]'Tensor' object has no attribute 'append'
+69it [02:49,  2.37s/it]'Tensor' object has no attribute 'append'
+68it [02:48,  2.45s/it]'Tensor' object has no attribute 'append'
+77it [02:50,  2.45s/it]'Tensor' object has no attribute 'append'
+69it [02:51,  2.42s/it]'Tensor' object has no attribute 'append'
+69it [02:50,  2.47s/it]'Tensor' object has no attribute 'append'
+70it [02:51,  2.45s/it]'Tensor' object has no attribute 'append'
+69it [02:49,  2.43s/it]'Tensor' object has no attribute 'append'
+72it [02:53,  2.37s/it]'Tensor' object has no attribute 'append'
+70it [02:52,  2.37s/it]'Tensor' object has no attribute 'append'
+69it [02:51,  2.44s/it]'Tensor' object has no attribute 'append'
+70it [02:52,  2.18s/it]'Tensor' object has no attribute 'append'
+78it [02:53,  2.49s/it]'Tensor' object has no attribute 'append'
+70it [02:53,  2.40s/it]'Tensor' object has no attribute 'append'
+70it [02:52,  2.43s/it]'Tensor' object has no attribute 'append'
+71it [02:53,  2.47s/it]'Tensor' object has no attribute 'append'
+73it [02:55,  2.37s/it]'Tensor' object has no attribute 'append'
+71it [02:54,  2.00s/it]'Tensor' object has no attribute 'append'
+71it [02:54,  2.36s/it]'Tensor' object has no attribute 'append'
+70it [02:53,  2.44s/it]'Tensor' object has no attribute 'append'
+72it [02:55,  1.84s/it]'Tensor' object has no attribute 'append'
+79it [02:55,  2.48s/it]'Tensor' object has no attribute 'append'
+71it [02:55,  2.39s/it]'Tensor' object has no attribute 'append'
+72it [02:56,  2.45s/it]'Tensor' object has no attribute 'append'
+71it [02:54,  2.43s/it]'Tensor' object has no attribute 'append'
+74it [02:57,  2.35s/it]'Tensor' object has no attribute 'append'
+72it [02:56,  2.36s/it]'Tensor' object has no attribute 'append'
+73it [02:56,  1.73s/it]'Tensor' object has no attribute 'append'
+71it [02:55,  2.42s/it]'Tensor' object has no attribute 'append'
+72it [02:58,  2.39s/it]'Tensor' object has no attribute 'append'
+80it [02:58,  2.48s/it]'Tensor' object has no attribute 'append'
+74it [02:58,  1.65s/it]'Tensor' object has no attribute 'append'
+75it [03:00,  2.36s/it]'Tensor' object has no attribute 'append'
+73it [02:58,  2.45s/it]'Tensor' object has no attribute 'append'
+72it [02:57,  2.49s/it]'Tensor' object has no attribute 'append'
+73it [02:59,  2.37s/it]'Tensor' object has no attribute 'append'
+72it [02:58,  2.42s/it]'Tensor' object has no attribute 'append'
+75it [03:00,  1.63s/it]'Tensor' object has no attribute 'append'
+73it [03:00,  2.40s/it]'Tensor' object has no attribute 'append'
+81it [03:00,  2.46s/it]'Tensor' object has no attribute 'append'
+76it [03:02,  2.35s/it]'Tensor' object has no attribute 'append'
+74it [03:01,  2.43s/it]'Tensor' object has no attribute 'append'
+73it [02:59,  2.51s/it]'Tensor' object has no attribute 'append'
+76it [03:01,  1.57s/it]'Tensor' object has no attribute 'append'
+74it [03:01,  2.37s/it]'Tensor' object has no attribute 'append'
+73it [03:00,  2.41s/it]'Tensor' object has no attribute 'append'
+74it [03:02,  2.40s/it]'Tensor' object has no attribute 'append'
+82it [03:02,  2.44s/it]'Tensor' object has no attribute 'append'
+77it [03:02,  1.54s/it]'Tensor' object has no attribute 'append'
+77it [03:05,  2.36s/it]'Tensor' object has no attribute 'append'
+75it [03:03,  2.43s/it]'Tensor' object has no attribute 'append'
+75it [03:04,  2.38s/it]'Tensor' object has no attribute 'append'
+74it [03:02,  2.54s/it]'Tensor' object has no attribute 'append'
+74it [03:03,  2.41s/it]'Tensor' object has no attribute 'append'
+78it [03:04,  1.53s/it]'Tensor' object has no attribute 'append'
+75it [03:05,  2.39s/it]'Tensor' object has no attribute 'append'
+83it [03:05,  2.43s/it]'Tensor' object has no attribute 'append'
+78it [03:07,  2.35s/it]'Tensor' object has no attribute 'append'
+79it [03:05,  1.51s/it]'Tensor' object has no attribute 'append'
+76it [03:05,  2.42s/it]'Tensor' object has no attribute 'append'
+76it [03:06,  2.39s/it]'Tensor' object has no attribute 'append'
+75it [03:04,  2.51s/it]'Tensor' object has no attribute 'append'
+75it [03:05,  2.40s/it]'Tensor' object has no attribute 'append'
+80it [03:07,  1.50s/it]'Tensor' object has no attribute 'append'
+76it [03:07,  2.39s/it]'Tensor' object has no attribute 'append'
+84it [03:07,  2.43s/it]'Tensor' object has no attribute 'append'
+79it [03:09,  2.37s/it]'Tensor' object has no attribute 'append'
+77it [03:08,  2.42s/it]'Tensor' object has no attribute 'append'
+77it [03:08,  2.41s/it]'Tensor' object has no attribute 'append'
+76it [03:07,  2.50s/it]'Tensor' object has no attribute 'append'
+81it [03:09,  1.55s/it]'Tensor' object has no attribute 'append'
+76it [03:07,  2.42s/it]'Tensor' object has no attribute 'append'
+77it [03:10,  2.39s/it]'Tensor' object has no attribute 'append'
+85it [03:10,  2.43s/it]'Tensor' object has no attribute 'append'
+80it [03:12,  2.36s/it]'Tensor' object has no attribute 'append'
+82it [03:10,  1.54s/it]'Tensor' object has no attribute 'append'
+78it [03:10,  2.45s/it]'Tensor' object has no attribute 'append'
+78it [03:11,  2.43s/it]'Tensor' object has no attribute 'append'
+77it [03:09,  2.49s/it]'Tensor' object has no attribute 'append'
+77it [03:10,  2.43s/it]'Tensor' object has no attribute 'append'
+83it [03:12,  1.56s/it]'Tensor' object has no attribute 'append'
+78it [03:12,  2.40s/it]'Tensor' object has no attribute 'append'
+86it [03:12,  2.44s/it]'Tensor' object has no attribute 'append'
+81it [03:14,  2.36s/it]'Tensor' object has no attribute 'append'
+79it [03:13,  2.45s/it]'Tensor' object has no attribute 'append'
+84it [03:13,  1.55s/it]'Tensor' object has no attribute 'append'
+79it [03:13,  2.42s/it]'Tensor' object has no attribute 'append'
+78it [03:12,  2.51s/it]'Tensor' object has no attribute 'append'
+78it [03:12,  2.44s/it]'Tensor' object has no attribute 'append'
+79it [03:14,  2.38s/it]'Tensor' object has no attribute 'append'
+87it [03:15,  2.43s/it]'Tensor' object has no attribute 'append'
+85it [03:15,  1.53s/it]'Tensor' object has no attribute 'append'
+82it [03:16,  2.36s/it]'Tensor' object has no attribute 'append'
+80it [03:15,  2.44s/it]'Tensor' object has no attribute 'append'
+80it [03:16,  2.44s/it]'Tensor' object has no attribute 'append'
+79it [03:14,  2.49s/it]'Tensor' object has no attribute 'append'
+79it [03:15,  2.44s/it]'Tensor' object has no attribute 'append'
+86it [03:16,  1.51s/it]'Tensor' object has no attribute 'append'
+80it [03:17,  2.38s/it]'Tensor' object has no attribute 'append'
+88it [03:17,  2.43s/it]'Tensor' object has no attribute 'append'
+83it [03:19,  2.36s/it]'Tensor' object has no attribute 'append'
+87it [03:18,  1.50s/it]'Tensor' object has no attribute 'append'
+81it [03:18,  2.44s/it]'Tensor' object has no attribute 'append'
+81it [03:18,  2.42s/it]'Tensor' object has no attribute 'append'
+80it [03:17,  2.42s/it]'Tensor' object has no attribute 'append'
+80it [03:17,  2.52s/it]'Tensor' object has no attribute 'append'
+81it [03:19,  2.39s/it]'Tensor' object has no attribute 'append'
+88it [03:19,  1.52s/it]'Tensor' object has no attribute 'append'
+89it [03:19,  2.42s/it]'Tensor' object has no attribute 'append'
+84it [03:21,  2.36s/it]89it [03:19,  2.25s/it]
+'Tensor' object has no attribute 'append'
+82it [03:20,  2.43s/it]'Tensor' object has no attribute 'append'
+82it [03:21,  2.44s/it]'Tensor' object has no attribute 'append'
+89it [03:21,  1.51s/it]89it [03:21,  2.26s/it]
+'Tensor' object has no attribute 'append'
+81it [03:20,  2.43s/it]'Tensor' object has no attribute 'append'
+81it [03:19,  2.51s/it]'Tensor' object has no attribute 'append'
+82it [03:22,  2.39s/it]'Tensor' object has no attribute 'append'
+85it [03:24,  2.42s/it]'Tensor' object has no attribute 'append'
+83it [03:23,  2.43s/it]'Tensor' object has no attribute 'append'
+83it [03:23,  2.43s/it]'Tensor' object has no attribute 'append'
+82it [03:22,  2.41s/it]'Tensor' object has no attribute 'append'
+82it [03:22,  2.49s/it]'Tensor' object has no attribute 'append'
+83it [03:24,  2.38s/it]'Tensor' object has no attribute 'append'
+86it [03:26,  2.40s/it]'Tensor' object has no attribute 'append'
+84it [03:25,  2.44s/it]'Tensor' object has no attribute 'append'
+84it [03:26,  2.44s/it]'Tensor' object has no attribute 'append'
+83it [03:25,  2.44s/it]'Tensor' object has no attribute 'append'
+83it [03:24,  2.47s/it]'Tensor' object has no attribute 'append'
+84it [03:26,  2.39s/it]'Tensor' object has no attribute 'append'
+87it [03:28,  2.41s/it]'Tensor' object has no attribute 'append'
+85it [03:27,  2.44s/it]'Tensor' object has no attribute 'append'
+85it [03:28,  2.42s/it]'Tensor' object has no attribute 'append'
+84it [03:27,  2.43s/it]'Tensor' object has no attribute 'append'
+84it [03:27,  2.47s/it]'Tensor' object has no attribute 'append'
+85it [03:29,  2.40s/it]'Tensor' object has no attribute 'append'
+88it [03:31,  2.41s/it]'Tensor' object has no attribute 'append'
+86it [03:30,  2.42s/it]'Tensor' object has no attribute 'append'
+86it [03:30,  2.42s/it]'Tensor' object has no attribute 'append'
+85it [03:29,  2.43s/it]'Tensor' object has no attribute 'append'
+85it [03:29,  2.49s/it]'Tensor' object has no attribute 'append'
+86it [03:31,  2.38s/it]'Tensor' object has no attribute 'append'
+89it [03:33,  2.38s/it]89it [03:33,  2.40s/it]
+'Tensor' object has no attribute 'append'
+87it [03:32,  2.42s/it]'Tensor' object has no attribute 'append'
+87it [03:33,  2.41s/it]'Tensor' object has no attribute 'append'
+86it [03:32,  2.43s/it]'Tensor' object has no attribute 'append'
+86it [03:32,  2.49s/it]'Tensor' object has no attribute 'append'
+87it [03:33,  2.40s/it]'Tensor' object has no attribute 'append'
+88it [03:35,  2.41s/it]'Tensor' object has no attribute 'append'
+88it [03:35,  2.39s/it]'Tensor' object has no attribute 'append'
+87it [03:34,  2.43s/it]'Tensor' object has no attribute 'append'
+87it [03:34,  2.46s/it]'Tensor' object has no attribute 'append'
+88it [03:36,  2.38s/it]'Tensor' object has no attribute 'append'
+89it [03:37,  2.41s/it]89it [03:37,  2.44s/it]
+'Tensor' object has no attribute 'append'
+89it [03:37,  2.38s/it]89it [03:37,  2.45s/it]
+'Tensor' object has no attribute 'append'
+88it [03:37,  2.41s/it]'Tensor' object has no attribute 'append'
+88it [03:37,  2.45s/it]'Tensor' object has no attribute 'append'
+89it [03:38,  2.39s/it]89it [03:38,  2.46s/it]
+'Tensor' object has no attribute 'append'
+89it [03:39,  2.43s/it]89it [03:39,  2.47s/it]
+'Tensor' object has no attribute 'append'
+89it [03:39,  2.43s/it]89it [03:39,  2.47s/it]
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 592, in <module>
+[rank1]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank1]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 465, in evaluate_chat_model
+[rank1]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank1]: NameError: name 'avg_vtokens_list' is not defined. Did you mean: 'num_token_list'?
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 592, in <module>
+[rank7]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank7]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 465, in evaluate_chat_model
+[rank7]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank7]: NameError: name 'avg_vtokens_list' is not defined. Did you mean: 'num_token_list'?
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 592, in <module>
+[rank0]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank0]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 465, in evaluate_chat_model
+[rank0]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank0]: NameError: name 'avg_vtokens_list' is not defined. Did you mean: 'num_token_list'?
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 592, in <module>
+[rank3]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank3]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 465, in evaluate_chat_model
+[rank3]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank3]: NameError: name 'avg_vtokens_list' is not defined. Did you mean: 'num_token_list'?
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 592, in <module>
+[rank5]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank5]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 465, in evaluate_chat_model
+[rank5]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank5]: NameError: name 'avg_vtokens_list' is not defined. Did you mean: 'num_token_list'?
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 592, in <module>
+[rank4]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank4]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 465, in evaluate_chat_model
+[rank4]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank4]: NameError: name 'avg_vtokens_list' is not defined. Did you mean: 'num_token_list'?
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 592, in <module>
+[rank6]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank6]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 465, in evaluate_chat_model
+[rank6]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank6]: NameError: name 'avg_vtokens_list' is not defined. Did you mean: 'num_token_list'?
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 592, in <module>
+[rank2]:     evaluate_chat_model(model, processor, image_process_args, args.select_mode, args.select_image_num)
+[rank2]:   File "/mntnlp/zqp/physical_report/Qwen2-VL/infer_mpdocvqa_dynamic_unsupervised_cls4.py", line 465, in evaluate_chat_model
+[rank2]:     torch.distributed.all_gather_object(merged_avg_vtokens, json.dumps(avg_vtokens_list))
+[rank2]: NameError: name 'avg_vtokens_list' is not defined. Did you mean: 'num_token_list'?
+W1222 09:10:37.313000 139779031714688 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 196764 closing signal SIGTERM
+W1222 09:10:37.313000 139779031714688 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 196765 closing signal SIGTERM
+W1222 09:10:37.313000 139779031714688 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 196766 closing signal SIGTERM
+W1222 09:10:37.313000 139779031714688 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 196767 closing signal SIGTERM
+W1222 09:10:37.313000 139779031714688 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 196769 closing signal SIGTERM
+W1222 09:10:37.313000 139779031714688 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 196770 closing signal SIGTERM
+W1222 09:10:37.313000 139779031714688 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 196771 closing signal SIGTERM
+E1222 09:10:38.580000 139779031714688 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 4 (pid: 196768) of binary: /root/miniconda3/bin/python
+Traceback (most recent call last):
+  File "/root/miniconda3/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/root/miniconda3/lib/python3.10/site-packages/zhenjin_utils/import_hooks/torchrun_args_hook.py", line 28, in new_run
+    return module.old_run(*func_args, **func_kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+infer_mpdocvqa_dynamic_unsupervised_cls4.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-12-22_09:10:37
+  host      : amed-kmaker-033145117225
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 196768)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v3-top3-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v3-top5-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix-test2 ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val-unsupervised-cls-v4-top5_mix == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix-test2 ']'

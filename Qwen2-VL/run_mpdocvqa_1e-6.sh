@@ -1,0 +1,22 @@
+ps -ef | grep swift | grep -v grep | awk '{print "sudo kill -9 "$2}' | sh
+MAX_PIXELS=100352 NPROC_PER_NODE=8 swift sft \
+  --model_type qwen2-vl-7b-instruct \
+  --model_id_or_path /gruntdata/heyuan67/huoluo.wx/models/Qwen__Qwen2-VL-7B-Instruct \
+  --sft_type full \
+  --dataset /mntnlp/qp_mm_data/docvqa/mpdoc/mpdoc_train_swift_qwen2vl.jsonl \
+  --deepspeed ds_z3_config.json \
+  --target_modules AUTO \
+  --learning_rate 1e-6 \
+  --gradient_accumulation_steps 1 \
+  --freeze_vit False \
+  --logging_steps 1 \
+  --batch_size 1 \
+  --output_dir /mntnlp/zqp/qp_lm_models/mpdocvqa/1e-6 \
+  --dataloader_num_workers 4 \
+  --save_safetensors True \
+  --gradient_checkpointing True \
+  --save_steps 100000000000 \
+  --push_to_hub False \
+  --use_flash_attn True \
+  --dataset_test_ratio 0. \
+  --num_train_epochs 100 \

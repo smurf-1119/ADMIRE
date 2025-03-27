@@ -1,0 +1,818 @@
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/
++ DATASET=vqa-newsvqa-val
++ GPUS=8
++ CHECKPOINT=/gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/
+++ pwd
++ export PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ PYTHONPATH=/mntnlp/zqp/physical_report/Qwen2-VL:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public:/root/miniconda3/lib/python3.10/site-packages/aistudio_notebook/public
++ echo 'CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/'
+CHECKPOINT: /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/
++ MASTER_PORT=62621
++ PORT=62621
++ GPUS=8
++ export MASTER_PORT=62621
++ MASTER_PORT=62621
++ export PORT=62621
++ PORT=62621
++ '[' vqa-newsvqa-val == vqa-mpdocvqa-val ']'
++ '[' vqa-newsvqa-val == vqa-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val == vqa-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val == vqa-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val == vqa-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val == vqa-dude-mpdocvqa-val ']'
++ '[' vqa-newsvqa-val == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val == vqa-dude-mpdocvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val == vqa-dude-mpdocvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val == vqa-newsvqa-val ']'
++ torchrun --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --nproc_per_node=8 --master_port=62621 infer_mpdocvqa_dynamic.py --checkpoint /gruntdata/heyuan67/zqp/qp_lm_models/mpdocvqa_dude_newsvqa_slidevqa/1e-6/qwen2-vl-7b-instruct/v11-20241212-001249/checkpoint-18868/ --max-pixels 200704 --datasets newsvqa_val --out-dir ./res/news-vqa
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+datasets: ['newsvqa_val']
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.58it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  5.12it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.17it/s]`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.19it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.16it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.17it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.26it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.17it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.10it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.50it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.70it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.69it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.70it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.24it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.82it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.57it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.84it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.84it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.12it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.84it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.92it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.29it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.70it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.00it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.86it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.99it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.86it/s]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.36it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.32it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.99it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.85it/s]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.39it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.75it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.66it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.63it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.35it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.44it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.29it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.42it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.34it/s]
+0it [00:00, ?it/s]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+0it [00:00, ?it/s]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+0it [00:00, ?it/s]{'max_pixels': 200704.0}
+0it [00:00, ?it/s]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+0it [00:00, ?it/s]0it [00:00, ?it/s]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+0it [00:00, ?it/s]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+0it [00:00, ?it/s]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+1it [00:02,  2.12s/it]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+1it [00:02,  2.17s/it]{'max_pixels': 200704.0}
+2it [00:02,  1.31s/it]{'max_pixels': 200704.0}
+1it [00:02,  2.07s/it]{'max_pixels': 200704.0}
+1it [00:02,  2.03s/it]{'max_pixels': 200704.0}
+1it [00:02,  2.09s/it]{'max_pixels': 200704.0}
+1it [00:02,  2.16s/it]{'max_pixels': 200704.0}
+1it [00:02,  2.18s/it]{'max_pixels': 200704.0}
+2it [00:02,  1.36s/it]{'max_pixels': 200704.0}
+1it [00:02,  2.37s/it]{'max_pixels': 200704.0}
+3it [00:03,  1.05s/it]{'max_pixels': 200704.0}
+2it [00:02,  1.27s/it]{'max_pixels': 200704.0}
+2it [00:02,  1.27s/it]{'max_pixels': 200704.0}
+2it [00:02,  1.31s/it]{'max_pixels': 200704.0}
+2it [00:02,  1.32s/it]{'max_pixels': 200704.0}
+2it [00:02,  1.34s/it]{'max_pixels': 200704.0}
+3it [00:03,  1.10s/it]{'max_pixels': 200704.0}
+2it [00:03,  1.41s/it]{'max_pixels': 200704.0}
+3it [00:03,  1.04s/it]{'max_pixels': 200704.0}
+4it [00:04,  1.05it/s]{'max_pixels': 200704.0}
+3it [00:03,  1.03s/it]{'max_pixels': 200704.0}
+3it [00:03,  1.06s/it]{'max_pixels': 200704.0}
+3it [00:03,  1.07s/it]{'max_pixels': 200704.0}
+3it [00:03,  1.07s/it]{'max_pixels': 200704.0}
+4it [00:04,  1.05it/s]{'max_pixels': 200704.0}
+3it [00:03,  1.11s/it]{'max_pixels': 200704.0}
+5it [00:05,  1.15it/s]{'max_pixels': 200704.0}
+4it [00:04,  1.06it/s]{'max_pixels': 200704.0}
+4it [00:04,  1.08it/s]{'max_pixels': 200704.0}
+4it [00:04,  1.06it/s]{'max_pixels': 200704.0}
+4it [00:04,  1.06it/s]{'max_pixels': 200704.0}
+4it [00:04,  1.06it/s]{'max_pixels': 200704.0}
+5it [00:05,  1.11it/s]{'max_pixels': 200704.0}
+4it [00:04,  1.04it/s]{'max_pixels': 200704.0}
+6it [00:05,  1.22it/s]{'max_pixels': 200704.0}
+5it [00:05,  1.16it/s]{'max_pixels': 200704.0}
+5it [00:05,  1.16it/s]{'max_pixels': 200704.0}
+5it [00:05,  1.15it/s]{'max_pixels': 200704.0}
+5it [00:05,  1.15it/s]{'max_pixels': 200704.0}
+5it [00:05,  1.12it/s]{'max_pixels': 200704.0}
+6it [00:06,  1.16it/s]{'max_pixels': 200704.0}
+7it [00:06,  1.27it/s]{'max_pixels': 200704.0}
+5it [00:05,  1.13it/s]{'max_pixels': 200704.0}
+6it [00:05,  1.21it/s]{'max_pixels': 200704.0}
+6it [00:05,  1.19it/s]{'max_pixels': 200704.0}
+6it [00:05,  1.20it/s]{'max_pixels': 200704.0}
+6it [00:05,  1.20it/s]{'max_pixels': 200704.0}
+6it [00:05,  1.18it/s]{'max_pixels': 200704.0}
+8it [00:07,  1.30it/s]{'max_pixels': 200704.0}
+6it [00:06,  1.19it/s]{'max_pixels': 200704.0}
+7it [00:06,  1.20it/s]{'max_pixels': 200704.0}
+7it [00:06,  1.25it/s]{'max_pixels': 200704.0}
+7it [00:06,  1.22it/s]{'max_pixels': 200704.0}
+7it [00:06,  1.26it/s]{'max_pixels': 200704.0}
+7it [00:06,  1.22it/s]{'max_pixels': 200704.0}
+7it [00:06,  1.22it/s]{'max_pixels': 200704.0}
+9it [00:08,  1.33it/s]{'max_pixels': 200704.0}
+7it [00:06,  1.24it/s]{'max_pixels': 200704.0}
+8it [00:07,  1.28it/s]{'max_pixels': 200704.0}
+8it [00:07,  1.22it/s]{'max_pixels': 200704.0}
+8it [00:07,  1.27it/s]{'max_pixels': 200704.0}
+8it [00:07,  1.28it/s]{'max_pixels': 200704.0}
+8it [00:07,  1.24it/s]{'max_pixels': 200704.0}
+10it [00:08,  1.32it/s]{'max_pixels': 200704.0}
+8it [00:07,  1.28it/s]{'max_pixels': 200704.0}
+8it [00:07,  1.19it/s]{'max_pixels': 200704.0}
+9it [00:08,  1.27it/s]{'max_pixels': 200704.0}
+9it [00:08,  1.29it/s]{'max_pixels': 200704.0}
+9it [00:08,  1.30it/s]{'max_pixels': 200704.0}
+9it [00:08,  1.32it/s]{'max_pixels': 200704.0}
+9it [00:08,  1.31it/s]{'max_pixels': 200704.0}
+9it [00:08,  1.24it/s]{'max_pixels': 200704.0}
+9it [00:08,  1.24it/s]{'max_pixels': 200704.0}
+10it [00:08,  1.30it/s]{'max_pixels': 200704.0}
+11it [00:09,  1.26it/s]{'max_pixels': 200704.0}
+10it [00:09,  1.23it/s]{'max_pixels': 200704.0}
+10it [00:08,  1.26it/s]{'max_pixels': 200704.0}
+10it [00:08,  1.26it/s]{'max_pixels': 200704.0}
+10it [00:09,  1.34it/s]{'max_pixels': 200704.0}
+10it [00:09,  1.27it/s]{'max_pixels': 200704.0}
+10it [00:09,  1.26it/s]{'max_pixels': 200704.0}
+11it [00:09,  1.33it/s]{'max_pixels': 200704.0}
+12it [00:10,  1.28it/s]{'max_pixels': 200704.0}
+11it [00:09,  1.26it/s]{'max_pixels': 200704.0}
+11it [00:09,  1.29it/s]{'max_pixels': 200704.0}
+11it [00:09,  1.28it/s]{'max_pixels': 200704.0}
+11it [00:09,  1.35it/s]{'max_pixels': 200704.0}
+11it [00:09,  1.29it/s]{'max_pixels': 200704.0}
+11it [00:09,  1.29it/s]{'max_pixels': 200704.0}
+12it [00:10,  1.29it/s]{'max_pixels': 200704.0}
+13it [00:11,  1.29it/s]{'max_pixels': 200704.0}
+12it [00:10,  1.27it/s]{'max_pixels': 200704.0}
+12it [00:10,  1.32it/s]{'max_pixels': 200704.0}
+12it [00:10,  1.26it/s]{'max_pixels': 200704.0}
+12it [00:10,  1.29it/s]{'max_pixels': 200704.0}
+12it [00:10,  1.28it/s]{'max_pixels': 200704.0}
+12it [00:10,  1.28it/s]{'max_pixels': 200704.0}
+13it [00:11,  1.32it/s]{'max_pixels': 200704.0}
+14it [00:11,  1.31it/s]{'max_pixels': 200704.0}
+13it [00:11,  1.29it/s]{'max_pixels': 200704.0}
+13it [00:11,  1.25it/s]{'max_pixels': 200704.0}
+13it [00:11,  1.27it/s]{'max_pixels': 200704.0}
+13it [00:11,  1.28it/s]{'max_pixels': 200704.0}
+15it [00:12,  1.33it/s]{'max_pixels': 200704.0}
+13it [00:11,  1.27it/s]{'max_pixels': 200704.0}
+14it [00:11,  1.33it/s]{'max_pixels': 200704.0}
+13it [00:11,  1.25it/s]{'max_pixels': 200704.0}
+14it [00:12,  1.32it/s]{'max_pixels': 200704.0}
+14it [00:11,  1.29it/s]{'max_pixels': 200704.0}
+14it [00:12,  1.26it/s]{'max_pixels': 200704.0}
+16it [00:13,  1.35it/s]{'max_pixels': 200704.0}
+14it [00:12,  1.30it/s]{'max_pixels': 200704.0}
+14it [00:12,  1.28it/s]{'max_pixels': 200704.0}
+15it [00:12,  1.32it/s]{'max_pixels': 200704.0}
+15it [00:12,  1.32it/s]{'max_pixels': 200704.0}
+14it [00:12,  1.23it/s]{'max_pixels': 200704.0}
+15it [00:12,  1.30it/s]{'max_pixels': 200704.0}
+15it [00:12,  1.21it/s]{'max_pixels': 200704.0}
+17it [00:14,  1.34it/s]{'max_pixels': 200704.0}
+15it [00:12,  1.31it/s]{'max_pixels': 200704.0}
+16it [00:13,  1.33it/s]{'max_pixels': 200704.0}
+15it [00:12,  1.27it/s]{'max_pixels': 200704.0}
+16it [00:13,  1.33it/s]{'max_pixels': 200704.0}
+15it [00:13,  1.20it/s]{'max_pixels': 200704.0}
+16it [00:13,  1.26it/s]{'max_pixels': 200704.0}
+16it [00:13,  1.34it/s]{'max_pixels': 200704.0}
+18it [00:14,  1.31it/s]{'max_pixels': 200704.0}
+16it [00:13,  1.31it/s]{'max_pixels': 200704.0}
+16it [00:13,  1.26it/s]{'max_pixels': 200704.0}
+17it [00:14,  1.31it/s]{'max_pixels': 200704.0}
+17it [00:14,  1.29it/s]{'max_pixels': 200704.0}
+16it [00:13,  1.24it/s]{'max_pixels': 200704.0}
+17it [00:14,  1.30it/s]{'max_pixels': 200704.0}
+17it [00:14,  1.36it/s]{'max_pixels': 200704.0}
+17it [00:14,  1.31it/s]{'max_pixels': 200704.0}
+18it [00:14,  1.33it/s]{'max_pixels': 200704.0}
+17it [00:14,  1.26it/s]{'max_pixels': 200704.0}
+19it [00:15,  1.28it/s]{'max_pixels': 200704.0}
+17it [00:14,  1.25it/s]{'max_pixels': 200704.0}
+18it [00:15,  1.23it/s]{'max_pixels': 200704.0}
+18it [00:15,  1.32it/s]{'max_pixels': 200704.0}
+18it [00:15,  1.32it/s]{'max_pixels': 200704.0}
+19it [00:15,  1.35it/s]{'max_pixels': 200704.0}
+18it [00:15,  1.31it/s]{'max_pixels': 200704.0}
+20it [00:16,  1.31it/s]{'max_pixels': 200704.0}
+18it [00:15,  1.27it/s]{'max_pixels': 200704.0}
+19it [00:16,  1.25it/s]{'max_pixels': 200704.0}
+18it [00:15,  1.22it/s]{'max_pixels': 200704.0}
+19it [00:15,  1.34it/s]{'max_pixels': 200704.0}
+19it [00:15,  1.30it/s]{'max_pixels': 200704.0}
+20it [00:16,  1.34it/s]{'max_pixels': 200704.0}
+19it [00:15,  1.31it/s]{'max_pixels': 200704.0}
+21it [00:17,  1.30it/s]{'max_pixels': 200704.0}
+19it [00:16,  1.29it/s]{'max_pixels': 200704.0}
+20it [00:16,  1.26it/s]{'max_pixels': 200704.0}
+19it [00:16,  1.26it/s]{'max_pixels': 200704.0}
+20it [00:16,  1.36it/s]{'max_pixels': 200704.0}
+20it [00:16,  1.33it/s]{'max_pixels': 200704.0}
+21it [00:17,  1.34it/s]{'max_pixels': 200704.0}
+20it [00:16,  1.34it/s]{'max_pixels': 200704.0}
+20it [00:16,  1.29it/s]{'max_pixels': 200704.0}
+22it [00:18,  1.29it/s]{'max_pixels': 200704.0}
+21it [00:17,  1.30it/s]{'max_pixels': 200704.0}
+20it [00:17,  1.24it/s]{'max_pixels': 200704.0}
+21it [00:17,  1.37it/s]{'max_pixels': 200704.0}
+22it [00:17,  1.34it/s]21it [00:17,  1.32it/s]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+21it [00:17,  1.34it/s]{'max_pixels': 200704.0}
+21it [00:17,  1.32it/s]{'max_pixels': 200704.0}
+23it [00:18,  1.30it/s]{'max_pixels': 200704.0}
+22it [00:18,  1.27it/s]{'max_pixels': 200704.0}
+22it [00:17,  1.35it/s]{'max_pixels': 200704.0}
+21it [00:17,  1.21it/s]{'max_pixels': 200704.0}
+22it [00:18,  1.31it/s]{'max_pixels': 200704.0}
+22it [00:18,  1.34it/s]{'max_pixels': 200704.0}
+23it [00:18,  1.32it/s]{'max_pixels': 200704.0}
+22it [00:18,  1.34it/s]{'max_pixels': 200704.0}
+24it [00:19,  1.31it/s]{'max_pixels': 200704.0}
+23it [00:19,  1.25it/s]{'max_pixels': 200704.0}
+23it [00:18,  1.33it/s]{'max_pixels': 200704.0}
+22it [00:18,  1.26it/s]{'max_pixels': 200704.0}
+23it [00:18,  1.35it/s]{'max_pixels': 200704.0}
+23it [00:18,  1.32it/s]{'max_pixels': 200704.0}
+24it [00:19,  1.33it/s]{'max_pixels': 200704.0}
+23it [00:18,  1.33it/s]{'max_pixels': 200704.0}
+25it [00:20,  1.30it/s]{'max_pixels': 200704.0}
+23it [00:19,  1.29it/s]{'max_pixels': 200704.0}
+24it [00:20,  1.23it/s]{'max_pixels': 200704.0}
+24it [00:19,  1.32it/s]{'max_pixels': 200704.0}
+24it [00:19,  1.36it/s]{'max_pixels': 200704.0}
+25it [00:20,  1.33it/s]{'max_pixels': 200704.0}
+24it [00:19,  1.32it/s]{'max_pixels': 200704.0}
+24it [00:19,  1.32it/s]{'max_pixels': 200704.0}
+26it [00:21,  1.30it/s]{'max_pixels': 200704.0}
+24it [00:20,  1.31it/s]25it [00:20,  1.27it/s]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+25it [00:20,  1.35it/s]{'max_pixels': 200704.0}
+25it [00:20,  1.37it/s]{'max_pixels': 200704.0}
+25it [00:20,  1.30it/s]{'max_pixels': 200704.0}
+26it [00:20,  1.30it/s]{'max_pixels': 200704.0}
+27it [00:21,  1.32it/s]{'max_pixels': 200704.0}
+25it [00:20,  1.25it/s]{'max_pixels': 200704.0}
+25it [00:20,  1.33it/s]{'max_pixels': 200704.0}
+26it [00:20,  1.35it/s]{'max_pixels': 200704.0}
+26it [00:21,  1.25it/s]{'max_pixels': 200704.0}
+26it [00:21,  1.36it/s]{'max_pixels': 200704.0}
+27it [00:21,  1.33it/s]{'max_pixels': 200704.0}
+26it [00:21,  1.30it/s]{'max_pixels': 200704.0}
+28it [00:22,  1.34it/s]{'max_pixels': 200704.0}
+26it [00:21,  1.26it/s]{'max_pixels': 200704.0}
+26it [00:21,  1.33it/s]{'max_pixels': 200704.0}
+27it [00:21,  1.32it/s]{'max_pixels': 200704.0}
+27it [00:22,  1.28it/s]{'max_pixels': 200704.0}
+27it [00:21,  1.32it/s]{'max_pixels': 200704.0}
+28it [00:22,  1.30it/s]{'max_pixels': 200704.0}
+27it [00:22,  1.29it/s]{'max_pixels': 200704.0}
+29it [00:23,  1.34it/s]{'max_pixels': 200704.0}
+27it [00:22,  1.27it/s]{'max_pixels': 200704.0}
+27it [00:22,  1.33it/s]{'max_pixels': 200704.0}
+28it [00:23,  1.31it/s]{'max_pixels': 200704.0}
+28it [00:22,  1.31it/s]{'max_pixels': 200704.0}
+28it [00:22,  1.34it/s]{'max_pixels': 200704.0}
+29it [00:23,  1.32it/s]{'max_pixels': 200704.0}
+28it [00:22,  1.32it/s]{'max_pixels': 200704.0}
+30it [00:24,  1.35it/s]{'max_pixels': 200704.0}
+28it [00:22,  1.31it/s]{'max_pixels': 200704.0}
+29it [00:23,  1.34it/s]{'max_pixels': 200704.0}
+28it [00:23,  1.30it/s]{'max_pixels': 200704.0}
+29it [00:24,  1.27it/s]{'max_pixels': 200704.0}
+29it [00:23,  1.34it/s]{'max_pixels': 200704.0}
+31it [00:24,  1.36it/s]{'max_pixels': 200704.0}
+30it [00:23,  1.31it/s]{'max_pixels': 200704.0}
+29it [00:23,  1.31it/s]{'max_pixels': 200704.0}
+29it [00:23,  1.30it/s]{'max_pixels': 200704.0}
+30it [00:23,  1.35it/s]{'max_pixels': 200704.0}
+30it [00:24,  1.35it/s]{'max_pixels': 200704.0}
+30it [00:24,  1.28it/s]{'max_pixels': 200704.0}
+29it [00:24,  1.22it/s]{'max_pixels': 200704.0}
+31it [00:24,  1.34it/s]{'max_pixels': 200704.0}
+32it [00:25,  1.36it/s]{'max_pixels': 200704.0}
+30it [00:24,  1.34it/s]{'max_pixels': 200704.0}
+30it [00:24,  1.29it/s]{'max_pixels': 200704.0}
+31it [00:24,  1.35it/s]{'max_pixels': 200704.0}
+31it [00:25,  1.31it/s]{'max_pixels': 200704.0}
+31it [00:24,  1.31it/s]{'max_pixels': 200704.0}
+32it [00:25,  1.35it/s]{'max_pixels': 200704.0}
+33it [00:26,  1.37it/s]{'max_pixels': 200704.0}
+30it [00:24,  1.21it/s]{'max_pixels': 200704.0}
+31it [00:25,  1.30it/s]{'max_pixels': 200704.0}
+31it [00:25,  1.30it/s]{'max_pixels': 200704.0}
+32it [00:25,  1.36it/s]{'max_pixels': 200704.0}
+32it [00:25,  1.32it/s]{'max_pixels': 200704.0}
+32it [00:26,  1.26it/s]{'max_pixels': 200704.0}
+34it [00:26,  1.36it/s]{'max_pixels': 200704.0}
+33it [00:26,  1.34it/s]{'max_pixels': 200704.0}
+32it [00:25,  1.30it/s]{'max_pixels': 200704.0}
+31it [00:25,  1.17it/s]{'max_pixels': 200704.0}
+32it [00:25,  1.31it/s]{'max_pixels': 200704.0}
+33it [00:26,  1.33it/s]{'max_pixels': 200704.0}
+33it [00:26,  1.33it/s]{'max_pixels': 200704.0}
+34it [00:26,  1.34it/s]{'max_pixels': 200704.0}
+35it [00:27,  1.32it/s]{'max_pixels': 200704.0}
+33it [00:27,  1.23it/s]{'max_pixels': 200704.0}
+33it [00:26,  1.33it/s]{'max_pixels': 200704.0}
+32it [00:26,  1.22it/s]{'max_pixels': 200704.0}
+33it [00:26,  1.28it/s]{'max_pixels': 200704.0}
+34it [00:26,  1.33it/s]{'max_pixels': 200704.0}
+34it [00:27,  1.33it/s]{'max_pixels': 200704.0}
+35it [00:27,  1.34it/s]{'max_pixels': 200704.0}
+34it [00:28,  1.26it/s]{'max_pixels': 200704.0}
+34it [00:27,  1.33it/s]{'max_pixels': 200704.0}
+36it [00:28,  1.31it/s]{'max_pixels': 200704.0}
+33it [00:27,  1.27it/s]{'max_pixels': 200704.0}
+34it [00:27,  1.28it/s]{'max_pixels': 200704.0}
+35it [00:27,  1.35it/s]{'max_pixels': 200704.0}
+35it [00:27,  1.35it/s]{'max_pixels': 200704.0}
+36it [00:28,  1.34it/s]{'max_pixels': 200704.0}
+37it [00:29,  1.33it/s]{'max_pixels': 200704.0}
+35it [00:28,  1.27it/s]{'max_pixels': 200704.0}
+35it [00:28,  1.32it/s]{'max_pixels': 200704.0}
+34it [00:28,  1.30it/s]{'max_pixels': 200704.0}
+35it [00:28,  1.30it/s]{'max_pixels': 200704.0}
+36it [00:28,  1.36it/s]{'max_pixels': 200704.0}
+36it [00:28,  1.36it/s]{'max_pixels': 200704.0}
+37it [00:29,  1.33it/s]{'max_pixels': 200704.0}
+38it [00:30,  1.33it/s]{'max_pixels': 200704.0}
+36it [00:29,  1.28it/s]{'max_pixels': 200704.0}
+36it [00:28,  1.32it/s]{'max_pixels': 200704.0}
+35it [00:28,  1.29it/s]{'max_pixels': 200704.0}
+37it [00:29,  1.37it/s]{'max_pixels': 200704.0}
+36it [00:29,  1.27it/s]{'max_pixels': 200704.0}
+37it [00:29,  1.35it/s]{'max_pixels': 200704.0}
+39it [00:30,  1.35it/s]38it [00:29,  1.32it/s]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+37it [00:30,  1.30it/s]{'max_pixels': 200704.0}
+37it [00:29,  1.31it/s]{'max_pixels': 200704.0}
+36it [00:29,  1.30it/s]{'max_pixels': 200704.0}
+38it [00:29,  1.38it/s]{'max_pixels': 200704.0}
+37it [00:29,  1.27it/s]{'max_pixels': 200704.0}
+38it [00:30,  1.33it/s]{'max_pixels': 200704.0}
+40it [00:31,  1.34it/s]{'max_pixels': 200704.0}
+38it [00:31,  1.33it/s]{'max_pixels': 200704.0}
+39it [00:30,  1.30it/s]{'max_pixels': 200704.0}
+37it [00:30,  1.29it/s]{'max_pixels': 200704.0}
+38it [00:30,  1.26it/s]{'max_pixels': 200704.0}
+39it [00:30,  1.38it/s]{'max_pixels': 200704.0}
+38it [00:30,  1.27it/s]{'max_pixels': 200704.0}
+39it [00:30,  1.35it/s]{'max_pixels': 200704.0}
+41it [00:32,  1.36it/s]{'max_pixels': 200704.0}
+39it [00:31,  1.33it/s]{'max_pixels': 200704.0}
+40it [00:31,  1.32it/s]{'max_pixels': 200704.0}
+38it [00:31,  1.30it/s]{'max_pixels': 200704.0}
+39it [00:31,  1.25it/s]{'max_pixels': 200704.0}
+40it [00:31,  1.36it/s]{'max_pixels': 200704.0}
+39it [00:31,  1.26it/s]{'max_pixels': 200704.0}
+40it [00:31,  1.34it/s]{'max_pixels': 200704.0}
+42it [00:32,  1.32it/s]{'max_pixels': 200704.0}
+41it [00:32,  1.30it/s]{'max_pixels': 200704.0}
+40it [00:32,  1.29it/s]{'max_pixels': 200704.0}
+39it [00:31,  1.30it/s]{'max_pixels': 200704.0}
+41it [00:32,  1.37it/s]{'max_pixels': 200704.0}
+40it [00:32,  1.22it/s]{'max_pixels': 200704.0}
+41it [00:32,  1.34it/s]{'max_pixels': 200704.0}
+40it [00:32,  1.23it/s]{'max_pixels': 200704.0}
+43it [00:33,  1.34it/s]{'max_pixels': 200704.0}
+42it [00:32,  1.33it/s]{'max_pixels': 200704.0}
+41it [00:33,  1.30it/s]{'max_pixels': 200704.0}
+42it [00:32,  1.35it/s]{'max_pixels': 200704.0}
+40it [00:32,  1.28it/s]{'max_pixels': 200704.0}
+41it [00:32,  1.24it/s]{'max_pixels': 200704.0}
+42it [00:33,  1.36it/s]{'max_pixels': 200704.0}
+41it [00:33,  1.25it/s]{'max_pixels': 200704.0}
+44it [00:34,  1.35it/s]{'max_pixels': 200704.0}
+43it [00:33,  1.34it/s]{'max_pixels': 200704.0}
+42it [00:34,  1.31it/s]{'max_pixels': 200704.0}
+41it [00:33,  1.29it/s]{'max_pixels': 200704.0}
+43it [00:33,  1.32it/s]{'max_pixels': 200704.0}
+42it [00:33,  1.27it/s]{'max_pixels': 200704.0}
+43it [00:33,  1.34it/s]{'max_pixels': 200704.0}
+42it [00:33,  1.26it/s]{'max_pixels': 200704.0}
+45it [00:35,  1.35it/s]{'max_pixels': 200704.0}
+44it [00:34,  1.35it/s]{'max_pixels': 200704.0}
+42it [00:34,  1.32it/s]{'max_pixels': 200704.0}
+43it [00:35,  1.23it/s]{'max_pixels': 200704.0}
+44it [00:34,  1.33it/s]{'max_pixels': 200704.0}
+43it [00:34,  1.28it/s]{'max_pixels': 200704.0}
+44it [00:34,  1.32it/s]{'max_pixels': 200704.0}
+45it [00:35,  1.37it/s]{'max_pixels': 200704.0}
+46it [00:35,  1.32it/s]{'max_pixels': 200704.0}
+43it [00:34,  1.25it/s]{'max_pixels': 200704.0}
+43it [00:35,  1.32it/s]{'max_pixels': 200704.0}
+45it [00:35,  1.34it/s]{'max_pixels': 200704.0}
+44it [00:35,  1.25it/s]{'max_pixels': 200704.0}
+44it [00:35,  1.29it/s]{'max_pixels': 200704.0}
+45it [00:35,  1.31it/s]{'max_pixels': 200704.0}
+46it [00:35,  1.36it/s]{'max_pixels': 200704.0}
+47it [00:36,  1.34it/s]{'max_pixels': 200704.0}
+44it [00:35,  1.25it/s]{'max_pixels': 200704.0}
+44it [00:35,  1.34it/s]{'max_pixels': 200704.0}
+46it [00:35,  1.33it/s]{'max_pixels': 200704.0}
+45it [00:36,  1.25it/s]{'max_pixels': 200704.0}
+45it [00:36,  1.27it/s]{'max_pixels': 200704.0}
+46it [00:36,  1.34it/s]{'max_pixels': 200704.0}
+48it [00:37,  1.35it/s]{'max_pixels': 200704.0}
+47it [00:36,  1.34it/s]{'max_pixels': 200704.0}
+45it [00:36,  1.28it/s]{'max_pixels': 200704.0}
+45it [00:36,  1.35it/s]{'max_pixels': 200704.0}
+47it [00:36,  1.34it/s]{'max_pixels': 200704.0}
+46it [00:37,  1.24it/s]{'max_pixels': 200704.0}
+46it [00:36,  1.29it/s]{'max_pixels': 200704.0}
+47it [00:36,  1.30it/s]{'max_pixels': 200704.0}
+48it [00:37,  1.36it/s]{'max_pixels': 200704.0}
+49it [00:38,  1.32it/s]{'max_pixels': 200704.0}
+46it [00:37,  1.28it/s]{'max_pixels': 200704.0}
+46it [00:37,  1.35it/s]{'max_pixels': 200704.0}
+48it [00:37,  1.34it/s]{'max_pixels': 200704.0}
+47it [00:37,  1.32it/s]{'max_pixels': 200704.0}
+47it [00:38,  1.23it/s]{'max_pixels': 200704.0}
+48it [00:37,  1.31it/s]{'max_pixels': 200704.0}
+49it [00:38,  1.34it/s]{'max_pixels': 200704.0}
+50it [00:38,  1.34it/s]{'max_pixels': 200704.0}
+47it [00:37,  1.30it/s]{'max_pixels': 200704.0}
+47it [00:37,  1.33it/s]{'max_pixels': 200704.0}
+49it [00:38,  1.36it/s]{'max_pixels': 200704.0}
+48it [00:38,  1.34it/s]{'max_pixels': 200704.0}
+48it [00:39,  1.24it/s]{'max_pixels': 200704.0}
+49it [00:38,  1.33it/s]{'max_pixels': 200704.0}
+51it [00:39,  1.31it/s]{'max_pixels': 200704.0}
+50it [00:38,  1.27it/s]{'max_pixels': 200704.0}
+48it [00:38,  1.29it/s]{'max_pixels': 200704.0}
+48it [00:38,  1.32it/s]{'max_pixels': 200704.0}
+50it [00:38,  1.30it/s]{'max_pixels': 200704.0}
+49it [00:38,  1.35it/s]{'max_pixels': 200704.0}
+49it [00:39,  1.25it/s]{'max_pixels': 200704.0}
+50it [00:39,  1.33it/s]{'max_pixels': 200704.0}
+52it [00:40,  1.33it/s]{'max_pixels': 200704.0}
+51it [00:39,  1.27it/s]{'max_pixels': 200704.0}
+49it [00:39,  1.30it/s]{'max_pixels': 200704.0}
+49it [00:39,  1.31it/s]{'max_pixels': 200704.0}
+51it [00:39,  1.30it/s]{'max_pixels': 200704.0}
+50it [00:39,  1.32it/s]{'max_pixels': 200704.0}
+51it [00:39,  1.33it/s]{'max_pixels': 200704.0}
+50it [00:40,  1.24it/s]{'max_pixels': 200704.0}
+53it [00:41,  1.35it/s]{'max_pixels': 200704.0}
+52it [00:40,  1.28it/s]{'max_pixels': 200704.0}
+50it [00:40,  1.30it/s]{'max_pixels': 200704.0}
+50it [00:40,  1.31it/s]{'max_pixels': 200704.0}
+52it [00:40,  1.30it/s]{'max_pixels': 200704.0}
+51it [00:40,  1.33it/s]{'max_pixels': 200704.0}
+51it [00:41,  1.27it/s]{'max_pixels': 200704.0}
+52it [00:40,  1.31it/s]{'max_pixels': 200704.0}
+54it [00:41,  1.36it/s]{'max_pixels': 200704.0}
+51it [00:40,  1.33it/s]{'max_pixels': 200704.0}
+53it [00:41,  1.29it/s]{'max_pixels': 200704.0}
+51it [00:41,  1.31it/s]{'max_pixels': 200704.0}
+53it [00:41,  1.28it/s]{'max_pixels': 200704.0}
+52it [00:41,  1.28it/s]{'max_pixels': 200704.0}
+53it [00:41,  1.33it/s]{'max_pixels': 200704.0}
+52it [00:42,  1.27it/s]{'max_pixels': 200704.0}
+55it [00:42,  1.35it/s]{'max_pixels': 200704.0}
+52it [00:41,  1.34it/s]{'max_pixels': 200704.0}
+54it [00:42,  1.25it/s]{'max_pixels': 200704.0}
+52it [00:41,  1.30it/s]{'max_pixels': 200704.0}
+54it [00:42,  1.26it/s]{'max_pixels': 200704.0}
+53it [00:42,  1.29it/s]{'max_pixels': 200704.0}
+53it [00:42,  1.31it/s]{'max_pixels': 200704.0}
+54it [00:42,  1.30it/s]{'max_pixels': 200704.0}
+56it [00:43,  1.32it/s]{'max_pixels': 200704.0}
+53it [00:42,  1.32it/s]{'max_pixels': 200704.0}
+55it [00:42,  1.26it/s]{'max_pixels': 200704.0}
+53it [00:42,  1.30it/s]{'max_pixels': 200704.0}
+55it [00:42,  1.26it/s]{'max_pixels': 200704.0}
+54it [00:42,  1.31it/s]{'max_pixels': 200704.0}
+54it [00:43,  1.33it/s]{'max_pixels': 200704.0}
+55it [00:42,  1.31it/s]57it [00:44,  1.34it/s]{'max_pixels': 200704.0}
+{'max_pixels': 200704.0}
+54it [00:43,  1.33it/s]{'max_pixels': 200704.0}
+54it [00:43,  1.32it/s]{'max_pixels': 200704.0}
+56it [00:43,  1.24it/s]{'max_pixels': 200704.0}
+56it [00:43,  1.29it/s]{'max_pixels': 200704.0}
+55it [00:43,  1.30it/s]{'max_pixels': 200704.0}
+55it [00:44,  1.34it/s]{'max_pixels': 200704.0}
+58it [00:44,  1.36it/s]{'max_pixels': 200704.0}
+55it [00:43,  1.32it/s]{'max_pixels': 200704.0}
+56it [00:43,  1.22it/s]{'max_pixels': 200704.0}
+55it [00:44,  1.31it/s]{'max_pixels': 200704.0}
+57it [00:44,  1.26it/s]{'max_pixels': 200704.0}
+57it [00:44,  1.31it/s]{'max_pixels': 200704.0}
+56it [00:45,  1.36it/s]{'max_pixels': 200704.0}
+56it [00:44,  1.27it/s]{'max_pixels': 200704.0}
+59it [00:45,  1.34it/s]{'max_pixels': 200704.0}
+56it [00:44,  1.33it/s]{'max_pixels': 200704.0}
+57it [00:44,  1.23it/s]{'max_pixels': 200704.0}
+58it [00:45,  1.30it/s]{'max_pixels': 200704.0}
+56it [00:44,  1.31it/s]{'max_pixels': 200704.0}
+57it [00:45,  1.37it/s]{'max_pixels': 200704.0}
+58it [00:45,  1.28it/s]{'max_pixels': 200704.0}
+60it [00:46,  1.30it/s]{'max_pixels': 200704.0}
+57it [00:45,  1.22it/s]{'max_pixels': 200704.0}
+57it [00:45,  1.33it/s]{'max_pixels': 200704.0}
+58it [00:45,  1.28it/s]{'max_pixels': 200704.0}
+59it [00:46,  1.29it/s]{'max_pixels': 200704.0}
+57it [00:45,  1.31it/s]{'max_pixels': 200704.0}
+58it [00:46,  1.35it/s]{'max_pixels': 200704.0}
+59it [00:45,  1.25it/s]{'max_pixels': 200704.0}
+58it [00:46,  1.26it/s]{'max_pixels': 200704.0}
+58it [00:46,  1.34it/s]{'max_pixels': 200704.0}
+59it [00:46,  1.30it/s]{'max_pixels': 200704.0}
+61it [00:47,  1.21it/s]{'max_pixels': 200704.0}
+60it [00:46,  1.32it/s]{'max_pixels': 200704.0}
+58it [00:46,  1.32it/s]{'max_pixels': 200704.0}
+59it [00:47,  1.33it/s]{'max_pixels': 200704.0}
+60it [00:46,  1.29it/s]{'max_pixels': 200704.0}
+59it [00:46,  1.27it/s]{'max_pixels': 200704.0}
+59it [00:46,  1.32it/s]{'max_pixels': 200704.0}
+60it [00:46,  1.30it/s]{'max_pixels': 200704.0}
+62it [00:48,  1.25it/s]{'max_pixels': 200704.0}
+61it [00:47,  1.33it/s]{'max_pixels': 200704.0}
+59it [00:47,  1.31it/s]{'max_pixels': 200704.0}
+60it [00:48,  1.35it/s]{'max_pixels': 200704.0}
+61it [00:47,  1.32it/s]{'max_pixels': 200704.0}
+60it [00:47,  1.26it/s]{'max_pixels': 200704.0}
+61it [00:47,  1.31it/s]{'max_pixels': 200704.0}
+60it [00:47,  1.30it/s]{'max_pixels': 200704.0}
+62it [00:48,  1.33it/s]{'max_pixels': 200704.0}
+63it [00:49,  1.19it/s]{'max_pixels': 200704.0}
+60it [00:47,  1.31it/s]{'max_pixels': 200704.0}
+61it [00:48,  1.32it/s]{'max_pixels': 200704.0}
+62it [00:48,  1.33it/s]{'max_pixels': 200704.0}
+61it [00:48,  1.29it/s]{'max_pixels': 200704.0}
+61it [00:48,  1.30it/s]{'max_pixels': 200704.0}
+62it [00:48,  1.27it/s]{'max_pixels': 200704.0}
+63it [00:49,  1.31it/s]{'max_pixels': 200704.0}
+61it [00:48,  1.32it/s]{'max_pixels': 200704.0}
+62it [00:49,  1.33it/s]{'max_pixels': 200704.0}
+63it [00:48,  1.35it/s]{'max_pixels': 200704.0}
+64it [00:50,  1.14it/s]{'max_pixels': 200704.0}
+62it [00:49,  1.30it/s]{'max_pixels': 200704.0}
+62it [00:49,  1.20it/s]{'max_pixels': 200704.0}
+64it [00:49,  1.34it/s]{'max_pixels': 200704.0}
+63it [00:49,  1.23it/s]{'max_pixels': 200704.0}
+62it [00:49,  1.31it/s]{'max_pixels': 200704.0}
+63it [00:50,  1.35it/s]{'max_pixels': 200704.0}
+64it [00:49,  1.37it/s]{'max_pixels': 200704.0}
+65it [00:50,  1.18it/s]{'max_pixels': 200704.0}
+63it [00:49,  1.33it/s]{'max_pixels': 200704.0}
+63it [00:50,  1.22it/s]{'max_pixels': 200704.0}
+64it [00:50,  1.25it/s]{'max_pixels': 200704.0}
+65it [00:50,  1.29it/s]{'max_pixels': 200704.0}
+63it [00:50,  1.31it/s]{'max_pixels': 200704.0}
+65it [00:50,  1.38it/s]{'max_pixels': 200704.0}
+64it [00:50,  1.35it/s]{'max_pixels': 200704.0}
+66it [00:51,  1.24it/s]{'max_pixels': 200704.0}
+64it [00:50,  1.34it/s]{'max_pixels': 200704.0}
+64it [00:50,  1.26it/s]{'max_pixels': 200704.0}
+64it [00:50,  1.34it/s]{'max_pixels': 200704.0}
+66it [00:51,  1.31it/s]{'max_pixels': 200704.0}
+66it [00:51,  1.37it/s]{'max_pixels': 200704.0}
+65it [00:51,  1.22it/s]{'max_pixels': 200704.0}
+67it [00:52,  1.28it/s]{'max_pixels': 200704.0}
+65it [00:51,  1.31it/s]{'max_pixels': 200704.0}
+65it [00:51,  1.34it/s]{'max_pixels': 200704.0}
+65it [00:51,  1.34it/s]{'max_pixels': 200704.0}
+67it [00:52,  1.32it/s]{'max_pixels': 200704.0}
+65it [00:51,  1.25it/s]{'max_pixels': 200704.0}
+67it [00:51,  1.35it/s]{'max_pixels': 200704.0}
+66it [00:51,  1.26it/s]{'max_pixels': 200704.0}
+68it [00:53,  1.31it/s]{'max_pixels': 200704.0}
+66it [00:52,  1.30it/s]{'max_pixels': 200704.0}
+66it [00:52,  1.34it/s]{'max_pixels': 200704.0}
+66it [00:52,  1.33it/s]{'max_pixels': 200704.0}
+66it [00:52,  1.27it/s]{'max_pixels': 200704.0}
+68it [00:52,  1.31it/s]{'max_pixels': 200704.0}
+68it [00:52,  1.35it/s]{'max_pixels': 200704.0}
+69it [00:53,  1.34it/s]{'max_pixels': 200704.0}
+67it [00:52,  1.28it/s]{'max_pixels': 200704.0}
+67it [00:53,  1.29it/s]{'max_pixels': 200704.0}
+67it [00:52,  1.34it/s]{'max_pixels': 200704.0}
+69it [00:53,  1.33it/s]{'max_pixels': 200704.0}
+67it [00:53,  1.32it/s]{'max_pixels': 200704.0}
+69it [00:53,  1.35it/s]{'max_pixels': 200704.0}
+67it [00:53,  1.26it/s]{'max_pixels': 200704.0}
+68it [00:53,  1.28it/s]{'max_pixels': 200704.0}
+70it [00:54,  1.30it/s]{'max_pixels': 200704.0}
+68it [00:54,  1.32it/s]{'max_pixels': 200704.0}
+68it [00:53,  1.34it/s]{'max_pixels': 200704.0}
+70it [00:54,  1.34it/s]{'max_pixels': 200704.0}
+68it [00:53,  1.33it/s]{'max_pixels': 200704.0}
+68it [00:53,  1.30it/s]{'max_pixels': 200704.0}
+70it [00:54,  1.35it/s]{'max_pixels': 200704.0}
+69it [00:54,  1.31it/s]{'max_pixels': 200704.0}
+69it [00:54,  1.31it/s]{'max_pixels': 200704.0}
+71it [00:55,  1.27it/s]{'max_pixels': 200704.0}
+69it [00:54,  1.36it/s]{'max_pixels': 200704.0}
+71it [00:55,  1.34it/s]{'max_pixels': 200704.0}
+71it [00:54,  1.37it/s]{'max_pixels': 200704.0}
+69it [00:54,  1.34it/s]{'max_pixels': 200704.0}
+69it [00:54,  1.31it/s]{'max_pixels': 200704.0}
+70it [00:54,  1.31it/s]{'max_pixels': 200704.0}
+70it [00:55,  1.34it/s]{'max_pixels': 200704.0}
+72it [00:56,  1.31it/s]{'max_pixels': 200704.0}
+70it [00:55,  1.36it/s]{'max_pixels': 200704.0}
+72it [00:55,  1.35it/s]{'max_pixels': 200704.0}
+70it [00:55,  1.34it/s]{'max_pixels': 200704.0}
+70it [00:55,  1.33it/s]{'max_pixels': 200704.0}
+71it [00:56,  1.35it/s]{'max_pixels': 200704.0}
+72it [00:55,  1.27it/s]{'max_pixels': 200704.0}
+73it [00:56,  1.30it/s]{'max_pixels': 200704.0}
+71it [00:55,  1.27it/s]{'max_pixels': 200704.0}
+71it [00:55,  1.35it/s]{'max_pixels': 200704.0}
+71it [00:56,  1.36it/s]{'max_pixels': 200704.0}
+73it [00:56,  1.34it/s]{'max_pixels': 200704.0}
+71it [00:56,  1.34it/s]{'max_pixels': 200704.0}
+72it [00:57,  1.37it/s]{'max_pixels': 200704.0}
+72it [00:56,  1.30it/s]{'max_pixels': 200704.0}
+74it [00:57,  1.32it/s]{'max_pixels': 200704.0}
+73it [00:56,  1.26it/s]{'max_pixels': 200704.0}
+72it [00:56,  1.35it/s]{'max_pixels': 200704.0}
+72it [00:56,  1.37it/s]{'max_pixels': 200704.0}
+72it [00:56,  1.34it/s]{'max_pixels': 200704.0}
+74it [00:57,  1.28it/s]{'max_pixels': 200704.0}
+73it [00:57,  1.36it/s]{'max_pixels': 200704.0}
+73it [00:57,  1.33it/s]{'max_pixels': 200704.0}
+75it [00:58,  1.32it/s]{'max_pixels': 200704.0}
+74it [00:57,  1.21it/s]{'max_pixels': 200704.0}
+73it [00:57,  1.35it/s]{'max_pixels': 200704.0}
+73it [00:57,  1.38it/s]{'max_pixels': 200704.0}
+73it [00:57,  1.35it/s]{'max_pixels': 200704.0}
+74it [00:58,  1.36it/s]{'max_pixels': 200704.0}
+74it [00:57,  1.35it/s]{'max_pixels': 200704.0}
+76it [00:59,  1.34it/s]{'max_pixels': 200704.0}
+75it [00:58,  1.24it/s]{'max_pixels': 200704.0}
+74it [00:58,  1.36it/s]{'max_pixels': 200704.0}
+75it [00:58,  1.24it/s]{'max_pixels': 200704.0}
+74it [00:58,  1.35it/s]{'max_pixels': 200704.0}
+74it [00:58,  1.36it/s]{'max_pixels': 200704.0}
+75it [00:59,  1.36it/s]{'max_pixels': 200704.0}
+77it [00:59,  1.36it/s]{'max_pixels': 200704.0}
+75it [00:58,  1.31it/s]{'max_pixels': 200704.0}
+76it [00:59,  1.22it/s]{'max_pixels': 200704.0}
+75it [00:58,  1.34it/s]{'max_pixels': 200704.0}
+76it [00:58,  1.25it/s]{'max_pixels': 200704.0}
+75it [00:59,  1.37it/s]{'max_pixels': 200704.0}
+75it [00:59,  1.33it/s]{'max_pixels': 200704.0}
+76it [00:59,  1.35it/s]{'max_pixels': 200704.0}
+76it [00:59,  1.33it/s]{'max_pixels': 200704.0}
+78it [01:00,  1.30it/s]{'max_pixels': 200704.0}
+77it [00:59,  1.27it/s]{'max_pixels': 200704.0}
+76it [00:59,  1.34it/s]{'max_pixels': 200704.0}
+77it [00:59,  1.27it/s]{'max_pixels': 200704.0}
+76it [00:59,  1.33it/s]{'max_pixels': 200704.0}
+76it [00:59,  1.35it/s]{'max_pixels': 200704.0}
+77it [01:00,  1.34it/s]{'max_pixels': 200704.0}
+77it [01:00,  1.35it/s]{'max_pixels': 200704.0}
+79it [01:01,  1.31it/s]{'max_pixels': 200704.0}
+78it [01:00,  1.29it/s]{'max_pixels': 200704.0}
+77it [01:00,  1.30it/s]{'max_pixels': 200704.0}
+78it [01:00,  1.20it/s]{'max_pixels': 200704.0}
+77it [01:00,  1.32it/s]{'max_pixels': 200704.0}
+77it [01:00,  1.33it/s]{'max_pixels': 200704.0}
+78it [01:01,  1.33it/s]{'max_pixels': 200704.0}
+78it [01:00,  1.35it/s]{'max_pixels': 200704.0}
+80it [01:02,  1.34it/s]{'max_pixels': 200704.0}
+79it [01:01,  1.28it/s]{'max_pixels': 200704.0}
+78it [01:01,  1.30it/s]{'max_pixels': 200704.0}
+79it [01:01,  1.23it/s]{'max_pixels': 200704.0}
+78it [01:01,  1.35it/s]{'max_pixels': 200704.0}
+78it [01:01,  1.32it/s]{'max_pixels': 200704.0}
+79it [01:02,  1.35it/s]{'max_pixels': 200704.0}
+79it [01:01,  1.34it/s]{'max_pixels': 200704.0}
+81it [01:02,  1.32it/s]{'max_pixels': 200704.0}
+80it [01:02,  1.28it/s]{'max_pixels': 200704.0}
+79it [01:01,  1.31it/s]{'max_pixels': 200704.0}
+79it [01:02,  1.31it/s]{'max_pixels': 200704.0}
+79it [01:02,  1.31it/s]{'max_pixels': 200704.0}
+80it [01:02,  1.20it/s]{'max_pixels': 200704.0}
+80it [01:02,  1.35it/s]{'max_pixels': 200704.0}
+80it [01:02,  1.35it/s]{'max_pixels': 200704.0}
+82it [01:03,  1.34it/s]{'max_pixels': 200704.0}
+81it [01:02,  1.31it/s]{'max_pixels': 200704.0}
+80it [01:02,  1.28it/s]{'max_pixels': 200704.0}
+80it [01:02,  1.34it/s]{'max_pixels': 200704.0}
+80it [01:02,  1.31it/s]{'max_pixels': 200704.0}
+81it [01:03,  1.36it/s]{'max_pixels': 200704.0}
+81it [01:03,  1.23it/s]{'max_pixels': 200704.0}
+81it [01:03,  1.34it/s]{'max_pixels': 200704.0}
+83it [01:04,  1.33it/s]{'max_pixels': 200704.0}
+82it [01:03,  1.32it/s]{'max_pixels': 200704.0}
+81it [01:03,  1.32it/s]{'max_pixels': 200704.0}
+81it [01:03,  1.33it/s]{'max_pixels': 200704.0}
+81it [01:03,  1.32it/s]{'max_pixels': 200704.0}
+82it [01:04,  1.35it/s]{'max_pixels': 200704.0}
+82it [01:03,  1.24it/s]{'max_pixels': 200704.0}
+82it [01:03,  1.34it/s]{'max_pixels': 200704.0}
+84it [01:05,  1.33it/s]{'max_pixels': 200704.0}
+83it [01:04,  1.32it/s]{'max_pixels': 200704.0}
+82it [01:04,  1.29it/s]{'max_pixels': 200704.0}
+82it [01:04,  1.35it/s]{'max_pixels': 200704.0}
+82it [01:04,  1.32it/s]{'max_pixels': 200704.0}
+83it [01:05,  1.36it/s]{'max_pixels': 200704.0}
+83it [01:04,  1.27it/s]{'max_pixels': 200704.0}
+83it [01:04,  1.34it/s]{'max_pixels': 200704.0}
+85it [01:05,  1.31it/s]{'max_pixels': 200704.0}
+84it [01:05,  1.32it/s]{'max_pixels': 200704.0}
+83it [01:04,  1.32it/s]{'max_pixels': 200704.0}
+83it [01:05,  1.32it/s]{'max_pixels': 200704.0}
+83it [01:05,  1.32it/s]{'max_pixels': 200704.0}
+84it [01:05,  1.34it/s]{'max_pixels': 200704.0}
+84it [01:05,  1.28it/s]{'max_pixels': 200704.0}
+84it [01:05,  1.32it/s]{'max_pixels': 200704.0}
+86it [01:06,  1.33it/s]{'max_pixels': 200704.0}
+85it [01:05,  1.31it/s]{'max_pixels': 200704.0}
+84it [01:05,  1.30it/s]{'max_pixels': 200704.0}
+84it [01:05,  1.34it/s]{'max_pixels': 200704.0}
+84it [01:05,  1.33it/s]{'max_pixels': 200704.0}
+85it [01:06,  1.33it/s]{'max_pixels': 200704.0}
+85it [01:06,  1.28it/s]{'max_pixels': 200704.0}
+85it [01:06,  1.32it/s]{'max_pixels': 200704.0}
+87it [01:07,  1.33it/s]86it [01:06,  1.31it/s]{'max_pixels': 200704.0}
+85it [01:06,  1.31it/s]{'max_pixels': 200704.0}
+85it [01:06,  1.31it/s]{'max_pixels': 200704.0}
+86it [01:07,  1.35it/s]{'max_pixels': 200704.0}
+86it [01:06,  1.29it/s]{'max_pixels': 200704.0}
+86it [01:06,  1.33it/s]{'max_pixels': 200704.0}
+85it [01:06,  1.25it/s]{'max_pixels': 200704.0}
+88it [01:08,  1.33it/s]87it [01:07,  1.31it/s]86it [01:07,  1.32it/s]{'max_pixels': 200704.0}
+87it [01:08,  1.37it/s]86it [01:07,  1.32it/s]{'max_pixels': 200704.0}
+87it [01:07,  1.32it/s]86it [01:07,  1.28it/s]{'max_pixels': 200704.0}
+87it [01:07,  1.30it/s]89it [01:08,  1.32it/s]89it [01:08,  1.29it/s]
+88it [01:08,  1.31it/s]87it [01:07,  1.33it/s]88it [01:08,  1.38it/s]87it [01:08,  1.33it/s]88it [01:08,  1.32it/s]88it [01:08,  1.29it/s]87it [01:08,  1.25it/s]89it [01:08,  1.31it/s]89it [01:08,  1.29it/s]
+88it [01:08,  1.35it/s]88it [01:08,  1.35it/s]89it [01:09,  1.34it/s]89it [01:09,  1.28it/s]
+89it [01:09,  1.35it/s]89it [01:09,  1.29it/s]
+88it [01:09,  1.26it/s]89it [01:09,  1.28it/s]89it [01:09,  1.29it/s]
+89it [01:09,  1.35it/s]89it [01:09,  1.28it/s]
+89it [01:09,  1.32it/s]89it [01:09,  1.28it/s]
+89it [01:09,  1.26it/s]89it [01:10,  1.27it/s]
+Evaluating newsvqa_val ...
+Results saved to ./res/news-vqa/newsvqa_val_241216180039.json
+python utils/infographicsvqa_eval.py -g /gruntdata/heyuan67/zqp/NewsVQA/ICDAR2023/annotation/swift_newsvideoqa_version_2_val_release2.json -s ./res/news-vqa/newsvqa_val_241216180039.json
+
+Overall ANLS: 0.7072
+write results to file ./res/news-vqa/checkpoint-18868_.txt
+write results to file ./res/news-vqa/checkpoint-18868_.txt
+write results to file ./res/news-vqa/checkpoint-18868_.txt
+write results to file ./res/news-vqa/checkpoint-18868_.txt
+write results to file ./res/news-vqa/checkpoint-18868_.txt
+write results to file ./res/news-vqa/checkpoint-18868_.txt
+write results to file ./res/news-vqa/checkpoint-18868_.txt
+write results to file ./res/news-vqa/checkpoint-18868_.txt
++ '[' vqa-newsvqa-val == vqa-newsvqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val == vqa-newsvqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val == vqa-newsvqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val == vqa-newsvqa-val-unsupervised-cls-v4-top5_mix ']'
++ '[' vqa-newsvqa-val == vqa-slidevqa-val ']'
++ '[' vqa-newsvqa-val == vqa-slidevqa-val-unsupervised-cls-v3-top3 ']'
++ '[' vqa-newsvqa-val == vqa-slidevqa-val-unsupervised-cls-v3-top5 ']'
++ '[' vqa-newsvqa-val == vqa-slidevqa-val-unsupervised-cls-v4-top3_mix ']'
++ '[' vqa-newsvqa-val == vqa-slidevqa-val-unsupervised-cls-v4-top5_mix ']'
