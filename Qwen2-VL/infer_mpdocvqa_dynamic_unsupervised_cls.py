@@ -20,7 +20,7 @@ from copy import deepcopy
 ds_collections = {
     'mpdocvqa_val': {
         'train': None,
-        'test': '/mntnlp/qp_mm_data/docvqa/mpdoc/mpdoc_val_swift_qwen2vl.jsonl',
+        'test': '~/docvqa/mpdoc/mpdoc_val_swift_qwen2vl.jsonl',
         'annotation': '/mntnlp/qp_mm_data/docvqa/mpdoc/val.json',
         'annotation_details': [f'/mntnlp/qp_mm_data/docvqa/mpdoc/val_{idx}.json' for idx in range(5)],
         'metric': 'anls',
@@ -28,14 +28,14 @@ ds_collections = {
     },
     'newsvqa_val': {
         'train': None,
-        'test': '/gruntdata/heyuan67/zqp/NewsVQA/ICDAR2023/swift_val.jsonl',
+        'test': '~/NewsVQA/ICDAR2023/swift_val.jsonl',
         'annotation': '/gruntdata/heyuan67/zqp/NewsVQA/ICDAR2023/annotation/swift_newsvideoqa_version_2_val_release2.json',
         'metric': 'anls',
         'max_new_tokens': 100,
     },
     'dude_mpdocvqa_val': {
         'train': None,
-        'test': '/gruntdata/heyuan67/zqp/DUDE_loader/internvl_val_dude_swift_mpdocqa.jsonl',
+        'test': '~/DUDE_loader/internvl_val_dude_swift_mpdocqa.jsonl',
         'annotation': '/gruntdata/heyuan67/zqp/DUDE_loader/internvl_val_dude_mpdocqa_annotations.json',
         'annotation_details': [f'/gruntdata/heyuan67/zqp/DUDE_loader/internvl_val_dude_mpdocqa_annotations_{idx}.json' for idx in range(5)],
         'metric': 'anls',
@@ -43,7 +43,7 @@ ds_collections = {
     },
     'mpdocvqa_train1000': {
         'train': None,
-        'test': '/mntnlp/qp_mm_data/docvqa/mpdoc/mpdoc_train_swift_qwen2vl_sample1000.jsonl',
+        'test': '~/docvqa/mpdoc/mpdoc_train_swift_qwen2vl_sample1000.jsonl',
         'annotation': '/mntnlp/qp_mm_data/docvqa/mpdoc/mpdoc_train_ann_sample1000.json',
         'metric': 'anls',
         'max_new_tokens': 100,
